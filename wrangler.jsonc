@@ -1,0 +1,10 @@
+// Used by the "Deploy to Cloudflare" button in README.md.
+// Deploys this folder as a static-assets Worker. The Cloudflare Pages
+// project ignores this file (it has no pages_build_output_dir).
+{
+  "name": "new-on-the-stacks",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "."
+  }
+}

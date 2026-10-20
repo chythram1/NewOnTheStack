@@ -7,6 +7,8 @@
 ![Zero dependencies](https://img.shields.io/badge/dependencies-0-blue)
 ![Content updated daily](https://img.shields.io/badge/content-updated%20daily-8a4b9e)
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/chythram1/NewOnTheStack)
+
 ---
 
 ## Overview
@@ -66,9 +68,11 @@ The site has no framework, no bundler and no backend. One HTML file renders ever
 
 ```
 .
-├── index.html   # The entire site: layout, styles and rendering logic
-├── feed.json    # All content: papers and trend briefs
-├── _headers     # Cloudflare Pages header rules (no caching for feed.json)
+├── index.html       # The entire site: layout, styles and rendering logic
+├── feed.json        # All content: papers and trend briefs
+├── _headers         # Header rules (no caching for feed.json)
+├── wrangler.jsonc   # Config for the "Deploy to Cloudflare" button
+├── .assetsignore    # Files the button's deploy won't serve
 └── README.md
 ```
 
@@ -96,6 +100,12 @@ Hosted on **Cloudflare Pages** through its GitHub integration:
 | Production branch | `main` |
 
 Every push to `main` triggers a new production deployment. No API tokens or build tooling are involved.
+
+### Deploy your own copy
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/chythram1/NewOnTheStack)
+
+The button copies this repo into your GitHub account and deploys it to your Cloudflare account as a static site. `wrangler.jsonc` holds the config it uses, and `.assetsignore` keeps repo-only files from being served. Both files are ignored by the Cloudflare Pages setup above.
 
 ## Updating the content
 
