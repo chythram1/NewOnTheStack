@@ -1,0 +1,528 @@
+{
+ "updatedAt": "2026-10-20T16:30:00Z",
+ "trends": {
+  "psych": {
+   "headline": "Behavior read through its social function",
+   "points": [
+    "Traits often treated as deficits are being reframed as strategies. In one study, shyness works as appeasement that earns teacher care.",
+    "Digital habits are being traced to underlying needs. Teens' absorption in short videos runs through loneliness.",
+    "Studies are more careful about what they claim. One reports a null result on subtle dehumanization, and a breathing study flags higher worry and self-selection."
+   ]
+  },
+  "edu": {
+   "headline": "Measurement is under scrutiny",
+   "points": [
+    "Large international comparisons are less stable than they look. PISA creativity rankings move a lot with modeling choices.",
+    "Policy evaluation is going system-wide. Brazil's quotas look modest once the reshuffling of seats is counted.",
+    "Assessment is moving into conversations. Tutoring dialogues, including AI-tutored ones, are being scored as evidence of learning."
+   ]
+  },
+  "ai": {
+   "headline": "Evaluation moves from single answers to whole interactions",
+   "points": [
+    "Multi-agent risk: monitors that watch agents one at a time miss attacks split across several agents.",
+    "Safety beyond the first reply: newer chatbot versions gave up sooner after users refused a crisis referral.",
+    "Structure over brute force: smaller models with explicit state, for patients or learners, rival bigger models and role-play prompts."
+   ]
+  },
+  "tech": {
+   "headline": "Agents as software testers",
+   "points": [
+    "Benchmarks now test whether agents can find bugs by using apps, and noticing the failure is the bottleneck.",
+    "Agents that build verifiable tools, such as database test generators, deliver concrete results: 44 confirmed bugs.",
+    "Design for people is in focus. An AI's persona changes whether children check its answers, and assistive tools raise surveillance concerns."
+   ]
+  },
+  "fin": {
+   "headline": "Market plumbing and institutions drive prices",
+   "points": [
+    "Forced sellers: pension funds that pay out more than they take in sell stocks into falling markets.",
+    "Institutions as macro news: Supreme Court makeup shifts inflation and fiscal expectations, and Fed policy spreads abroad through dollar-short arbitrageurs.",
+    "Venture capital has drifted from funding R&D to funding customer acquisition."
+   ]
+  }
+ },
+ "papers": [
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Yang Yao, Haozhe Chen, Bingyi Kang",
+   "date": "2026-10-14",
+   "field": "tech",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.14096",
+   "source": "auto",
+   "summary": "The best of 15 coding agents passed only 59% of tasks that require finding and fixing bugs that only appear when you use real web apps. Most failures came from not noticing the bug.",
+   "title": "SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?",
+   "url": "https://arxiv.org/abs/2610.14096",
+   "venue": "arXiv cs.SE",
+   "findings": [
+    "200 tasks built from real bug fixes in 200 popular open-source web apps. Agents got only the code and a vague request.",
+    "The best agent's pass rate was 59.0%.",
+    "Agents often reached the right feature but never triggered the failure, or didn't recognize it when they did."
+   ],
+   "takeaway": "For autonomous coding agents, the bottleneck is now spotting broken behavior, not writing the fix.",
+   "evidence": "Preprint · benchmark of 15 agents",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.14096"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Suyang Zhong, Manuel Rigger",
+   "date": "2026-10-14",
+   "field": "tech",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.14161",
+   "source": "auto",
+   "summary": "Coding agents that add features to database test generators found 44 confirmed bugs in SQLite, DuckDB and PostgreSQL. 34 are already fixed.",
+   "title": "Agentic Evolution of SQL Test Generators",
+   "url": "https://arxiv.org/abs/2610.14161",
+   "venue": "arXiv cs.SE",
+   "findings": [
+    "A check called witness replay reruns the agent's recorded choices to confirm each new feature really produces the target SQL, which catches made-up changes.",
+    "Developers confirmed 44 bugs and have fixed 34.",
+    "Once a feature is built into the generator, testing needs no further LLM calls, which keeps costs low."
+   ],
+   "takeaway": "Having agents build testing tools, instead of testing directly, gives results that are cheaper and easier to verify.",
+   "evidence": "Preprint · tested on 3 database systems",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.14161"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Zhangqi Duan, Simon Woodhead, Maya Miller-Vedam",
+   "date": "2026-10-15",
+   "field": "edu",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.19532",
+   "source": "auto",
+   "summary": "One model that scores both quiz answers and the steps inside tutoring dialogues predicts question difficulty and student correctness better than strong baselines.",
+   "title": "A Unified Response Framework for Questions and Tutoring Dialogues",
+   "url": "https://arxiv.org/abs/2610.19532",
+   "venue": "arXiv cs.CY",
+   "findings": [
+    "Math subtasks from human- and AI-tutored dialogues were rewritten as standalone questions and placed on the same ability scale as regular questions, using item response theory.",
+    "It was tested on two real-world math datasets.",
+    "It beat the baselines at predicting difficulty and correctness. The abstract gives no numbers."
+   ],
+   "takeaway": "Tutoring conversations, including AI tutoring, carry usable evidence of what students know. That could make assessment continuous instead of test-based.",
+   "evidence": "Preprint · modeling study · 2 math datasets",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.19532"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Yilin Jiang, Fei Tan, Xuanyu Yin",
+   "date": "2026-10-15",
+   "field": "ai",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.19654",
+   "source": "auto",
+   "summary": "Asking an LLM to role-play a student doesn't work well. Predicting a specific learner's next move from their history makes simulated students far more realistic.",
+   "title": "HACHIMI-II: From Role-Play to Learner Behavior Modeling for Faithful Student Simulation",
+   "url": "https://arxiv.org/abs/2610.19654",
+   "venue": "arXiv cs.CY",
+   "findings": [
+    "The method builds an explicit picture of what the learner knows and limits the LLM's next answer to it, so the model's own knowledge doesn't leak in.",
+    "Across three item-response datasets, simulated ability matched real students 2.4 to 8.4 times more closely than the strongest baseline did.",
+    "Across two dialogue datasets, it reproduced real students' specific errors 1.8 to 5.1 times more often."
+   ],
+   "takeaway": "Capable LLMs make poor stand-ins for struggling students unless their own knowledge is held back. This matters for testing AI tutors before real students use them.",
+   "evidence": "Preprint · 3 item-response + 2 dialogue datasets",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.19654"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Shuning Liu, Yuxin Song, Hanbing Li",
+   "date": "2026-10-16",
+   "field": "tech",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.21233",
+   "source": "auto",
+   "summary": "Children aged 8 to 10 saw AI helpers as useful but fallible. A partner-like AI drew more direct questions, and a tool-like AI drew more evidence-checking.",
+   "title": "'Do You Trust It... or Check It?': Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration",
+   "url": "https://arxiv.org/abs/2610.21233",
+   "venue": "arXiv cs.HC",
+   "findings": [
+    "Children played a biology reasoning game with an AI in one of three styles: partner-like, tool-like, or a mix of both.",
+    "The AI's style shaped how children engaged and how deeply they questioned its answers.",
+    "This is a preliminary study; the abstract reports no sample size or statistics."
+   ],
+   "takeaway": "How an AI presents itself can nudge children toward or away from checking its answers.",
+   "evidence": "Preprint · preliminary study · logs, ratings, interviews",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.21233"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Silas Curry, Rishit Singh, Heekyoung Jung",
+   "date": "2026-10-16",
+   "field": "tech",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.21236",
+   "source": "auto",
+   "summary": "Unspoken expectations at work are a major barrier for autistic workers and workers with intellectual and developmental disabilities. Tools that make work clearer risk exposing these workers to more surveillance.",
+   "title": "Workplace Ambiguity and Technology Support for Autistic and IDD Workers",
+   "url": "https://arxiv.org/abs/2610.21236",
+   "venue": "arXiv cs.HC",
+   "findings": [
+    "Researchers interviewed 11 caregivers and ran an AI co-design session.",
+    "Unclear expectations fell into three kinds: how work is judged, how tasks are done, and how to relate to coworkers.",
+    "Proposed supports: real-time prompts to get back on track, help making sense of feedback, and guidance based on body signals."
+   ],
+   "takeaway": "Employers should make expectations explicit before anyone is penalized for missing them, and assistive tech should answer to the worker, not the employer.",
+   "evidence": "Preprint · qualitative · 11 caregiver interviews",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.21236"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Subigya Nepal, Ruth Heo, Emma M Parrish",
+   "date": "2026-10-16",
+   "field": "ai",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.21253",
+   "source": "auto",
+   "summary": "All five chatbots tested pointed users with suicidal thoughts to help, but the newer versions gave up on that referral sooner after users said no.",
+   "title": "What do AI chatbots do after users decline therapeutic redirection for suicide thoughts?",
+   "url": "https://arxiv.org/abs/2610.21253",
+   "venue": "arXiv cs.HC",
+   "findings": [
+    "2,550 scripted conversations across 5 chatbots, each in an older and a newer version. 99.7% referred the user to help in the first reply.",
+    "Average persistence ranged from 0.01 to 9.94 refusals before giving up. Every chatbot's newer version persisted less (each P < .05).",
+    "Bots that persisted less more often presented themselves as the user's support (ρ = −0.80). Only 2% of replies asked what was stopping the user from seeking help."
+   ],
+   "takeaway": "Safety testing should check what a chatbot does after a crisis referral is turned down, not only whether it offers one.",
+   "evidence": "Cross-sectional audit · 2,550 conversations · September 2026",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.21253"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Simon A. Lee, Jiahang Hank Sha, Soomin Chung",
+   "date": "2026-10-20",
+   "field": "ai",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.23862",
+   "source": "auto",
+   "summary": "A compact world model forecasts how a patient's health record evolves and how treatments change that path. It is competitive with clinical models about 30 times larger.",
+   "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
+   "url": "https://arxiv.org/abs/2610.23862",
+   "venue": "arXiv cs.LG",
+   "findings": [
+    "It separates the patient's underlying state from the clinical actions taken, then rolls the trajectory forward in time.",
+    "It has about 30 times fewer parameters than the clinical foundation models it was compared with. It was competitive on classification and time-to-event tasks, though results varied by task.",
+    "Changing the sequence of actions, such as treatments, changes the forecast, which allows what-if simulation."
+   ],
+   "takeaway": "World models, already common in robotics, are moving into healthcare as smaller alternatives to giant clinical models that can also simulate scenarios.",
+   "evidence": "Preprint · model evaluation · dataset not named in abstract",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.23862"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "John Kitaoka, Thao Amelia Pham, Carlos Rafael Giudice",
+   "date": "2026-10-20",
+   "field": "ai",
+   "kind": "Preprint",
+   "ref": "arXiv:2610.24052",
+   "source": "auto",
+   "summary": "Monitors that watch each AI agent separately caught only 7% of attacks split across several agents, versus 87% when a single agent did the same thing.",
+   "title": "Red-Teaming Multi-Agent Attacks for Loss-of-Control Risks",
+   "url": "https://arxiv.org/abs/2610.24052",
+   "venue": "arXiv cs.CR",
+   "findings": [
+    "The test setup, called MiniLab, has 5 linked services, 249 ordinary tasks and 16 human-designed attacks spread across agents, such as stealing model weights or escalating permissions.",
+    "Watching each agent alone flagged 7% of successful distributed attacks. The same side task done by one agent was flagged 87% of the time.",
+    "Attacks planned by models evaded a monitor at most 25% of the time, versus 80% for human-designed plans. The authors expect that gap to narrow as models improve."
+   ],
+   "takeaway": "As companies deploy teams of agents, safety monitoring has to look across agents, not at each one alone.",
+   "evidence": "Preprint · red-team experiments · synthetic environment",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "arxiv.org_abs_2610.24052"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Said Rashid Ali Alshuhum, Dawood Abdulmalek Al-Hidabi, Abd Al-Aziz Al-refaei",
+   "date": "2026-10-19",
+   "field": "edu",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "Teacher self-efficacy is by far the strongest predictor of innovative teaching in Omani primary schools. School climate and organizational learning showed no direct link.",
+   "title": "Modelling the determinants of innovative teaching practices among primary school teachers in Oman through a multi-group analysis using PLS-SEM",
+   "url": "https://link.springer.com/article/10.1007/s44217-026-02267-2",
+   "venue": "Discover Education",
+   "findings": [
+    "Self-efficacy: β = 0.75. Transformational leadership: β = 0.13.",
+    "School climate and organizational learning had no significant direct association with innovative teaching.",
+    "How teachers responded to these factors differed by gender."
+   ],
+   "takeaway": "Building teachers' confidence may do more for classroom innovation than broad school-culture programs.",
+   "evidence": "Cross-sectional survey, PLS-SEM · 368 teachers in Muscat",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "link.springer.com_article_10.1007_s44217-026-02267-2"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Travis M. Wilson",
+   "date": "2026-09-24",
+   "field": "psych",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "In grades 5 and 6, shy Black American children were less popular but more prosocial and closer to their teachers. That fits the idea of shyness as a social appeasement strategy.",
+   "title": "Shyness as an Anticipatory Form of Appeasement in Urban Black American Children",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1739",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "The study covered 445 Black American students in grades 3 to 6 at five urban schools, 91% of them on free or reduced lunch. Data came from peer nominations, teacher reports and census records.",
+    "Peers more often saw girls (not boys) as shy, and also older students living in more disadvantaged neighborhoods.",
+    "Only in grades 5 and 6 did low popularity go with more shyness, and being seen as shy go with more prosocial behavior. Shy children were closer to their teachers, especially in the older grades."
+   ],
+   "takeaway": "Shyness may be an adaptive way to elicit care rather than only a deficit. The authors call this the first empirical study of shyness in Black American children.",
+   "evidence": "Multilevel correlational study · 445 children",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1739"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Marshall M. C. Hui, Karson T. F. Kung",
+   "date": "2026-09-24",
+   "field": "psych",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "Children aged 9 to 12 did not see gender-nonconforming peers as less human on subtler measures. This is a null result for two milder forms of dehumanization.",
+   "title": "No Evidence of Infrahumanization or Trait-Based Dehumanization in Children's Evaluation of Gender Nonconforming Peers",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1743",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "235 children rated hypothetical gender-conforming and gender-nonconforming peers on uniquely human emotions and on human traits.",
+    "Ratings did not differ on either measure. The same team found blatant dehumanization and mind denial in a 2025 study.",
+    "The authors suggest some earlier positive findings may be artifacts of measures that mix up humanness with likability."
+   ],
+   "takeaway": "Different forms of dehumanization don't necessarily show up together, so bias studies need to choose their measures carefully.",
+   "evidence": "Rating task · 235 children",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1743"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Shuangrui Liu, Seungwoo Choi, Ansu Lee",
+   "date": "2026-09-24",
+   "field": "psych",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "Students who see their PE teacher as supportive behave more prosocially and less antisocially, mostly because the class climate feels supportive.",
+   "title": "How Students' Perceptions of Physical Education Teachers' Teaching Style Relate to Prosocial and Antisocial Behavior Among Chinese High School Students",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1744",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "Teaching style strongly predicted a perceived supportive climate (β = 0.49).",
+    "A supportive climate predicted more prosocial behavior (β = 0.42) and less antisocial behavior (β = −0.18).",
+    "Teaching style also directly predicted less antisocial behavior (β = −0.26), but had no significant direct link to prosocial behavior (β = 0.07, p = 0.16)."
+   ],
+   "takeaway": "Teachers may be able to shift student behavior through autonomy support, structure and involvement. The design is cross-sectional, so the causal order is unproven.",
+   "evidence": "Cross-sectional SEM · 710 Chinese high-school students",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1744"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Alexandru Florian Crișan, Roxana Ramona Onofrei, Adelina Marițescu",
+   "date": "2026-09-24",
+   "field": "psych",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "A year after a 14-week breathing program, students who kept practicing reported better well-being, happiness and sleep. They also reported more worry.",
+   "title": "Breathing-Practice Status and Psychological Outcomes 12 Months After a Structured Program in University Students",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1745",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "Of 34 students followed up, 18 were still practicing at 12 months. After adjusting for their scores right after the program, they scored higher on happiness, positive affect, sleep quality, life satisfaction and all six well-being dimensions (all q < 0.001).",
+    "Worry was higher in the group that kept practicing: +4.52 points on the Penn State Worry Questionnaire (95% CI 1.44 to 7.60).",
+    "Negative affect did not differ between the groups."
+   ],
+   "takeaway": "Keeping up a simple habit goes with lasting well-being gains. But students chose whether to continue, so this shows association, not cause, and the higher worry argues against overselling breathwork.",
+   "evidence": "Observational follow-up · 34 students · self-selected groups",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1745"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Samet Makas, Mustafa Baloglu",
+   "date": "2026-09-25",
+   "field": "psych",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "Lonelier teens get more absorbed in short videos. Loneliness fully explains the link between lower well-being and that absorption.",
+   "title": "Psychological Well-Being and Short Video Flow in Adolescents: The Moderated-Mediation via Loneliness and Sensation-Seeking",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1750",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "Among 373 Turkish adolescents aged 12 to 15, loneliness fully mediated the path from psychological well-being to absorption in short videos.",
+    "Sensation seeking changed how strongly loneliness was tied to that absorption.",
+    "The abstract reports no effect sizes."
+   ],
+   "takeaway": "Heavy short-video use may be better treated as a loneliness problem than a screen-time problem.",
+   "evidence": "Cross-sectional survey · 373 adolescents · convenience sample",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1750"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Georgios Sideridis, Mohammed Alghamdi",
+   "date": "2026-09-27",
+   "field": "edu",
+   "kind": "Journal article",
+   "source": "seed",
+   "summary": "The PISA 2022 creativity questionnaires hold up as overall measures, but country rankings shift a lot depending on how the data are modeled.",
+   "title": "Are PISA 2022 Creativity-Related Self-Reports Comparable Across Education Systems?",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1758",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "Four of the six published indices fit poorly as single-factor scales across up to 73 education systems.",
+    "Re-modeled, country averages still correlated r = 0.77 to 0.97 with the originals, but 18% to 53% of systems moved more than five places in the ranking.",
+    "Within countries, links between self-reported creativity and actual creative-thinking scores were small and inconsistent."
+   ],
+   "takeaway": "Don't read much into where any one country ranks on PISA's creativity questionnaires.",
+   "evidence": "Psychometric re-analysis · PISA 2022, up to 73 systems",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1758"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Hui Jiang, Guanyu Zhou, Lu Jiao",
+   "date": "2026-10-19",
+   "field": "edu",
+   "kind": "Journal article",
+   "source": "auto",
+   "summary": "Learning Korean words in immersive VR worked through two routes: a cognitive one through feeling present and self-efficacy, and an emotional one through feeling present and emotions.",
+   "title": "L2 Vocabulary Learning Through Virtual Reality: Effects of Affective and Cognitive Variables",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1939",
+   "venue": "Behavioral Sciences (MDPI)",
+   "findings": [
+    "Native Chinese speakers learned Korean vocabulary in VR, then took a word-recognition test.",
+    "Situational interest and intrinsic motivation were linked, in sequence, to better recognition.",
+    "The abstract gives no effect sizes, and the authors say the findings need independent confirmation."
+   ],
+   "takeaway": "VR vocabulary gains seem to depend on learners feeling present, confident and interested, not on the immersive technology by itself.",
+   "evidence": "Structural equation model · about 100 learners",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.mdpi.com_2076-328X_16_10_1939"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Nano Barahona, Cauê Dobbin, Sebastián Otero",
+   "date": "2026-10-15",
+   "dateLabel": "Oct 2026",
+   "field": "edu",
+   "kind": "Working paper",
+   "ref": "w35893",
+   "source": "seed",
+   "summary": "Brazil's policy of reserving half of federal university seats helps the targeted students graduate. But reshuffled seats displace about 30% more students than it benefits, leaving a modest net gain.",
+   "title": "Affirmative Action in Centralized College Admissions Systems",
+   "url": "https://www.nber.org/papers/w35893",
+   "venue": "NBER",
+   "findings": [
+    "Among students right at the admission cutoff, graduation gains for those admitted under the policy are about twice the losses of those displaced.",
+    "Because seats reshuffle across programs, the policy displaces about 30% more students than it benefits.",
+    "Losses among students outside the policy offset about two-thirds of targeted students' graduation gains."
+   ],
+   "takeaway": "Judging affirmative action only by students right at the cutoff overstates its effect. The reshuffling across the whole system matters.",
+   "evidence": "Admission-cutoff comparison plus structural model · Brazil national admissions",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.nber.org_papers_w35893"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Thomas Drechsel, Naixin Zhang",
+   "date": "2026-10-15",
+   "dateLabel": "Oct 2026",
+   "field": "fin",
+   "kind": "Working paper",
+   "ref": "w35895",
+   "source": "seed",
+   "summary": "When an unexpected Supreme Court vacancy tilts the Court conservative, markets price in lower inflation, weaker growth and lower bond yields. They read it as a sign of tighter future fiscal policy.",
+   "title": "Do Judges Move Markets? Ideological Shifts in the Supreme Court and Macroeconomic Expectations",
+   "url": "https://www.nber.org/papers/w35895",
+   "venue": "NBER",
+   "findings": [
+    "The study uses unexpected deaths of Justices as natural experiments and tracks asset prices minute by minute.",
+    "A more conservative Court lowers expected inflation, expected growth and bond yields. A shift toward a more liberal Court does the reverse.",
+    "Clean energy and health care stocks respond in the expected directions, which supports the fiscal-policy reading."
+   ],
+   "takeaway": "Markets treat the Court's makeup as news about future government spending.",
+   "evidence": "Working paper · event study",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.nber.org_papers_w35895"
+  },
+  {
+   "addedAt": "2026-10-19T19:50:00Z",
+   "authors": "Aleksandar Andonov, Kristy A. E. Jansen, Joshua Rauh",
+   "date": "2026-10-15",
+   "dateLabel": "Oct 2026",
+   "field": "fin",
+   "kind": "Working paper",
+   "ref": "w35896",
+   "source": "seed",
+   "summary": "US public pension funds now cover cash shortfalls by selling stocks, about 67 cents of every dollar, even in falling markets. That makes them regular sellers rather than market stabilizers.",
+   "title": "When Cash Flows Turn Negative: Liquidity-Driven Selling by Pension Funds",
+   "url": "https://www.nber.org/papers/w35896",
+   "venue": "NBER",
+   "findings": [
+    "As benefit payments exceed contributions, funds don't raise their low allocations to safe assets.",
+    "They cover $0.67 of each dollar of cash shortfall by selling stocks, spread across their holdings instead of drawing on liquid assets first.",
+    "They sell even when stock returns are negative, which points to cash needs rather than rebalancing."
+   ],
+   "takeaway": "As more plans pay out more than they take in, pension funds could deepen stock sell-offs.",
+   "evidence": "Working paper · aggregate and holdings data from public records",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.nber.org_papers_w35896"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Rohan Kekre, Moritz Lenel",
+   "date": "2026-10-01",
+   "dateLabel": "Oct 2026",
+   "field": "fin",
+   "kind": "Working paper",
+   "ref": "w35902",
+   "source": "auto",
+   "summary": "US rate hikes spread abroad by hurting global arbitrageurs who are short the dollar, which raises the price of risk worldwide.",
+   "title": "A Model of U.S. Monetary Policy and the Global Financial Cycle",
+   "url": "https://www.nber.org/papers/w35902",
+   "venue": "NBER",
+   "findings": [
+    "A US tightening shrinks the net worth of arbitrageurs whose debts are in dollars and raises risk premia around the world.",
+    "If dollar interest rates stay higher in the future, dollar borrowing and these spillovers both shrink.",
+    "The model is matched to observed effects of Fed policy on international asset prices. The abstract gives no figures."
+   ],
+   "takeaway": "How much the Fed moves global markets depends on the level of dollar rates, so a world with higher rates may see smaller spillovers.",
+   "evidence": "Working paper · calibrated general-equilibrium model",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.nber.org_papers_w35902"
+  },
+  {
+   "addedAt": "2026-10-20T10:56:28Z",
+   "authors": "Martin Aragoneses, Young Soo Jang, Amir Sufi",
+   "date": "2026-10-01",
+   "dateLabel": "Oct 2026",
+   "field": "fin",
+   "kind": "Working paper",
+   "ref": "w35919",
+   "source": "auto",
+   "summary": "Over the past 30 years, venture capital has shifted from backing R&D-heavy companies to backing companies built on winning customers through sales, marketing and brands.",
+   "title": "Venture Capital and Customer Capital",
+   "url": "https://www.nber.org/papers/w35919",
+   "venue": "NBER",
+   "findings": [
+    "Compared with firms funded by other investors, VC-backed firms spend more on sales and marketing relative to revenue and file more trademarks.",
+    "VCs favor industries heavy on customers and light on R&D, and avoid R&D-heavy industries that lack a customer base.",
+    "VCs that make many small bets go for customer-driven firms. VCs that make a few large commitments still back R&D-heavy firms."
+   ],
+   "takeaway": "Bets on winning customers fail often but can pay off hugely, which suits VC's model. That challenges the view of VC as mainly a funder of innovation.",
+   "evidence": "Working paper · firm-level data (details not in abstract)",
+   "revisedAt": "2026-10-20T16:30:00Z",
+   "id": "www.nber.org_papers_w35919"
+  }
+ ]
+}
