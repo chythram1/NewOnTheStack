@@ -1,42 +1,42 @@
 {
- "updatedAt": "2026-10-20T16:30:00Z",
+ "updatedAt": "2026-10-26T00:45:35Z",
  "trends": {
   "psych": {
-   "headline": "Behavior read through its social function",
+   "headline": "Social context shapes well-being",
    "points": [
-    "Traits often treated as deficits are being reframed as strategies. In one study, shyness works as appeasement that earns teacher care.",
-    "Digital habits are being traced to underlying needs. Teens' absorption in short videos runs through loneliness.",
-    "Studies are more careful about what they claim. One reports a null result on subtle dehumanization, and a breathing study flags higher worry and self-selection."
+    "Support across settings matters. Trans and nonbinary youth affirmed beyond their friends had fewer depression and anxiety symptoms and lower odds of suicidal thoughts.",
+    "Digital habits are traced to underlying needs. Teens' absorption in short videos runs through loneliness.",
+    "Studies are careful about what they claim. One reports a null result on subtle dehumanization of gender-nonconforming children, and a breathing study flags self-selection."
    ]
   },
   "edu": {
-   "headline": "Measurement is under scrutiny",
+   "headline": "What AI help does to learning",
    "points": [
-    "Large international comparisons are less stable than they look. PISA creativity rankings move a lot with modeling choices.",
-    "Policy evaluation is going system-wide. Brazil's quotas look modest once the reshuffling of seats is counted.",
-    "Assessment is moving into conversations. Tutoring dialogues, including AI-tutored ones, are being scored as evidence of learning."
+    "Homework gains can hide learning losses. Early chatbot access raised homework scores by 2.56 points with no exam gain, and heavy chatbot use tracked lower exam scores.",
+    "Assessment is moving into conversations. One model now scores tutoring dialogues alongside quiz answers.",
+    "Policy and teacher factors still loom large: Brazil's admissions quotas help targeted students graduate, and teacher self-efficacy best predicts innovative teaching in Oman."
    ]
   },
   "ai": {
-   "headline": "Evaluation moves from single answers to whole interactions",
+   "headline": "Agent safety depends on what the agent can't see",
    "points": [
-    "Multi-agent risk: monitors that watch agents one at a time miss attacks split across several agents.",
-    "Safety beyond the first reply: newer chatbot versions gave up sooner after users refused a crisis referral.",
-    "Structure over brute force: smaller models with explicit state, for patients or learners, rival bigger models and role-play prompts."
+    "Missing information is a hazard. When tools silently drop a safety-critical fact, agents take forbidden actions, and recovery sources reduced this for all 10 models tested.",
+    "Watching agents one at a time falls short. Per-agent monitors caught only 7% of attacks split across several agents, versus 87% for single-agent attacks.",
+    "Safety beyond the first reply: newer chatbot versions gave up sooner after users declined a crisis referral."
    ]
   },
   "tech": {
-   "headline": "Agents as software testers",
+   "headline": "Trust and verification between people and software",
    "points": [
-    "Benchmarks now test whether agents can find bugs by using apps, and noticing the failure is the bottleneck.",
-    "Agents that build verifiable tools, such as database test generators, deliver concrete results: 44 confirmed bugs.",
-    "Design for people is in focus. An AI's persona changes whether children check its answers, and assistive tools raise surveillance concerns."
+    "People defer to confident AI. Learners adopted a chatbot's planted falsehoods about 65% of the time, and their confidence stopped tracking accuracy.",
+    "How an AI presents itself changes checking. Children questioned a partner-like AI more directly than a tool-like one.",
+    "Agents as testers are improving but limited: the best of 15 agents solved 59% of interactive bug-finding tasks, while agent-built SQL test generators found 44 confirmed bugs."
    ]
   },
   "fin": {
    "headline": "Market plumbing and institutions drive prices",
    "points": [
-    "Forced sellers: pension funds that pay out more than they take in sell stocks into falling markets.",
+    "Forced sellers: pension funds that pay out more than they take in sell stocks into falling markets, about 67 cents of each shortfall dollar.",
     "Institutions as macro news: Supreme Court makeup shifts inflation and fiscal expectations, and Fed policy spreads abroad through dollar-short arbitrageurs.",
     "Venture capital has drifted from funding R&D to funding customer acquisition."
    ]
@@ -264,27 +264,6 @@
   },
   {
    "addedAt": "2026-10-19T19:50:00Z",
-   "authors": "Travis M. Wilson",
-   "date": "2026-09-24",
-   "field": "psych",
-   "kind": "Journal article",
-   "source": "seed",
-   "summary": "In grades 5 and 6, shy Black American children were less popular but more prosocial and closer to their teachers. That fits the idea of shyness as a social appeasement strategy.",
-   "title": "Shyness as an Anticipatory Form of Appeasement in Urban Black American Children",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1739",
-   "venue": "Behavioral Sciences (MDPI)",
-   "findings": [
-    "The study covered 445 Black American students in grades 3 to 6 at five urban schools, 91% of them on free or reduced lunch. Data came from peer nominations, teacher reports and census records.",
-    "Peers more often saw girls (not boys) as shy, and also older students living in more disadvantaged neighborhoods.",
-    "Only in grades 5 and 6 did low popularity go with more shyness, and being seen as shy go with more prosocial behavior. Shy children were closer to their teachers, especially in the older grades."
-   ],
-   "takeaway": "Shyness may be an adaptive way to elicit care rather than only a deficit. The authors call this the first empirical study of shyness in Black American children.",
-   "evidence": "Multilevel correlational study · 445 children",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.mdpi.com_2076-328X_16_10_1739"
-  },
-  {
-   "addedAt": "2026-10-19T19:50:00Z",
    "authors": "Marshall M. C. Hui, Karson T. F. Kung",
    "date": "2026-09-24",
    "field": "psych",
@@ -366,27 +345,6 @@
    "evidence": "Cross-sectional survey · 373 adolescents · convenience sample",
    "revisedAt": "2026-10-20T16:30:00Z",
    "id": "www.mdpi.com_2076-328X_16_10_1750"
-  },
-  {
-   "addedAt": "2026-10-19T19:50:00Z",
-   "authors": "Georgios Sideridis, Mohammed Alghamdi",
-   "date": "2026-09-27",
-   "field": "edu",
-   "kind": "Journal article",
-   "source": "seed",
-   "summary": "The PISA 2022 creativity questionnaires hold up as overall measures, but country rankings shift a lot depending on how the data are modeled.",
-   "title": "Are PISA 2022 Creativity-Related Self-Reports Comparable Across Education Systems?",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1758",
-   "venue": "Behavioral Sciences (MDPI)",
-   "findings": [
-    "Four of the six published indices fit poorly as single-factor scales across up to 73 education systems.",
-    "Re-modeled, country averages still correlated r = 0.77 to 0.97 with the originals, but 18% to 53% of systems moved more than five places in the ranking.",
-    "Within countries, links between self-reported creativity and actual creative-thinking scores were small and inconsistent."
-   ],
-   "takeaway": "Don't read much into where any one country ranks on PISA's creativity questionnaires.",
-   "evidence": "Psychometric re-analysis · PISA 2022, up to 73 systems",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.mdpi.com_2076-328X_16_10_1758"
   },
   {
    "addedAt": "2026-10-20T10:56:28Z",
@@ -523,6 +481,86 @@
    "evidence": "Working paper · firm-level data (details not in abstract)",
    "revisedAt": "2026-10-20T16:30:00Z",
    "id": "www.nber.org_papers_w35919"
+  },
+  {
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-10-22",
+   "title": "Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration",
+   "authors": "Deepthika S, Pawni Yadav, B. Sankar",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.31579",
+   "ref": "arXiv:2610.31579",
+   "summary": "People learning from a confidently wrong chatbot absorbed its planted falsehoods about 65% of the time, and quiz scores fell from 7.4 to 2.9 out of 10 as the share of false facts rose.",
+   "findings": [
+    "32 participants learned science topics from five GPT-5-mini assistants whose briefings secretly had 0% to 100% of facts swapped for plausible falsehoods.",
+    "On falsified items people chose the planted falsehood 60% of the time versus 11% on correctly taught items (odds ratio 12.5), and held those wrong answers with high confidence (8.4/10).",
+    "Confidence stopped telling right from wrong (AUROC fell from 0.70 to chance), while trust ratings after the task barely moved."
+   ],
+   "takeaway": "Sycophancy can run from the human to the AI, so trust should be judged for the person-plus-model pair; the sample is small and used one model.",
+   "evidence": "Within-subjects experiment · 32 participants, 1,040 answers",
+   "id": "arxiv.org_abs_2610.31579",
+   "addedAt": "2026-10-26T00:45:35Z"
+  },
+  {
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-10-22",
+   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+   "authors": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.31650",
+   "ref": "arXiv:2610.31650",
+   "summary": "When a tool quietly leaves out a safety-critical fact, LLM agents can take forbidden actions on harmless requests; giving them ways to recover the missing facts cut unsafe actions for all 10 models tested.",
+   "findings": [
+    "The benchmark has 300 paired safe/unsafe tasks across six domains, with critical facts deliberately hidden from tool outputs.",
+    "The 10 models varied widely, and resisting a missing fact did not mean an agent could go find it.",
+    "The abstract gives no per-model rates or percentages."
+   ],
+   "takeaway": "Agent safety depends on noticing what a tool did not say, not just on refusing bad requests; results are on a synthetic benchmark.",
+   "evidence": "Preprint · executable benchmark of 10 models, 300 task pairs",
+   "id": "arxiv.org_abs_2610.31650",
+   "addedAt": "2026-10-26T00:45:35Z"
+  },
+  {
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-10-22",
+   "title": "Supporting or Replacing Students' Reasoning? Cognitive Offloading in AI-Assisted Proof Learning",
+   "authors": "Eason Chen, Sophia Judicke, Kayla Beigh",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2610.31481",
+   "ref": "arXiv:2610.31481",
+   "summary": "Early chatbot access raised homework scores by 2.56 points but not exam scores, and once everyone had it, each extra 100 chatbot messages went with a 3.02-point lower exam score.",
+   "findings": [
+    "153 undergraduates in a proof-based math course were randomly given AI support early or late.",
+    "Students with lower self-efficacy used the chatbot more, which predicted lower exams: 0.62 fewer exam points per one-point drop in self-efficacy via chatbot use.",
+    "A homework feedback tool that made students attempt proofs first showed no negative link to exam scores."
+   ],
+   "takeaway": "Open-ended chatbots may let weaker students offload the reasoning they need to learn, so tutors built into coursework look safer; the usage findings are correlational.",
+   "evidence": "Staggered randomized rollout · 153 undergraduates, one course",
+   "id": "arxiv.org_abs_2610.31481",
+   "addedAt": "2026-10-26T00:45:35Z"
+  },
+  {
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-09-27",
+   "title": "Patterns of Pronoun Affirmation Across Social Contexts and Opportunities for Resilience Among Trans and Nonbinary Youth",
+   "authors": "Alyssa N. Garcia, Russell B. Toomey, Roberto L. Abreu",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/10/1756",
+   "ref": "doi:10.3390/bs16101756",
+   "summary": "Trans and nonbinary youth whose pronouns were affirmed beyond their friend group had fewer depression and anxiety symptoms and lower odds of suicidal thoughts than those affirmed mainly by friends.",
+   "findings": [
+    "Survey of 319 trans and nonbinary youth aged 13 to 22 across six settings: home, online school, in-person school, work, friends and extended family.",
+    "Three profiles emerged: mostly friends (27.3%), non-family settings (55.8%) and affirmed everywhere (16.9%); nonbinary youth were less likely to be affirmed everywhere.",
+    "Affirmation at home and at school were each tied to fewer depression and anxiety symptoms."
+   ],
+   "takeaway": "Affirmation in schools and families, not just among friends, tracks better mental health, which matters as US laws restrict it; the data are cross-sectional.",
+   "evidence": "Cross-sectional survey · 319 youth, latent class analysis",
+   "id": "www.mdpi.com_2076-328X_16_10_1756",
+   "addedAt": "2026-10-26T00:45:35Z"
   }
  ]
 }
