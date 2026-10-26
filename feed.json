@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-10-26T00:45:35Z",
+ "updatedAt": "2026-10-26T11:20:00Z",
  "trends": {
   "psych": {
-   "headline": "Social context shapes well-being",
+   "headline": "Context and calm shape how people take in information",
    "points": [
-    "Support across settings matters. Trans and nonbinary youth affirmed beyond their friends had fewer depression and anxiety symptoms and lower odds of suicidal thoughts.",
-    "Digital habits are traced to underlying needs. Teens' absorption in short videos runs through loneliness.",
-    "Studies are careful about what they claim. One reports a null result on subtle dehumanization of gender-nonconforming children, and a breathing study flags self-selection."
+    "Support across settings matters: trans and nonbinary youth affirmed beyond their friends had fewer depression and anxiety symptoms and lower odds of suicidal thoughts.",
+    "Lower anxiety changes how long people keep searching, not whether they start: calmer teens low in intolerance of uncertainty viewed more peer choices under ambiguity.",
+    "Studies are careful about modest effects: signposting sped inference answers by about 12% with no accuracy gain, and a breathing-program follow-up flags self-selection."
    ]
   },
   "edu": {
@@ -34,11 +34,11 @@
    ]
   },
   "fin": {
-   "headline": "Market plumbing and institutions drive prices",
+   "headline": "Reading economic signals from people and markets",
    "points": [
-    "Forced sellers: pension funds that pay out more than they take in sell stocks into falling markets, about 67 cents of each shortfall dollar.",
-    "Institutions as macro news: Supreme Court makeup shifts inflation and fiscal expectations, and Fed policy spreads abroad through dollar-short arbitrageurs.",
-    "Venture capital has drifted from funding R&D to funding customer acquisition."
+    "Text and AI as forecasting tools: an AI score built from 120,000+ earnings calls predicts GDP and jobs 5+ quarters ahead.",
+    "LLMs as household-finance models are close but not ahead: the best cut error 12.2% over a no-change baseline, yet gradient-boosted trees won most tasks.",
+    "Market plumbing and institutions move prices: pension funds sell about 67 cents of each cash-shortfall dollar in stocks, and Supreme Court shifts move inflation and yield expectations."
    ]
   }
  },
@@ -264,48 +264,6 @@
   },
   {
    "addedAt": "2026-10-19T19:50:00Z",
-   "authors": "Marshall M. C. Hui, Karson T. F. Kung",
-   "date": "2026-09-24",
-   "field": "psych",
-   "kind": "Journal article",
-   "source": "seed",
-   "summary": "Children aged 9 to 12 did not see gender-nonconforming peers as less human on subtler measures. This is a null result for two milder forms of dehumanization.",
-   "title": "No Evidence of Infrahumanization or Trait-Based Dehumanization in Children's Evaluation of Gender Nonconforming Peers",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1743",
-   "venue": "Behavioral Sciences (MDPI)",
-   "findings": [
-    "235 children rated hypothetical gender-conforming and gender-nonconforming peers on uniquely human emotions and on human traits.",
-    "Ratings did not differ on either measure. The same team found blatant dehumanization and mind denial in a 2025 study.",
-    "The authors suggest some earlier positive findings may be artifacts of measures that mix up humanness with likability."
-   ],
-   "takeaway": "Different forms of dehumanization don't necessarily show up together, so bias studies need to choose their measures carefully.",
-   "evidence": "Rating task · 235 children",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.mdpi.com_2076-328X_16_10_1743"
-  },
-  {
-   "addedAt": "2026-10-19T19:50:00Z",
-   "authors": "Shuangrui Liu, Seungwoo Choi, Ansu Lee",
-   "date": "2026-09-24",
-   "field": "psych",
-   "kind": "Journal article",
-   "source": "seed",
-   "summary": "Students who see their PE teacher as supportive behave more prosocially and less antisocially, mostly because the class climate feels supportive.",
-   "title": "How Students' Perceptions of Physical Education Teachers' Teaching Style Relate to Prosocial and Antisocial Behavior Among Chinese High School Students",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1744",
-   "venue": "Behavioral Sciences (MDPI)",
-   "findings": [
-    "Teaching style strongly predicted a perceived supportive climate (β = 0.49).",
-    "A supportive climate predicted more prosocial behavior (β = 0.42) and less antisocial behavior (β = −0.18).",
-    "Teaching style also directly predicted less antisocial behavior (β = −0.26), but had no significant direct link to prosocial behavior (β = 0.07, p = 0.16)."
-   ],
-   "takeaway": "Teachers may be able to shift student behavior through autonomy support, structure and involvement. The design is cross-sectional, so the causal order is unproven.",
-   "evidence": "Cross-sectional SEM · 710 Chinese high-school students",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.mdpi.com_2076-328X_16_10_1744"
-  },
-  {
-   "addedAt": "2026-10-19T19:50:00Z",
    "authors": "Alexandru Florian Crișan, Roxana Ramona Onofrei, Adelina Marițescu",
    "date": "2026-09-24",
    "field": "psych",
@@ -438,29 +396,6 @@
   },
   {
    "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "Rohan Kekre, Moritz Lenel",
-   "date": "2026-10-01",
-   "dateLabel": "Oct 2026",
-   "field": "fin",
-   "kind": "Working paper",
-   "ref": "w35902",
-   "source": "auto",
-   "summary": "US rate hikes spread abroad by hurting global arbitrageurs who are short the dollar, which raises the price of risk worldwide.",
-   "title": "A Model of U.S. Monetary Policy and the Global Financial Cycle",
-   "url": "https://www.nber.org/papers/w35902",
-   "venue": "NBER",
-   "findings": [
-    "A US tightening shrinks the net worth of arbitrageurs whose debts are in dollars and raises risk premia around the world.",
-    "If dollar interest rates stay higher in the future, dollar borrowing and these spillovers both shrink.",
-    "The model is matched to observed effects of Fed policy on international asset prices. The abstract gives no figures."
-   ],
-   "takeaway": "How much the Fed moves global markets depends on the level of dollar rates, so a world with higher rates may see smaller spillovers.",
-   "evidence": "Working paper · calibrated general-equilibrium model",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.nber.org_papers_w35902"
-  },
-  {
-   "addedAt": "2026-10-20T10:56:28Z",
    "authors": "Martin Aragoneses, Young Soo Jang, Amir Sufi",
    "date": "2026-10-01",
    "dateLabel": "Oct 2026",
@@ -561,6 +496,86 @@
    "evidence": "Cross-sectional survey · 319 youth, latent class analysis",
    "id": "www.mdpi.com_2076-328X_16_10_1756",
    "addedAt": "2026-10-26T00:45:35Z"
+  },
+  {
+   "field": "fin",
+   "kind": "Working paper",
+   "date": "2026-10-19",
+   "dateLabel": "Oct 2026",
+   "title": "Generative AI, Managerial Expectations, and Economic Activity",
+   "authors": "Manish Jha, Jialin Qian, Michael Weber",
+   "venue": "NBER",
+   "url": "https://www.nber.org/papers/w35949",
+   "ref": "w35949",
+   "summary": "An AI reading of what managers say on earnings calls predicts GDP, production, jobs and wages five or more quarters ahead, beating survey forecasts.",
+   "findings": [
+    "Built from more than 120,000 earnings-call transcripts, scored by a generative AI model for managers' outlook.",
+    "The resulting \"AI Economy Score\" forecasts growth, output, employment and wages 5+ quarters out, beyond surveys and existing indicators.",
+    "Firm- and industry-level versions track activity in those units; the signal is strongest from managers with an accurate, unbiased forecasting record."
+   ],
+   "takeaway": "Corporate talk, read at scale by AI, could become an early-warning macro indicator, though the abstract gives no size for the forecast gains.",
+   "evidence": "Working paper · text analysis of 120,000+ earnings calls",
+   "id": "www.nber.org_papers_w35949",
+   "addedAt": "2026-10-26T11:20:00Z"
+  },
+  {
+   "field": "fin",
+   "kind": "Working paper",
+   "date": "2026-10-19",
+   "dateLabel": "Oct 2026",
+   "title": "HouseholdBench: Evaluating Large Language Models as Predictors of Household Economic Behavior",
+   "authors": "Jin Huang, Diego Ferreras Garrucho, Yutong Xie",
+   "venue": "NBER",
+   "url": "https://www.nber.org/papers/w35927",
+   "ref": "w35927",
+   "summary": "Most of 13 language models beat a no-change baseline at predicting household spending, income and housing choices, cutting numeric error by up to 12.2%, but plain gradient-boosted trees still won most tasks.",
+   "findings": [
+    "Benchmark spans 6 US household surveys and 32 prediction tasks, including how households react to policy changes.",
+    "The best LLM cut error on numeric outcomes by 12.2% versus assuming no change; top proprietary models trailed tree models only slightly, open-weight ones lagged.",
+    "Fine-tuning a 4-billion-parameter open model and averaging 16 predictions per household matched proprietary models, even on held-out policy-response tasks."
+   ],
+   "takeaway": "LLMs are becoming usable stand-ins for modeling household finances, but they show task-specific over- and under-prediction and do not yet beat classic ML.",
+   "evidence": "Working paper · benchmark of 13 LLMs on 6 surveys",
+   "id": "www.nber.org_papers_w35927",
+   "addedAt": "2026-10-26T11:20:00Z"
+  },
+  {
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-10-26",
+   "title": "Metadiscourse in Reading and Inferential Comprehension: Evidence from L1 Chinese Readers and Implications for L2 Pedagogy",
+   "authors": "Ying Lu, Ao Sun",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/1996",
+   "summary": "Signposting phrases in a text (\"first\", \"in contrast\", \"I argue\") did not speed up reading, but readers answered inference questions about 12% faster afterward.",
+   "findings": [
+    "42 Chinese readers each read four texts with metadiscourse present or reduced, in a self-paced reading task.",
+    "No reliable differences in whole-text or sentence reading times; texts felt slightly easier, but that result depended on the model used.",
+    "Inference answers came about 12% faster with metadiscourse; accuracy did not differ and was near ceiling."
+   ],
+   "takeaway": "Signposting may help readers find and use the big-picture structure, but the text stayed visible during questions, so faster answers may just reflect easier rereading.",
+   "evidence": "Within-subject reading experiment · 42 adults",
+   "id": "www.mdpi.com_2076-328X_16_11_1996",
+   "addedAt": "2026-10-26T11:20:00Z"
+  },
+  {
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-10-24",
+   "title": "Anxiety Reduction and Adolescents' Social Information Search Under Risk and Ambiguity: The Moderating Role of Intolerance of Uncertainty",
+   "authors": "Jiani Zhang, Tongtong Zhan, Wushuang Yan",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/1993",
+   "summary": "Calming teens down did not change whether they looked at peers' choices in a gamble, but under ambiguity, calmer teens who tolerate uncertainty well kept looking longer.",
+   "findings": [
+    "180 high-school students were randomly assigned to an easy math task (which lowered anxiety), a hard one, or no task, then played a social gambling game.",
+    "Neither condition nor intolerance of uncertainty predicted whether teens started checking peers' choices.",
+    "Under ambiguity, low-intolerance teens in the easy-task group viewed more peer choices than controls; high-intolerance teens showed no difference. No effect sizes are given in the abstract."
+   ],
+   "takeaway": "Starting and continuing to seek social information seem to be partly separate processes, though the hard task failed to raise anxiety, so only the calming arm is informative.",
+   "evidence": "Randomized experiments (2) · 180 adolescents",
+   "id": "www.mdpi.com_2076-328X_16_11_1993",
+   "addedAt": "2026-10-26T11:20:00Z"
   }
  ]
 }
