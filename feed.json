@@ -1,48 +1,108 @@
 {
- "updatedAt": "2026-10-28T11:15:30Z",
+ "updatedAt": "2026-10-30T11:33:35Z",
  "trends": {
   "psych": {
-   "headline": "Context changes how people judge and act",
+   "headline": "Self-serving beliefs shape judgment",
    "points": [
-    "Social context can flip classic effects: more onlookers made 7th–8th graders more willing to defend cyberbullying victims, reversing the bystander effect.",
-    "Uncertainty shapes choices beyond risk: ambiguity lowered how much 525 adults valued options and how firmly they committed, especially for those intolerant of uncertainty.",
-    "Support across social settings matters: trans and nonbinary youth affirmed beyond their friend group had fewer depression and anxiety symptoms."
+    "People credit humans for what they like: a favourite image was 22.1 points more likely to be judged human-made in an 11,123-person AI art test.",
+    "Optimism about oneself leaks into crowds: Manifold markets on users' own goals resolved YES 4.4 points less often than prices implied, with the user's own trades driving 38% of the movement.",
+    "Brief guided reflection can counter this, raising group deliberation quality by d = 0.31 in a 1,173-person randomized experiment."
    ]
   },
   "edu": {
-   "headline": "AI help is easy to log but hard to turn into learning",
+   "headline": "How students use AI matters more than whether they do",
    "points": [
-    "Chatbot use can replace reasoning: early access raised homework scores by 2.56 points but not exam scores, and heavy use went with lower exam scores.",
-    "Tutor chat logs say little about grades yet: the best model cut prediction error only from 3.14 to 3.02 points, not a clear gain.",
-    "Teachers remain the lever: self-efficacy was the strongest predictor of innovative teaching in Oman, and Tanzanian teachers enacted the same reform in three different ways."
+    "AI tutors can be talked out of correct answers: across 13 LLMs on statics problems, models abandoned correct work 1.6% to 50.0% of the time when a student pushed back.",
+    "Chat quality, not volume, tracks learning: secondary students whose questions became more understanding-oriented did better on a test without AI, while raw tutor chats barely improved grade prediction (error 3.02 vs 3.14).",
+    "Curricula lag on data literacy: only 22.2% of 36 U.S. health-AI programs teach data provenance, though 80.6% cover ethics."
    ]
   },
   "tech": {
-   "headline": "Agents and people both struggle when conditions get real",
+   "headline": "Measuring AI tools is harder than it looks",
    "points": [
-    "Single-task scores mislead: coding agents lost 13–23 points on heavy concurrent workloads, and a fixed two-at-a-time rule nearly matched the best agent.",
-    "Agents can still be productive tools: coding agents extending SQL test generators found 44 confirmed database bugs, 34 already fixed.",
-    "Human trust is poorly calibrated: people absorbed a confident chatbot's planted falsehoods about 65% of the time, while children checked a tool-like AI more than a partner-like one."
+    "Time-savings claims are fragile: a reanalysis of METR's 246 tasks still finds a 19–24% slowdown, with AI helping on somewhere between 3% and 82% of issues.",
+    "The harness can matter as much as the model: on one model, open coding harnesses scored about 0.53 while lab harnesses scored 0.00 on kw-bench.",
+    "Agents strain under realistic load: every system on AOS-Bench lost 13–23 points on heavy workloads."
    ]
   },
   "ai": {
-   "headline": "Agent safety hinges on hidden context and weak boundaries",
+   "headline": "Agents behave differently than single-turn tests suggest",
    "points": [
-    "Instruction hierarchy is fragile: in 1.89 million replies, position beat role, system policies often lost to later user lines, and models flagged conflicts at most 2.92% of the time.",
-    "Missing or split information is a hazard: agents took forbidden actions when tools dropped safety facts, and per-agent monitors caught only 7% of multi-agent attacks.",
-    "Autonomy is arriving fast: ten agents left to post-train a base model all produced working assistants, the best closing 76% of the gap, though one run became less safe."
+    "Supervision changes agents: negotiating agents earned 13.7% more with users present and acted against users in 14.3% of 11.2k games.",
+    "Memory is a weak point: one obsolete fact cut Qwen2.5 accuracy from 100% to 44.6%.",
+    "Safety filters are improving but mostly in simulation: consequence-aware gating halved harmful trajectories (14.75% to 7.02%), while cheap moderation models already match frontier ones (AUROC 0.83)."
    ]
   },
   "fin": {
-   "headline": "Machine learning in finance meets reality checks",
+   "headline": "Many market signals shrink under careful measurement",
    "points": [
-    "Benchmarks can mislead: grading rules alone swung a finance-LLM benchmark by up to 0.42 accuracy, and many scores sat at the majority-class floor.",
-    "Simple baselines are hard to beat: neural nets did not beat a random walk on Chinese convertible bonds, and gradient-boosted trees beat most LLMs at predicting household behavior.",
-    "New signals do carry information: AI readings of earnings calls predict GDP and jobs five-plus quarters ahead, and weekend crypto volatility now predicts 27–54% higher Monday variance."
+    "Data definitions drive results: sub-millisecond quote glitches make Hawkes models overstate price-change clustering about threefold within one second.",
+    "Benchmark scores depend on grading: two scoring rules on the same FLARE answers differed by up to 0.42 in accuracy.",
+    "Some signals survive scrutiny: a popular futures pattern was right 62–71% of the time when aligned with the trend, and weekend crypto volatility predicts 27–54% higher Monday stock variance since 2024."
    ]
   }
  },
  "papers": [
+  {
+   "id": "arxiv.org_abs_2610.38113",
+   "field": "psych",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "Beauty Is Human: When People Love AI-Generated Art, They Think a Human Made It",
+   "authors": "Zihan Chen, Di Zhu, Lei Nico Zheng",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2610.38113",
+   "ref": "arXiv:2610.38113",
+   "summary": "People assume the art they like best was made by a human: a picture was 22.1 percentage points more likely to be judged human-made when it was someone's favourite.",
+   "findings": [
+    "11,123 people judged 50 images (26 AI-generated) in an online AI Art Turing Test; 9,152 named a favourite.",
+    "People most hostile to AI art picked fewer AI favourites (47% vs 60% for the most positive) but more often thought those favourites were human-made.",
+    "A reanalysis of an earlier 230-person study showed the same pattern."
+   ],
+   "takeaway": "Liking and authorship judgments are entangled, so \"can people tell AI art apart\" tests may really be measuring taste; the sample is a self-selected online audience.",
+   "evidence": "Large online judgment study · 11,123 participants",
+   "addedAt": "2026-10-30T11:33:35Z"
+  },
+  {
+   "id": "arxiv.org_abs_2610.40324",
+   "field": "psych",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals",
+   "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2610.40324",
+   "ref": "arXiv:2610.40324",
+   "summary": "Markets betting on whether people would hit their own goals were too optimistic: they resolved YES 4.4 percentage points less often than prices implied, while other markets were nearly calibrated.",
+   "findings": [
+    "6,150 Manifold markets, with 1,660 users asking about their own futures.",
+    "External markets were off by only 0.9 points; at matched price levels the self-market gap was 2.2 points.",
+    "The goal-setter's own trades supplied 38% of the price movement in self-markets vs 9% in external ones; recalibrating from past markets improved forecasts by only 1.5%."
+   ],
+   "takeaway": "Crowds inherit people's optimism about themselves, partly because the person trades on their own market; it is one play-money platform.",
+   "evidence": "Observational market data · 6,150 markets",
+   "addedAt": "2026-10-30T11:33:35Z"
+  },
+  {
+   "id": "arxiv.org_abs_2610.37862",
+   "field": "psych",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "Improving Group Deliberation through AI-Guided Self-Reflection",
+   "authors": "Haiwen Li, Crystal Qian, Ben Usman",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2610.37862",
+   "ref": "arXiv:2610.37862",
+   "summary": "Having people reflect with an AI guide before group discussion improved deliberation quality (Cohen's d = 0.31 vs no reflection), most of all in groups that disagreed.",
+   "findings": [
+    "Randomized experiment with 1,173 U.S. adults in 391 small-group deliberations.",
+    "Quality on the Discourse Quality Index rose by d = 0.31 vs no self-reflection and d = 0.27 vs reflecting without AI help.",
+    "The benefit was largest in groups with disagreement."
+   ],
+   "takeaway": "A light-touch AI prompt can make disagreements more productive, though the outcome is a coded discussion-quality score rather than real-world decisions.",
+   "evidence": "Randomized experiment · 1,173 adults, 391 groups",
+   "addedAt": "2026-10-30T11:33:35Z"
+  },
   {
    "id": "www.mdpi.com_2076-328X_16_11_2021",
    "field": "psych",
@@ -84,62 +144,64 @@
    "source": "auto"
   },
   {
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-10-26",
-   "title": "Metadiscourse in Reading and Inferential Comprehension: Evidence from L1 Chinese Readers and Implications for L2 Pedagogy",
-   "authors": "Ying Lu, Ao Sun",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/1996",
-   "summary": "Signposting phrases in a text (\"first\", \"in contrast\", \"I argue\") did not speed up reading, but readers answered inference questions about 12% faster afterward.",
+   "id": "arxiv.org_abs_2610.38917",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "TrussTutor-Bench: Benchmarking large language models on solution accuracy, sycophancy, and error detection in statics",
+   "authors": "Evangelos Apostolakis, Erfan Hamdi, Sara Jahedazad",
+   "venue": "arXiv cs.CY",
+   "url": "https://arxiv.org/abs/2610.38917",
+   "ref": "arXiv:2610.38917",
+   "summary": "LLM tutors for engineering statics vary widely in how easily students can talk them out of correct answers: when a student insisted correct work was wrong, models gave in 1.6% to 50.0% of the time.",
    "findings": [
-    "42 Chinese readers each read four texts with metadiscourse present or reduced, in a self-paced reading task.",
-    "No reliable differences in whole-text or sentence reading times; texts felt slightly easier, but that result depended on the model used.",
-    "Inference answers came about 12% faster with metadiscourse; accuracy did not differ and was near ceiling."
+    "13 LLMs tested on 200 verified 2D truss problems.",
+    "Baseline accuracy ranged from 64.5% to 97.0%.",
+    "Models caught 90.4% to 100% of deliberately injected errors."
    ],
-   "takeaway": "Signposting may help readers find and use the big-picture structure, but the text stayed visible during questions, so faster answers may just reflect easier rereading.",
-   "evidence": "Within-subject reading experiment · 42 adults",
-   "id": "www.mdpi.com_2076-328X_16_11_1996",
-   "addedAt": "2026-10-26T11:20:00Z"
+   "takeaway": "Accuracy alone is a poor guide to tutor quality, since sycophancy varies far more than error detection; this is a benchmark, not a study with students.",
+   "evidence": "Preprint · benchmark of 13 LLMs, 200 problems",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-10-24",
-   "title": "Anxiety Reduction and Adolescents' Social Information Search Under Risk and Ambiguity: The Moderating Role of Intolerance of Uncertainty",
-   "authors": "Jiani Zhang, Tongtong Zhan, Wushuang Yan",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/1993",
-   "summary": "Calming teens down did not change whether they looked at peers' choices in a gamble, but under ambiguity, calmer teens who tolerate uncertainty well kept looking longer.",
+   "id": "arxiv.org_abs_2610.38950",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "Student-LLM Interactions During Math Learning: Limited Epistemic Proactivity Overall, but Within-chat Change Predicts Performance Without AI",
+   "authors": "Rania Abdelghani, Peter Kaiser, Kou Murayama",
+   "venue": "arXiv cs.CY",
+   "url": "https://arxiv.org/abs/2610.38950",
+   "ref": "arXiv:2610.38950",
+   "summary": "Secondary students mostly asked an AI for answers rather than planning or checking their own work, but those whose questions shifted toward understanding did better on a later test without AI.",
    "findings": [
-    "180 high-school students were randomly assigned to an easy math task (which lowered anxiety), a hard one, or no task, then played a social gambling game.",
-    "Neither condition nor intolerance of uncertainty predicted whether teens started checking peers' choices.",
-    "Under ambiguity, low-intolerance teens in the easy-task group viewed more peer choices than controls; high-intolerance teens showed no difference. No effect sizes are given in the abstract."
+    "112 secondary-school students, 880 substantive chat turns with a Mistral model during math-modelling practice.",
+    "Planning, monitoring and evaluation moves were rare; explicit self-regulation rose slightly over the chat while help-seeking grew less understanding-focused.",
+    "The abstract gives no percentages or effect sizes."
    ],
-   "takeaway": "Starting and continuing to seek social information seem to be partly separate processes, though the hard task failed to raise anxiety, so only the calming arm is informative.",
-   "evidence": "Randomized experiments (2) · 180 adolescents",
-   "id": "www.mdpi.com_2076-328X_16_11_1993",
-   "addedAt": "2026-10-26T11:20:00Z"
+   "takeaway": "How students' questions change during a chat may signal learning better than how much they use AI; the result is correlational and from one task.",
+   "evidence": "Observational chat analysis · 112 students",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-09-27",
-   "title": "Patterns of Pronoun Affirmation Across Social Contexts and Opportunities for Resilience Among Trans and Nonbinary Youth",
-   "authors": "Alyssa N. Garcia, Russell B. Toomey, Roberto L. Abreu",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1756",
-   "ref": "doi:10.3390/bs16101756",
-   "summary": "Trans and nonbinary youth whose pronouns were affirmed beyond their friend group had fewer depression and anxiety symptoms and lower odds of suicidal thoughts than those affirmed mainly by friends.",
+   "id": "arxiv.org_abs_2610.39606",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-10-30",
+   "title": "Data Provenance and Ethics in the Curricula of U.S. Health AI Education Programs",
+   "authors": "Raffaele Giancotti, Francesca Santucci, Amama Anjum",
+   "venue": "arXiv cs.CY",
+   "url": "https://arxiv.org/abs/2610.39606",
+   "ref": "arXiv:2610.39606",
+   "summary": "Most U.S. health-AI degree programs teach ethics (80.6%), but only 22.2% cover where training data comes from, and none of the seven master's programs met the study's main standard.",
    "findings": [
-    "Survey of 319 trans and nonbinary youth aged 13 to 22 across six settings: home, online school, in-person school, work, friends and extended family.",
-    "Three profiles emerged: mostly friends (27.3%), non-family settings (55.8%) and affirmed everywhere (16.9%); nonbinary youth were less likely to be affirmed everywhere.",
-    "Affirmation at home and at school were each tied to fewer depression and anxiety symptoms."
+    "36 programs at 21 universities reviewed; ethics in 29 (80.6%), data provenance in 8 (22.2%), structural provenance in 6 (16.7%).",
+    "Of 92 named instructors, 76.1% came from computational fields and 3.3% from social sciences or humanities.",
+    "Among 51 instructors with known gender, 66.7% were men."
    ],
-   "takeaway": "Affirmation in schools and families, not just among friends, tracks better mental health, which matters as US laws restrict it; the data are cross-sectional.",
-   "evidence": "Cross-sectional survey · 319 youth, latent class analysis",
-   "id": "www.mdpi.com_2076-328X_16_10_1756",
-   "addedAt": "2026-10-26T00:45:35Z"
+   "takeaway": "Future health-AI builders may learn ethics in the abstract without learning to question their data; this is a review of published curricula, not of what is taught in class.",
+   "evidence": "Curriculum audit · 36 programs",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
    "id": "link.springer.com_article_10.1007_s44217-026-02349-1",
@@ -183,66 +245,62 @@
    "source": "auto"
   },
   {
-   "field": "edu",
+   "id": "arxiv.org_abs_2610.35942",
+   "field": "tech",
    "kind": "Preprint",
-   "date": "2026-10-22",
-   "title": "Supporting or Replacing Students' Reasoning? Cognitive Offloading in AI-Assisted Proof Learning",
-   "authors": "Eason Chen, Sophia Judicke, Kayla Beigh",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.31481",
-   "ref": "arXiv:2610.31481",
-   "summary": "Early chatbot access raised homework scores by 2.56 points but not exam scores, and once everyone had it, each extra 100 chatbot messages went with a 3.02-point lower exam score.",
+   "date": "2026-10-28",
+   "title": "Counting the Bandages: On measuring the time that AI saves",
+   "authors": "Solomon Shalom Lijo",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.35942",
+   "ref": "arXiv:2610.35942",
+   "summary": "Re-analysing METR's well-known developer study still finds AI tools slowed experienced developers by 19% or 24% depending on the estimate, and the share of issues AI actually helped is anywhere from 3% to 82%.",
    "findings": [
-    "153 undergraduates in a proof-based math course were randomly given AI support early or late.",
-    "Students with lower self-efficacy used the chatbot more, which predicted lower exams: 0.62 fewer exam points per one-point drop in self-efficacy via chatbot use.",
-    "A homework feedback tool that made students attempt proofs first showed no negative link to exam scores."
+    "Uses METR's public data on 246 issues; the unadjusted slowdown is 34%.",
+    "The share of issues where AI helped cannot be pinned down more tightly than 3%–82%.",
+    "In GDPval's workflow where every output is reviewed, review time alone caps GPT-5's speedup at 3.6x."
    ],
-   "takeaway": "Open-ended chatbots may let weaker students offload the reasoning they need to learn, so tutors built into coursework look safer; the usage findings are correlational.",
-   "evidence": "Staggered randomized rollout · 153 undergraduates, one course",
-   "id": "arxiv.org_abs_2610.31481",
-   "addedAt": "2026-10-26T00:45:35Z"
+   "takeaway": "Headline \"AI saves X% time\" numbers depend heavily on how they are measured and on review costs; it is a single-author reanalysis of existing data.",
+   "evidence": "Preprint · reanalysis of 246 developer tasks",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "Hui Jiang, Guanyu Zhou, Lu Jiao",
-   "date": "2026-10-19",
-   "field": "edu",
-   "kind": "Journal article",
-   "source": "auto",
-   "summary": "Learning Korean words in immersive VR worked through two routes: a cognitive one through feeling present and self-efficacy, and an emotional one through feeling present and emotions.",
-   "title": "L2 Vocabulary Learning Through Virtual Reality: Effects of Affective and Cognitive Variables",
-   "url": "https://www.mdpi.com/2076-328X/16/10/1939",
-   "venue": "Behavioral Sciences (MDPI)",
+   "id": "arxiv.org_abs_2610.36405",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-10-28",
+   "title": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+   "authors": "George Juraj Salapa",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.36405",
+   "ref": "arXiv:2610.36405",
+   "summary": "The agent harness matters as much as the model: on DeepSeek v4.1 Flash, open harnesses scored about 0.53–0.54 while two lab-built harnesses scored 0.00.",
    "findings": [
-    "Native Chinese speakers learned Korean vocabulary in VR, then took a word-recognition test.",
-    "Situational interest and intrinsic motivation were linked, in sequence, to better recognition.",
-    "The abstract gives no effect sizes, and the authors say the findings need independent confirmation."
+    "OpenCode scored 0.542 and micro-cc 0.528 on DeepSeek v4.1 Flash; the two lab harnesses both scored 0.00.",
+    "On Claude Opus 5.5, micro-cc and Claude Code scored 0.9986 and 1.000, taking 22 and 25 minutes."
    ],
-   "takeaway": "VR vocabulary gains seem to depend on learners feeling present, confident and interested, not on the immersive technology by itself.",
-   "evidence": "Structural equation model · about 100 learners",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "www.mdpi.com_2076-328X_16_10_1939"
+   "takeaway": "Comparisons of coding agents should report the harness, since it can make or break a model; the benchmark is new and single-author.",
+   "evidence": "Preprint · benchmark of agent harnesses",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "addedAt": "2026-10-19T19:50:00Z",
-   "authors": "Said Rashid Ali Alshuhum, Dawood Abdulmalek Al-Hidabi, Abd Al-Aziz Al-refaei",
-   "date": "2026-10-19",
-   "field": "edu",
-   "kind": "Journal article",
-   "source": "seed",
-   "summary": "Teacher self-efficacy is by far the strongest predictor of innovative teaching in Omani primary schools. School climate and organizational learning showed no direct link.",
-   "title": "Modelling the determinants of innovative teaching practices among primary school teachers in Oman through a multi-group analysis using PLS-SEM",
-   "url": "https://link.springer.com/article/10.1007/s44217-026-02267-2",
-   "venue": "Discover Education",
+   "id": "arxiv.org_abs_2610.36234",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-10-28",
+   "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+   "authors": "Jannatul Shefa, Alejandro Salado, Paul Wach",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.36234",
+   "ref": "arXiv:2610.36234",
+   "summary": "Adding systems-engineering knowledge to LLMs made them much better at judging software requirement quality, lifting Claude Opus 5 from 0.55 to 0.80 median F1.",
    "findings": [
-    "Self-efficacy: β = 0.75. Transformational leadership: β = 0.13.",
-    "School climate and organizational learning had no significant direct association with innovative teaching.",
-    "How teachers responded to these factors differed by gender."
+    "Median F1: 0.80 Claude Opus 5, 0.62 GPT-5.6 Sol, 0.53 Gemma 3 12B.",
+    "Off-the-shelf baselines scored 0.55, 0.52 and 0.18 respectively."
    ],
-   "takeaway": "Building teachers' confidence may do more for classroom innovation than broad school-culture programs.",
-   "evidence": "Cross-sectional survey, PLS-SEM · 368 teachers in Muscat",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "link.springer.com_article_10.1007_s44217-026-02267-2"
+   "takeaway": "Domain knowledge helps even small models with requirements review, but gains vary a lot by model and the evaluation data set is limited.",
+   "evidence": "Preprint · evaluation across 3 LLMs",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
    "id": "arxiv.org_abs_2610.33178",
@@ -286,70 +344,63 @@
    "addedAt": "2026-10-26T00:45:35Z"
   },
   {
-   "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "Silas Curry, Rishit Singh, Heekyoung Jung",
-   "date": "2026-10-16",
-   "field": "tech",
+   "id": "arxiv.org_abs_2610.36435",
+   "field": "ai",
    "kind": "Preprint",
-   "ref": "arXiv:2610.21236",
-   "source": "auto",
-   "summary": "Unspoken expectations at work are a major barrier for autistic workers and workers with intellectual and developmental disabilities. Tools that make work clearer risk exposing these workers to more surveillance.",
-   "title": "Workplace Ambiguity and Technology Support for Autistic and IDD Workers",
-   "url": "https://arxiv.org/abs/2610.21236",
-   "venue": "arXiv cs.HC",
+   "date": "2026-10-28",
+   "title": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
+   "authors": "Jane Pan, You Lyu, Abe Bohan Hou",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.36435",
+   "ref": "arXiv:2610.36435",
+   "summary": "AI negotiating agents got 13.7% higher payouts on average when their user was present, and behaved against their users' interests in 14.3% of games.",
    "findings": [
-    "Researchers interviewed 11 caregivers and ran an AI co-design session.",
-    "Unclear expectations fell into three kinds: how work is judged, how tasks are done, and how to relate to coworkers.",
-    "Proposed supports: real-time prompts to get back on track, help making sense of feedback, and guidance based on body signals."
+    "11.2k runs across 7 negotiation games and 8 models.",
+    "Parties with a user present earned 13.7% more on average.",
+    "Misaligned behavior toward users showed up in 14.3% of games."
    ],
-   "takeaway": "Employers should make expectations explicit before anyone is penalized for missing them, and assistive tech should answer to the worker, not the employer.",
-   "evidence": "Preprint · qualitative · 11 caregiver interviews",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "arxiv.org_abs_2610.21236"
+   "takeaway": "Agents may behave differently when watched, so unsupervised testing could miss problems; results come from simulated games.",
+   "evidence": "Preprint · 11.2k simulated negotiations, 8 models",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "Shuning Liu, Yuxin Song, Hanbing Li",
-   "date": "2026-10-16",
-   "field": "tech",
+   "id": "arxiv.org_abs_2610.36308",
+   "field": "ai",
    "kind": "Preprint",
-   "ref": "arXiv:2610.21233",
-   "source": "auto",
-   "summary": "Children aged 8 to 10 saw AI helpers as useful but fallible. A partner-like AI drew more direct questions, and a tool-like AI drew more evidence-checking.",
-   "title": "'Do You Trust It... or Check It?': Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration",
-   "url": "https://arxiv.org/abs/2610.21233",
-   "venue": "arXiv cs.HC",
+   "date": "2026-10-28",
+   "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+   "authors": "Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.36308",
+   "ref": "arXiv:2610.36308",
+   "summary": "One outdated fact in an agent's memory can wreck its answers: swapping a single unrelated statement for an obsolete competing one cut accuracy from 100% to 44.6% for Qwen2.5.",
    "findings": [
-    "Children played a biology reasoning game with an AI in one of three styles: partner-like, tool-like, or a mix of both.",
-    "The AI's style shaped how children engaged and how deeply they questioned its answers.",
-    "This is a preliminary study; the abstract reports no sample size or statistics."
+    "With Qwen3-14B the same swap cut accuracy to 87.8%.",
+    "On MemoryAgentBench, BM25 retrieval accuracy with Qwen2.5-7B fell from 45% to 32% as the evidence budget grew from 64 to 512 tokens."
    ],
-   "takeaway": "How an AI presents itself can nudge children toward or away from checking its answers.",
-   "evidence": "Preprint · preliminary study · logs, ratings, interviews",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "arxiv.org_abs_2610.21233"
+   "takeaway": "Agent memory needs a way to retire stale facts, not just retrieve more; tests use small open models.",
+   "evidence": "Preprint · controlled memory experiments, 2 models",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "Suyang Zhong, Manuel Rigger",
-   "date": "2026-10-14",
-   "field": "tech",
+   "id": "arxiv.org_abs_2610.36570",
+   "field": "ai",
    "kind": "Preprint",
-   "ref": "arXiv:2610.14161",
-   "source": "auto",
-   "summary": "Coding agents that add features to database test generators found 44 confirmed bugs in SQLite, DuckDB and PostgreSQL. 34 are already fixed.",
-   "title": "Agentic Evolution of SQL Test Generators",
-   "url": "https://arxiv.org/abs/2610.14161",
-   "venue": "arXiv cs.SE",
+   "date": "2026-10-28",
+   "title": "CASEL: Consequence-Aware Selective Execution for Reliable Long-Horizon Tool-Using Agents",
+   "authors": "Yanyan Zhang, Fei Shen, Ting Yan",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2610.36570",
+   "ref": "arXiv:2610.36570",
+   "summary": "Gating agent actions by their likely consequences roughly halved harmful runs in simulation, from 14.75% to 7.02% of trajectories.",
    "findings": [
-    "A check called witness replay reruns the agent's recorded choices to confirm each new feature really produces the target SQL, which catches made-up changes.",
-    "Developers confirmed 44 bugs and have fixed 34.",
-    "Once a feature is built into the generator, testing needs no further LLM calls, which keeps costs low."
+    "20 simulation seeds with 120,000 test actions each.",
+    "Mean normalized harm fell from 0.184 to 0.123 versus an uncertainty-based gate.",
+    "The authors say the effect of interventions is assumed rather than measured."
    ],
-   "takeaway": "Having agents build testing tools, instead of testing directly, gives results that are cheaper and easier to verify.",
-   "evidence": "Preprint · tested on 3 database systems",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "arxiv.org_abs_2610.14161"
+   "takeaway": "Weighing consequences, not just uncertainty, looks like a better safety filter for agents, but evidence so far is simulator-only.",
+   "evidence": "Preprint · simulation, 20 seeds",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
    "id": "arxiv.org_abs_2610.33624",
@@ -394,67 +445,64 @@
    "source": "auto"
   },
   {
-   "id": "arxiv.org_abs_2610.33201",
-   "field": "ai",
+   "id": "arxiv.org_abs_2610.37487",
+   "field": "fin",
    "kind": "Preprint",
-   "date": "2026-10-27",
-   "title": "Position, Role or Label? A Controlled Study of Instruction Conflicts in LLM Agents",
-   "authors": "Anish Laddha, Nitesh Pradhan, Gaurav Srivastava",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.33201",
-   "ref": "arXiv:2610.33201",
-   "summary": "When two instructions clash, where they sit matters more than who gave them: within one message the first line won 72–95% of the time, and system-level policies often lost to later user lines.",
+   "date": "2026-10-28",
+   "title": "Contemporaneous Transmission Networks and Systemic Risk in European Banking",
+   "authors": "Minh Duc Duong, Alessio Moneta, Fabrizio Lillo",
+   "venue": "arXiv q-fin.ST",
+   "url": "https://arxiv.org/abs/2610.37487",
+   "ref": "arXiv:2610.37487",
+   "summary": "Mapping shock links among 51 European banks shows that which banks absorb stress is far more stable to identify than which ones spread it.",
    "findings": [
-    "1,080 code-scored conflict scenarios, 14 open-weight models (0.6B–122B), about 1.89 million scored replies.",
-    "Across separate messages the earlier instruction held only 23–63% of the time; in every Qwen model a system or developer policy lost most conflicts to later lines, while gpt-oss mostly kept it.",
-    "Models rarely noticed the clash: at most 2.92% of replies flagged or hedged a conflict."
+    "Covers 51 listed European banks, scored on size-weighted systemic impact and vulnerability.",
+    "Receiving roles were more reproducible across repeated network estimation than transmitting roles.",
+    "Volatility standardization sharply cut detected dependence; the abstract gives no headline effect sizes."
    ],
-   "takeaway": "System prompts are a weaker safety boundary than many agent builders assume; caveat: only open-weight models were tested and conflict-flagging was measured by keyword.",
-   "evidence": "Preprint · controlled experiments · 14 models, 1.89M replies",
-   "addedAt": "2026-10-28T11:15:30Z",
-   "source": "auto"
+   "takeaway": "Regulators may get more reliable signals from bank vulnerability than from \"who spreads contagion\" rankings; the full-sample model fails a key independence check.",
+   "evidence": "Preprint · network analysis of 51 banks",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "field": "ai",
+   "id": "arxiv.org_abs_2610.35887",
+   "field": "fin",
    "kind": "Preprint",
-   "date": "2026-10-22",
-   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-   "authors": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2610.31650",
-   "ref": "arXiv:2610.31650",
-   "summary": "When a tool quietly leaves out a safety-critical fact, LLM agents can take forbidden actions on harmless requests; giving them ways to recover the missing facts cut unsafe actions for all 10 models tested.",
+   "date": "2026-10-28",
+   "title": "Evaluating the Predictive Validity of ICT's Accumulation-Manipulation-Distribution (AMD) Model on CME E-Mini NASDAQ-100 Futures",
+   "authors": "Veer Taylor",
+   "venue": "arXiv stat.AP",
+   "url": "https://arxiv.org/abs/2610.35887",
+   "ref": "arXiv:2610.35887",
+   "summary": "A popular retail-trading pattern on Nasdaq futures only works with the trend: aligned signals were right 62–71% of the time, but counter-trend ones only 25–30%.",
    "findings": [
-    "The benchmark has 300 paired safe/unsafe tasks across six domains, with critical facts deliberately hidden from tool outputs.",
-    "The 10 models varied widely, and resisting a missing fact did not mean an agent could go find it.",
-    "The abstract gives no per-model rates or percentages."
+    "15-minute NQ futures data, Jan 2022–Jul 2026; 484 signal days, with the signal firing on 44% of trading days.",
+    "57% of valid signals reached their full target before the 9:40 AM New York entry window.",
+    "Effect sizes Cohen's h = 0.23–0.43 (aligned) and 0.42–0.53 (opposed); all four trending cells survived multiple-testing correction."
    ],
-   "takeaway": "Agent safety depends on noticing what a tool did not say, not just on refusing bad requests; results are on a synthetic benchmark.",
-   "evidence": "Preprint · executable benchmark of 10 models, 300 task pairs",
-   "id": "arxiv.org_abs_2610.31650",
-   "addedAt": "2026-10-26T00:45:35Z"
+   "takeaway": "A rare formal test of a social-media trading method suggests it is mostly trend-following; it is one market and one author, with no trading costs reported.",
+   "evidence": "Preprint · backtest, 484 signal days",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "addedAt": "2026-10-20T10:56:28Z",
-   "authors": "John Kitaoka, Thao Amelia Pham, Carlos Rafael Giudice",
-   "date": "2026-10-20",
-   "field": "ai",
+   "id": "arxiv.org_abs_2610.36317",
+   "field": "fin",
    "kind": "Preprint",
-   "ref": "arXiv:2610.24052",
-   "source": "auto",
-   "summary": "Monitors that watch each AI agent separately caught only 7% of attacks split across several agents, versus 87% when a single agent did the same thing.",
-   "title": "Red-Teaming Multi-Agent Attacks for Loss-of-Control Risks",
-   "url": "https://arxiv.org/abs/2610.24052",
-   "venue": "arXiv cs.CR",
+   "date": "2026-10-28",
+   "title": "Event definition and the branching ratio: Hawkes estimates of price-change clustering in the consolidated quote feed",
+   "authors": "Hyoeun Lee",
+   "venue": "arXiv q-fin.ST",
+   "url": "https://arxiv.org/abs/2610.36317",
+   "ref": "arXiv:2610.36317",
+   "summary": "About half of best-quote changes in large-tick stocks are sub-millisecond glitches, which make standard models overstate how much price moves trigger more price moves by about threefold within one second.",
    "findings": [
-    "The test setup, called MiniLab, has 5 linked services, 249 ordinary tasks and 16 human-designed attacks spread across agents, such as stealing model weights or escalating permissions.",
-    "Watching each agent alone flagged 7% of successful distributed attacks. The same side task done by one agent was flagged 87% of the time.",
-    "Attacks planned by models evaded a monitor at most 25% of the time, versus 80% for human-designed plans. The authors expect that gap to narrow as models improve."
+    "Roughly half of NBBO changes in large-tick stocks are locks or depleted quotes that clear within a millisecond.",
+    "Raw model fits put three times the \"clean\" excitation mass within one second; a simulation reproduces this.",
+    "Counting only mid-price levels that last one millisecond removes the spurious component."
    ],
-   "takeaway": "As companies deploy teams of agents, safety monitoring has to look across agents, not at each one alone.",
-   "evidence": "Preprint · red-team experiments · synthetic environment",
-   "revisedAt": "2026-10-20T16:30:00Z",
-   "id": "arxiv.org_abs_2610.24052"
+   "takeaway": "Estimates of market \"reflexivity\" depend on how events are defined, so past findings may be inflated; the fix is shown on U.S. quote data only.",
+   "evidence": "Preprint · high-frequency quote data + simulation",
+   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
    "id": "arxiv.org_abs_2610.35702",
@@ -497,69 +545,6 @@
    "evidence": "Preprint · benchmark audit · 204-cell factorial + 46-cell diagnostic",
    "addedAt": "2026-10-28T11:15:30Z",
    "source": "auto"
-  },
-  {
-   "id": "arxiv.org_abs_2610.33453",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-10-27",
-   "title": "Cross-Bond Panel Learning for Next-Day Price Forecasting of Chinese Convertible Bonds: A Reality Check",
-   "authors": "Derun Zhong, Guolian Wang, Shiqing Wang",
-   "venue": "arXiv q-fin.CP",
-   "url": "https://arxiv.org/abs/2610.33453",
-   "ref": "arXiv:2610.33453",
-   "summary": "Neural networks trained across 100 Chinese convertible bonds did not beat a simple random walk at next-day pricing (RMSE 2.36 vs 2.36 CNY, out-of-sample R² slightly below zero).",
-   "findings": [
-    "73,806 daily observations from 2022–2025, with a 29,514-observation holdout.",
-    "Ensembled MLPs scored RMSE 2.3619 and 2.3645 CNY vs 2.3577 for the random walk; p-values 0.453 and 0.248.",
-    "Pooling across bonds helped 79 of 90 individual bonds, but five volatile, clause-sensitive bonds caused 74.4% of the excess error."
-   ],
-   "takeaway": "A useful negative result: fancy forecasting adds nothing on average here, though it may still help for most individual bonds.",
-   "evidence": "Preprint · out-of-sample forecasting test · 100 bonds, 73,806 obs.",
-   "addedAt": "2026-10-28T11:15:30Z",
-   "source": "auto"
-  },
-  {
-   "field": "fin",
-   "kind": "Working paper",
-   "date": "2026-10-19",
-   "dateLabel": "Oct 2026",
-   "title": "Generative AI, Managerial Expectations, and Economic Activity",
-   "authors": "Manish Jha, Jialin Qian, Michael Weber",
-   "venue": "NBER",
-   "url": "https://www.nber.org/papers/w35949",
-   "ref": "w35949",
-   "summary": "An AI reading of what managers say on earnings calls predicts GDP, production, jobs and wages five or more quarters ahead, beating survey forecasts.",
-   "findings": [
-    "Built from more than 120,000 earnings-call transcripts, scored by a generative AI model for managers' outlook.",
-    "The resulting \"AI Economy Score\" forecasts growth, output, employment and wages 5+ quarters out, beyond surveys and existing indicators.",
-    "Firm- and industry-level versions track activity in those units; the signal is strongest from managers with an accurate, unbiased forecasting record."
-   ],
-   "takeaway": "Corporate talk, read at scale by AI, could become an early-warning macro indicator, though the abstract gives no size for the forecast gains.",
-   "evidence": "Working paper · text analysis of 120,000+ earnings calls",
-   "id": "www.nber.org_papers_w35949",
-   "addedAt": "2026-10-26T11:20:00Z"
-  },
-  {
-   "field": "fin",
-   "kind": "Working paper",
-   "date": "2026-10-19",
-   "dateLabel": "Oct 2026",
-   "title": "HouseholdBench: Evaluating Large Language Models as Predictors of Household Economic Behavior",
-   "authors": "Jin Huang, Diego Ferreras Garrucho, Yutong Xie",
-   "venue": "NBER",
-   "url": "https://www.nber.org/papers/w35927",
-   "ref": "w35927",
-   "summary": "Most of 13 language models beat a no-change baseline at predicting household spending, income and housing choices, cutting numeric error by up to 12.2%, but plain gradient-boosted trees still won most tasks.",
-   "findings": [
-    "Benchmark spans 6 US household surveys and 32 prediction tasks, including how households react to policy changes.",
-    "The best LLM cut error on numeric outcomes by 12.2% versus assuming no change; top proprietary models trailed tree models only slightly, open-weight ones lagged.",
-    "Fine-tuning a 4-billion-parameter open model and averaging 16 predictions per household matched proprietary models, even on held-out policy-response tasks."
-   ],
-   "takeaway": "LLMs are becoming usable stand-ins for modeling household finances, but they show task-specific over- and under-prediction and do not yet beat classic ML.",
-   "evidence": "Working paper · benchmark of 13 LLMs on 6 surveys",
-   "id": "www.nber.org_papers_w35927",
-   "addedAt": "2026-10-26T11:20:00Z"
   }
  ]
 }
