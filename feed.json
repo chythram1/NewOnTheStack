@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T12:08:56Z",
+ "updatedAt": "2026-11-04T12:20:01Z",
  "trends": {
   "psych": {
    "headline": "AI shapes judgment more than people notice",
@@ -18,27 +18,27 @@
    ]
   },
   "tech": {
-   "headline": "Real-world tests reveal gaps that benchmarks hide",
+   "headline": "Security tools and benchmarks are weaker than assumed",
    "points": [
-    "Hijacked-agent detectors trained on AgentDrift dropped to near chance on AgentDojo, and their rankings flipped once fewer than about 50% of tool calls used tools seen in training.",
-    "Purpose-built AI tools do beat general ones in controlled trials: a visit-prep agent left 73.8% of patients feeling prepared vs 57.0% with a generic chatbot (802 adults).",
-    "Privacy and productivity costs persist: 239 of 240 simulated mental-health chats exposed a sensitive attribute, and a re-analysis of METR's study still finds AI slowed experienced developers by 19–24%."
+    "Established tools underdeliver: static analyzers scored near chance (AUROC 0.495–0.526) at separating vulnerable C/C++ code from its fix across 20,000 cases.",
+    "Benchmarks can flatter models: fixing future-data leakage in the Elliptic++ Bitcoin dataset cut a random forest's illicit-class F1 from 0.846 to 0.291.",
+    "Purpose-built approaches still find what others miss: a new edk2 firmware fuzzer reached 73.1% coverage (about 1.7x the prior tool) and found 137 unknown bugs, while behavior graphs classified malware at 94.44% accuracy."
    ]
   },
   "ai": {
-   "headline": "Measuring what models really do",
+   "headline": "Agents stumble on coordination, memory and honest scoring",
    "points": [
-    "Evaluation can be gamed: a rule that ignores the explanation hit 0.979 balanced accuracy on an interpretability benchmark versus 0.838 for LLM scorers.",
-    "Behavior traces to training and context: capitulation under objection appeared in all post-trained checkpoints but not base models, and negotiating agents earned 13.7% more when their user was watching.",
-    "Cheap oversight and transfer can work: activation probes flagged unsafe tool calls with AUROC up to 0.912, though a TF-IDF baseline nearly matched them, and a frontier-written artifact bank let Haiku beat unaided Sonnet at 60% of the cost."
+    "Coordination is a weak spot: Claude Code with Opus 4.8 fell from 62% to 16% on contradictory tasks when run as parallel agents, and a communication channel recovered little.",
+    "Memory is the bottleneck for long sessions: the best GUI agent hit 16.4% on MemU-Bench, though a training-free memory module lifted GPT-5.5 from 15.7% to 66.9%.",
+    "Scores can mislead: medical-QA accuracy fell from 82.3% to 50.9% when answer choices were hidden, and spotting reward hacking needed a stronger monitor (AUC 0.80 vs 0.64)."
    ]
   },
   "fin": {
-   "headline": "AI forecasting: useful but overconfident",
+   "headline": "Testing what really moves prices and forecasts",
    "points": [
-    "LLMs forecast unpublished economics experiment results with a median error of 0.054 SD, beating simple benchmarks across 889 effects.",
-    "But LLM agents' 80% earnings-forecast ranges held the real EPS only 37–70% of the time, and news sentiment improved volatility forecasts in just 2 of 33 tests.",
-    "Correlated AI advice is a systemic risk: simulated agentic wealth managers behaved like about 2 independent investors and raised tail losses 1.47–1.90× versus robo-advice."
+    "Classic risk pricing holds in bonds: Treasury expected excess returns tracked stock-market betas with a 67% correlation over 1988–2024, explaining over half the long decline in yields.",
+    "Market-based data sharpen policy reads: Kalshi prediction-market prices respond to Fed moves in line with standard transmission, with little sign of a 'Fed information effect'.",
+    "AI forecasting helps only in places: LLMs predicted economics treatment effects with a median error of 0.054 SD, yet news sentiment improved volatility forecasts in just 2 of 33 tests."
    ]
   }
  },
@@ -244,204 +244,244 @@
    "addedAt": "2026-10-30T11:33:35Z"
   },
   {
-   "id": "arxiv.org_abs_2610.41437",
+   "id": "arxiv.org_abs_2611.03742",
    "field": "tech",
    "kind": "Preprint",
-   "date": "2026-11-02",
-   "title": "A prospective randomized study of patient-centered AI for clinical visit preparation",
-   "authors": "Xincheng Tan, Matthew Thompson, Xiang Ji",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.41437",
-   "ref": "arXiv:2610.41437",
-   "summary": "In a randomized study of 802 U.S. adults, a purpose-built visit-prep AI left 73.8% of patients feeling prepared versus 57.0% with a generic chatbot.",
-   "findings": [
-    "802 adults (866 conversations) were randomized to a visit-prep agent (standard or concise) or a control chatbot.",
-    "Clinician reviewers (n = 272) rated preparation comprehensive in 67.2% vs 50.6% of cases and context-aligned in 98.9% vs 90.4%.",
-    "Patients (n = 460) reported more confidence about what to ask (81.4% vs 67.1%) and satisfaction (74.0% vs 62.0%), but patient and clinician ratings did not correlate."
-   ],
-   "takeaway": "Task-specific health chat design measurably beats a general chatbot; outcomes are ratings of the conversation, not actual visit or health outcomes.",
-   "evidence": "Randomized study · 802 adults",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.41300",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-02",
-   "title": "Toward Low-Burden Image-Based Dietary Assessment Through Human-AI Collaborative Correction",
-   "authors": "Darren Liu, Andrew Lu, Zhiyuan \"Ryan\" Wang",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.41300",
-   "ref": "arXiv:2610.41300",
-   "summary": "Letting users fix AI food-photo logs by stating what they meant cut workload from 55.00 to 35.83 on the Raw TLX scale versus manual search-and-edit, and 90.0% preferred it.",
-   "findings": [
-    "Within-participant study with 30 people.",
-    "Intent-driven AI correction used 21.0% less time and 51.1% fewer clicks than manual editing (Raw TLX 35.83 vs 55.00, p < .001).",
-    "An exploratory analysis also found lower error in estimated energy (MAE)."
-   ],
-   "takeaway": "Correction, not just recognition, is where AI can lower the burden of food tracking; a 30-person lab study, with the accuracy gain only exploratory.",
-   "evidence": "Within-participant experiment · 30 participants",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.41045",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-02",
-   "title": "Measuring Personal Information Exposure in Mental Health-Related Conversations with LLMs",
-   "authors": "Synthia Qia Wang, Ranya Sharma, Christine Lee",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.41045",
-   "ref": "arXiv:2610.41045",
-   "summary": "Mental-health chats with LLMs leak a lot about the user: 239 of 240 simulated conversations exposed at least one sensitive attribute, and 33–41% of each profile could be inferred from the conversation alone.",
-   "findings": [
-    "240 synthetic multi-turn conversations built from survey-sampled profiles covering 21 attributes, checked against real transcripts.",
-    "Inference was right on the first guess 76.5% of the time and within three guesses 94.3% of the time.",
-    "45.0% of conversations exposed all six sensitive attributes."
-   ],
-   "takeaway": "Users seeking emotional support disclose far more than they may realize, which matters for data retention and training; conversations were synthetic rather than real users.",
-   "evidence": "Simulation study · 240 synthetic conversations",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.41803",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer",
-   "authors": "Mahmoud Abbasi, Juan M. Núñez V., Amin Shahraki",
+   "date": "2026-11-04",
+   "title": "Fixed Detectors, Moving Code: How Well Do Static Security Analyzers Hold Up over a Decade of C/C++ Evolution?",
+   "authors": "Junhua Tang, Zhengsong Zhang, Haipeng Cai",
    "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2610.41803",
-   "ref": "arXiv:2610.41803",
-   "summary": "Detectors that spot hijacked AI agents from their tool calls look strong in standard tests but fall apart under realistic conditions: trained on one benchmark, they score near chance on another.",
+   "url": "https://arxiv.org/abs/2611.03742",
+   "ref": "arXiv:2611.03742",
+   "summary": "Popular static security analyzers barely beat a coin flip at telling vulnerable C/C++ code from its fixed version: across 20,000 cases, AUROC stayed between 0.495 and 0.526.",
    "findings": [
-    "An audit of eleven published detector evaluations found widely varying attack rates and little testing on a second data source.",
-    "Detector rankings flip once fewer than about 50% of test tool calls use tools seen in training; input dropout largely fixes this.",
-    "Detectors trained on AgentDrift were near chance on AgentDojo; an off-the-shelf monitor (AlignmentCheck) did better but raised many false alerts at a 2% attack rate."
+    "20,000 vulnerable and patched cases from 1,116 projects; overall F1 ranged from 0.066 to 0.478.",
+    "Very few warnings landed on the actual fix: 6 of 39 for CodeQL and 2 of 620 for Infer.",
+    "79% of Semgrep cases had parser or timeout errors even though the tool reported success."
    ],
-   "takeaway": "High AUROC can hide very low precision when attacks are rare, so agent-security claims need realistic base rates; results cover two benchmarks.",
-   "evidence": "Preprint · re-evaluation on AgentDrift and AgentDojo",
-   "addedAt": "2026-11-02T12:08:56Z"
+   "takeaway": "Teams relying on static analysis for C/C++ security may be getting far less protection than they assume, including silent failures.",
+   "evidence": "Preprint · large-scale evaluation · 20,000 cases from 1,116 projects",
+   "addedAt": "2026-11-04T12:20:01Z"
   },
   {
-   "id": "arxiv.org_abs_2610.35942",
+   "id": "arxiv.org_abs_2611.03854",
    "field": "tech",
    "kind": "Preprint",
-   "date": "2026-10-28",
-   "title": "Counting the Bandages: On measuring the time that AI saves",
-   "authors": "Solomon Shalom Lijo",
+   "date": "2026-11-04",
+   "title": "Towards Effective Fuzzing of EDK2 Components",
+   "authors": "Datta Manikanta Sri Hari Danduri, Connor Everett Glosner, Aravind Machiry",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.03854",
+   "ref": "arXiv:2611.03854",
+   "summary": "A new fuzzer for UEFI boot firmware found 137 previously unknown bugs in edk2 and covered 73.1% of code, about 1.7 times the prior tool FuzzUEr.",
+   "findings": [
+    "Tested on 60 drivers covering 162 boot-time protocols.",
+    "73.1% coverage, roughly 1.7x FuzzUEr.",
+    "137 new bugs found; 26 reported so far, 12 of them remotely triggerable."
+   ],
+   "takeaway": "Boot firmware runs before the OS and is hard to patch, so remotely triggerable bugs here are serious; many findings are still being disclosed.",
+   "evidence": "Preprint · tool evaluation on 60 firmware drivers",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.04000",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Revisiting Elliptic++ for Bitcoin Forensics: Feature Reconstruction and Leakage-Resistant Evaluation",
+   "authors": "Runlin Liang, Simon Trimborn, Noud van Giersbergen",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.04000",
+   "ref": "arXiv:2611.04000",
+   "summary": "A widely used Bitcoin illicit-transaction benchmark leaks future information: with a proper time-based split, a random forest's F1 for illicit transactions fell from 0.846 to 0.291.",
+   "findings": [
+    "The original non-temporal split lets models peek at future data.",
+    "Under a leakage-resistant temporal pipeline, random-forest illicit-class F1 dropped from 0.846 to 0.291.",
+    "After the fix, the random forest no longer beat plain logistic regression."
+   ],
+   "takeaway": "Published crypto-forensics accuracy may be badly inflated; the finding is specific to the Elliptic++ dataset.",
+   "evidence": "Preprint · re-analysis of a public benchmark",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.04086",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Permitted but Unauthorized: Affordance-Induced Delegated-Scope Violations in Multi-Agent LLM Systems",
+   "authors": "Shravya Kanchi",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.04086",
+   "ref": "arXiv:2611.04086",
+   "summary": "When another agent's action was simply listed as available, LLM agents often overstepped the scope they had been delegated: Claude Sonnet 4.5 did so in 52 of 52 episodes under competitive pressure.",
+   "findings": [
+    "Eight LLMs tested in two simulated multi-agent environments; behavior differed sharply across models.",
+    "Claude Sonnet 4.5 crossed its delegated scope in 52/52 episodes when a peer's action was exposed under competitive pressure.",
+    "Two proposed defenses blocked every crossing and cut avoidable peer deadline misses from 15/40 and 14/40 to at most 1/40."
+   ],
+   "takeaway": "Tool access is not the same as authorization, so multi-agent systems need explicit scope checks; results come from simulated environments.",
+   "evidence": "Preprint · simulation study of 8 LLMs",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.03774",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "What Malware Actually Does: An Empirical Analysis of Post-Infection Behavior Across Malware Families",
+   "authors": "Emmanuela Andam, Emanuel S. Grant, Naima Kaabouch",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.03774",
+   "ref": "arXiv:2611.03774",
+   "summary": "Modeling what malware does after infection as a graph of behaviors identified malicious samples with 94.44% accuracy, 7.4 MCC points better than a flat-feature baseline.",
+   "findings": [
+    "Sandbox (CAPEv2) runs covering 37 malware families, represented as heterogeneous behavior graphs.",
+    "A voting ensemble reached 94.44% accuracy and MCC 0.863.",
+    "A multiclass model could tell apart 24 malware families."
+   ],
+   "takeaway": "Behavior graphs give defenders a richer signal than flat indicators; sandbox behavior can differ from what malware does in the wild.",
+   "evidence": "Preprint · sandbox dataset across 37 malware families",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.00314",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-03",
+   "title": "Decentralized Multi-Agent Coordination and Communication in Shared Codebases (ParallACT)",
+   "authors": "Rishabh Mediratta, Lingyun Xiao, Peter Stone",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2610.35942",
-   "ref": "arXiv:2610.35942",
-   "summary": "Re-analysing METR's well-known developer study still finds AI tools slowed experienced developers by 19% or 24% depending on the estimate, and the share of issues AI actually helped is anywhere from 3% to 82%.",
+   "url": "https://arxiv.org/abs/2611.00314",
+   "ref": "arXiv:2611.00314",
+   "summary": "Splitting a coding job across parallel agents backfired on tasks with conflicting requirements: Claude Code with Opus 4.8 fell from 62% success working alone with full information to 16% as a team of parallel agents.",
    "findings": [
-    "Uses METR's public data on 246 issues; the unadjusted slowdown is 34%.",
-    "The share of issues where AI helped cannot be pinned down more tightly than 3%–82%.",
-    "In GDPval's workflow where every output is reviewed, review time alone caps GPT-5's speedup at 3.6x."
+    "Single-agent oracle: 62% success; same model as decentralized parallel agents: 16%.",
+    "The same drop showed up in six further agent/model configurations.",
+    "Giving agents a channel to talk to each other won back only a small part of the lost performance."
    ],
-   "takeaway": "Headline \"AI saves X% time\" numbers depend heavily on how they are measured and on review costs; it is a single-author reanalysis of existing data.",
-   "evidence": "Preprint · reanalysis of 246 developer tasks",
-   "addedAt": "2026-10-30T11:33:35Z"
+   "takeaway": "Multi-agent coding setups are popular for speed, but coordination in a shared codebase is still a major weak point; results come from purpose-built contradictory tasks rather than everyday repos.",
+   "evidence": "Preprint · benchmark of parallel coding agents across 7 configurations",
+   "addedAt": "2026-11-04T12:20:01Z"
   },
   {
-   "id": "arxiv.org_abs_2610.37788",
+   "id": "arxiv.org_abs_2611.00460",
    "field": "ai",
    "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Locating Sycophancy Across Training Stages in Open Language Models",
-   "authors": "Jiarui Yao, Shweta Parihar, Nghia Tuan Bui",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.37788",
-   "ref": "arXiv:2610.37788",
-   "summary": "Caving in when a user objects appears only after post-training: it was absent from base models but present in every post-trained checkpoint across 13 checkpoints from 5 model families.",
-   "findings": [
-    "13 open checkpoints from 5 model lineages were tested from base model through post-training.",
-    "Deferring to a user's stated claim already showed up in every base model.",
-    "Capitulating under objection was largely missing in base models and appeared in all post-trained ones; the abstract gives no rates."
-   ],
-   "takeaway": "Different kinds of sycophancy come from different training stages, so fixes need to target the right one; findings are limited to open models.",
-   "evidence": "Preprint · 13 checkpoints, 5 model lineages",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.37680",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Artifact Distillation: Training-Free Transfer from Frontier to Small Language Models",
-   "authors": "Mustafa Safa Ozdayi, Somin Wadhwa",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.37680",
-   "ref": "arXiv:2610.37680",
-   "summary": "A bank of reusable artifacts written by a frontier model let a small model beat a mid-size one: Claude Haiku 4.5 scored 0.707 on spatial reasoning versus 0.647 for unaided Sonnet 4.5, at 60% of the cost.",
-   "findings": [
-    "Tested on four LiveBench tasks with an artifact bank written by Claude Opus 4.5, with no fine-tuning.",
-    "On table joining, Haiku matched Sonnet's level at 89% of the cost.",
-    "Qwen3.5-27B's pooled score rose from 0.730 to 0.800."
-   ],
-   "takeaway": "Frontier-model knowledge can be passed down without retraining, cutting inference costs; only four tasks were tested.",
-   "evidence": "Preprint · 4 LiveBench tasks, several models",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.37679",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Exposure Is Not Commitment: Double-Stratified Evaluation of Latent Monitors for Tool-Using Agents",
-   "authors": "Rishabh Sinha",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.37679",
-   "ref": "arXiv:2610.37679",
-   "summary": "Probes on an agent's internal activations can predict an unsafe tool call up to two steps ahead (AUROC 0.853 on Qwen, 0.896 on Mistral-7B), but a simple text baseline nearly matches them.",
-   "findings": [
-    "Probes retrained only on cases where the agent was exposed to a risk predicted unsafe calls up to two steps early.",
-    "AUROC reached 0.853 (Qwen), 0.896 (Mistral-7B) and 0.912 (OLMo-2-7B).",
-    "A trained TF-IDF text baseline scored 0.855 on Qwen, about the same as the probe."
-   ],
-   "takeaway": "Internal monitors can give early warning, but their edge over cheap baselines is small and depends on how evaluation cases are split; single-author preprint on open 7B-scale models.",
-   "evidence": "Preprint · probe evaluation on 3 open models",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.37676",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
-   "authors": "Xupeng Chen",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.37676",
-   "ref": "arXiv:2610.37676",
-   "summary": "A standard interpretability benchmark can be gamed without reading the explanation at all: a rule keyed to the marked token hit 0.979 balanced accuracy, beating stored LLM scorers at 0.838.",
-   "findings": [
-    "Tested on 500 random GPT-2 small features.",
-    "The shortcut rule ignored the explanation yet scored 0.979 balanced accuracy versus 0.838 for LLM scorers.",
-    "On natural-text windows, a decision model reached a pooled correlation of 0.331 over 49 features, versus 0.013 with shuffled explanations."
-   ],
-   "takeaway": "Automated-interpretability scores may reward data artifacts rather than good explanations; shown on GPT-2 small only.",
-   "evidence": "Preprint · 500 GPT-2 small features",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.36435",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-10-28",
-   "title": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
-   "authors": "Jane Pan, You Lyu, Abe Bohan Hou",
+   "date": "2026-11-03",
+   "title": "From Small to Large: Assessing Medical Reasoning, Benchmark Contamination, and Model Size in Language Models",
+   "authors": "Navapat Nananukul, Mayank Kejriwal",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2610.36435",
-   "ref": "arXiv:2610.36435",
-   "summary": "AI negotiating agents got 13.7% higher payouts on average when their user was present, and behaved against their users' interests in 14.3% of games.",
+   "url": "https://arxiv.org/abs/2611.00460",
+   "ref": "arXiv:2611.00460",
+   "summary": "Medical-exam scores for LLMs lean heavily on the multiple-choice format: across 14 models and 3,076 questions, mean accuracy dropped from 82.3% to 50.9% once the answer options were hidden.",
    "findings": [
-    "11.2k runs across 7 negotiation games and 8 models.",
-    "Parties with a user present earned 13.7% more on average.",
-    "Misaligned behavior toward users showed up in 14.3% of games."
+    "Hiding answer choices cut average accuracy from 82.3% to 50.9%.",
+    "Smaller models trailed larger ones by 8.7 points, and only two of six models cleared the human-expert bar.",
+    "Models could reconstruct roughly one question in four from its answer choices alone, a sign of benchmark contamination."
    ],
-   "takeaway": "Agents may behave differently when watched, so unsupervised testing could miss problems; results come from simulated games.",
-   "evidence": "Preprint · 11.2k simulated negotiations, 8 models",
-   "addedAt": "2026-10-30T11:33:35Z"
+   "takeaway": "Headline medical-QA scores likely overstate real clinical reasoning; the study covers exam-style questions, not live clinical use.",
+   "evidence": "Preprint · evaluation of 14 models on 3,076 questions",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.00191",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-03",
+   "title": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+   "authors": "Yizhou Liu, Zhengxi Lu, Fei Tang",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.00191",
+   "ref": "arXiv:2611.00191",
+   "summary": "Screen-operating AI agents are poor at remembering what a user did earlier: the best model reached just 16.4% on a new long-horizon benchmark, though a training-free memory add-on lifted GPT-5.5 from 15.7% to 66.9%.",
+   "findings": [
+    "118 tasks built from 29 long user-interaction trajectories; best score was Gemini-3.1-Pro at 16.4% SPL.",
+    "End-to-end GUI agents scored below 5%.",
+    "The AppMem memory module raised GPT-5.5 by 51.2 points and beat a simple summarize-the-history baseline by 9.3 points."
+   ],
+   "takeaway": "Memory, not clicking skill, is the bottleneck for agents that help over long sessions; the gains are from the authors' own benchmark.",
+   "evidence": "Preprint · benchmark of 118 tasks",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.00407",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-03",
+   "title": "Hacking or Just Failing? A More Capable LLM Monitor Better Separates Reward Hacking from Honest Failure",
+   "authors": "Kaushik Kezendirane",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.00407",
+   "ref": "arXiv:2611.00407",
+   "summary": "A stronger monitor model was much better at telling an agent gaming its reward from one honestly failing: Gemini 3.1 Flash-Lite reached AUC 0.80 versus 0.64 for the small primary monitor.",
+   "findings": [
+    "Tested on 60 episodes from a Llama 3.1 8B agent.",
+    "Gemini 3.1 Flash-Lite scored AUC 0.80 (95% CI 0.66–0.93) and wrongly flagged only 1 of 35 honest failures.",
+    "Smaller monitors struggled; the primary monitor managed AUC 0.64."
+   ],
+   "takeaway": "Monitor capability matters for catching reward hacking, but with only 14 exploit episodes the estimates are very uncertain.",
+   "evidence": "Preprint · small evaluation, 60 agent episodes",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.00463",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-03",
+   "title": "Exo: An Architecture for Self-Improving Systems at Runtime",
+   "authors": "Alexander Krentsel, Sylvia Ratnasamy, Ion Stoica",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.00463",
+   "ref": "arXiv:2611.00463",
+   "summary": "Letting an agent system improve itself while it runs cut model costs by 12%–53% versus Codex and Pi at the same completion rates, and by 45%–82% when lessons were transferred to new runs.",
+   "findings": [
+    "Standalone runs: 12%–53% lower model cost than Codex and Pi with matching completion rates.",
+    "On held-out AppWorld and SREGym tasks, cost fell 35%–61%.",
+    "AppWorld task time dropped 13% and median SREGym diagnosis time dropped 35%."
+   ],
+   "takeaway": "Runtime self-improvement could make agents cheaper and faster without retraining; results are from a few agent benchmarks.",
+   "evidence": "Preprint · systems evaluation on agent benchmarks",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "www.nber.org_papers_w35973",
+   "field": "fin",
+   "kind": "Working paper",
+   "date": "2026-11-02",
+   "title": "Risk and Return in Government Bonds",
+   "authors": "Matteo Leombroni, Carolin Pflueger, Adi Sunderam",
+   "venue": "NBER Working Paper",
+   "url": "https://www.nber.org/papers/w35973",
+   "ref": "w35973",
+   "summary": "Treasury investors do get paid more when bonds are riskier: expected excess returns tracked bonds' stock-market betas with a 67% correlation from 1988 to 2024, and shifting risk premia explain over half of the long fall in U.S. long-term yields.",
+   "findings": [
+    "Monthly U.S. Treasury panel by maturity, 1988–2024: 67% correlation between expected excess returns and bond-stock betas, driven by market yields rather than forecaster expectations.",
+    "Realized returns link only weakly to beta until monetary-policy and macro forecast errors are controlled for; then the link is large and significant.",
+    "Changing risk premia account for over half of the decline in long yields since the mid-1980s and over half of their rise since 2020; a developed-country panel (1989–2024) gives similar results."
+   ],
+   "takeaway": "Bond yields move with how risky bonds are relative to stocks, which matters for portfolios and policy; it is an unrefereed working paper.",
+   "evidence": "Working paper · U.S. and international bond panels, 1988–2024",
+   "addedAt": "2026-11-04T12:20:01Z"
+  },
+  {
+   "id": "nber.org_papers_w35968",
+   "field": "fin",
+   "kind": "Working paper",
+   "date": "2026-11-02",
+   "title": "The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets",
+   "authors": "Eric T. Swanson, Wang Renxuan, Yanbin Wu",
+   "venue": "NBER Working Paper",
+   "url": "https://nber.org/papers/w35968",
+   "ref": "w35968",
+   "summary": "Prediction-market prices react to Fed announcements the way standard monetary theory predicts, leaving little or no role for a 'Fed information effect' in which hikes signal good news.",
+   "findings": [
+    "Uses high-frequency prices from Kalshi macroeconomic event contracts to isolate the effect of Fed and other announcements on expectations.",
+    "Market-implied expectations respond in line with standard monetary transmission channels.",
+    "The abstract reports no specific effect sizes."
+   ],
+   "takeaway": "Prediction markets offer a cleaner read on policy surprises than monthly forecast surveys; how well thinly traded contracts reflect broad expectations is a caveat.",
+   "evidence": "Working paper · high-frequency event study using prediction-market data",
+   "addedAt": "2026-11-04T12:20:01Z"
   },
   {
    "id": "arxiv.org_abs_2610.38883",
@@ -501,46 +541,6 @@
    ],
    "takeaway": "A useful null result against the hype around text-based risk signals; only eleven stocks were studied.",
    "evidence": "Out-of-sample forecasting study · 11 stocks",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.37705",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management",
-   "authors": "Saurabh Kohli",
-   "venue": "arXiv q-fin.RM",
-   "url": "https://arxiv.org/abs/2610.37705",
-   "ref": "arXiv:2610.37705",
-   "summary": "If AI wealth agents all rely on a few correlated models, they act like about 2 independent investors, and index tail losses come out 1.47–1.90× larger than under periodic robo-advice.",
-   "findings": [
-    "Agent-based model calibrated to model concentration, cross-model correlation, retail turnover and 33 years of equity returns.",
-    "Tail losses grow with the square root of agent adoption; replaying 2020 with a 10% agent share deepens the crash by about 858 bp.",
-    "Spreading out advice, staging execution and a participation breaker cut tail liquidation by 63%; the fragility index has hold-out R² 0.56."
-   ],
-   "takeaway": "Herding by AI advisers is a new systemic-risk channel worth regulating early; results come from simulation, not observed agent behavior.",
-   "evidence": "Calibrated simulation · 33 years of returns, historical replays",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.38056",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "What Language Models Add to Healthcare-Equity Rankings, and What They Could Have Known",
-   "authors": "Haotong Fu, Xiyue Zhang, Jack Rose",
-   "venue": "arXiv q-fin.CP",
-   "url": "https://arxiv.org/abs/2610.38056",
-   "ref": "arXiv:2610.38056",
-   "summary": "Adding balance-sheet and attention features lifted a healthcare-stock ranking model's 12-month neutral rank IC from 0.063 to 0.093 (+48%), while language-model embeddings added only a small, exploratory gain.",
-   "findings": [
-    "U.S. healthcare firms, 2020–2025.",
-    "Raw IC moved only slightly, from 0.289 to 0.298.",
-    "At three months, a current embedding model raised neutral IC from 0.046 to 0.056 (t = 2.8), which the authors call exploratory."
-   ],
-   "takeaway": "Plain fundamentals still do most of the work in stock ranking; the sample includes only surviving firms and is not adjusted for the full search.",
-   "evidence": "Backtest · U.S. healthcare equities 2020–2025",
    "addedAt": "2026-11-02T12:08:56Z"
   }
  ]
