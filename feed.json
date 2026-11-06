@@ -1,44 +1,44 @@
 {
- "updatedAt": "2026-11-04T12:20:01Z",
+ "updatedAt": "2026-11-06T12:37:09Z",
  "trends": {
   "psych": {
-   "headline": "AI shapes judgment more than people notice",
+   "headline": "AI sways people in ways they can't see or guard against",
    "points": [
-    "Conversation history can override intent: 75.0% of 360 participants sent an AI-drafted suspension letter, including 11 who meant to cancel.",
-    "Human-AI pairing is not automatic synergy: across 1,955 effects from 420 papers, teams beat humans alone but trailed the better of human or AI alone.",
-    "Self-serving beliefs bias judgment too: favourite images were 22.1 points more likely to be called human-made, and markets on people's own goals resolved YES 4.4 points less often than priced."
+    "People can't spot AI's hand: readers detected AI-polished LinkedIn posts only 49% of the time, and the edits did not lower trust (214 participants).",
+    "Guardrails help little: bias disclaimers reduced political persuasion by a biased chatbot only in some tasks and not after a week, while user traits like party and AI use mattered more (1,586 participants).",
+    "AI steers choices once the pattern is set: 75.0% of 360 participants sent an AI-drafted suspension letter, and across 1,955 effects human-AI teams trailed the better of human or AI alone."
    ]
   },
   "edu": {
-   "headline": "AI in learning: engagement is not the same as benefit",
+   "headline": "How students use AI matters more than how much",
    "points": [
-    "Students warmed to a supportive AI teammate from week one yet rated it less helpful than a challenging one over five weeks (48 students).",
-    "Students mostly used an AI for answers in math, and LLM tutors gave in to students' wrong objections 1.6% to 50.0% of the time in TrussTutor-Bench.",
-    "Design details still help: narration-synced zooms and highlights raised comprehension and cut cognitive load over static AI-narrated slides (24 participants)."
+    "Structure beats frequency: in 11 physics sections, students' confidence tracked perceived understanding (r_s = 0.37) but not how often they used AI (r_s = 0.02).",
+    "Default use is shallow: secondary students mostly asked an AI for answers in math, though those who shifted toward understanding did better later without AI.",
+    "Liking is not learning: student teams warmed to a supportive AI teammate yet rated it less helpful than a challenging one over five weeks (48 students), while narration-synced visual cues raised comprehension (24 participants)."
    ]
   },
   "tech": {
-   "headline": "Security tools and benchmarks are weaker than assumed",
+   "headline": "Security testing gets sharper, and assumptions get weaker",
    "points": [
-    "Established tools underdeliver: static analyzers scored near chance (AUROC 0.495–0.526) at separating vulnerable C/C++ code from its fix across 20,000 cases.",
-    "Benchmarks can flatter models: fixing future-data leakage in the Elliptic++ Bitcoin dataset cut a random forest's illicit-class F1 from 0.846 to 0.291.",
-    "Purpose-built approaches still find what others miss: a new edk2 firmware fuzzer reached 73.1% coverage (about 1.7x the prior tool) and found 137 unknown bugs, while behavior graphs classified malware at 94.44% accuracy."
+    "Smaller tools can do real security work: local open-weight models down to 4B solved most of six easier CyberGym vulnerability-reproduction tasks, with the hardest needing 27B.",
+    "Purpose-built analysis finds what others miss: a new edk2 firmware fuzzer reached 73.1% coverage and 137 unknown bugs, and behavior graphs classified malware at 94.44% accuracy.",
+    "Benchmarks and permissions can mislead: fixing leakage in Elliptic++ cut illicit-class F1 from 0.846 to 0.291, and Claude Sonnet 4.5 overstepped its delegated scope in 52 of 52 competitive episodes."
    ]
   },
   "ai": {
-   "headline": "Agents stumble on coordination, memory and honest scoring",
+   "headline": "Agents show real gains, but scores need verification",
    "points": [
-    "Coordination is a weak spot: Claude Code with Opus 4.8 fell from 62% to 16% on contradictory tasks when run as parallel agents, and a communication channel recovered little.",
-    "Memory is the bottleneck for long sessions: the best GUI agent hit 16.4% on MemU-Bench, though a training-free memory module lifted GPT-5.5 from 15.7% to 66.9%.",
-    "Scores can mislead: medical-QA accuracy fell from 82.3% to 50.9% when answer choices were hidden, and spotting reward hacking needed a stronger monitor (AUC 0.80 vs 0.64)."
+    "Agents can deliver real engineering wins: the best coding agent built an LLM serving system worth 4.87x vLLM per GPU dollar, yet only 22 of 33 runs passed verification.",
+    "Memory and self-improvement are key levers: a memory module lifted GPT-5.5 from 15.7% to 66.9% on MemU-Bench, and runtime self-improvement cut model costs 12%–53%.",
+    "Headline scores can mislead: medical-QA accuracy fell from 82.3% to 50.9% with answer choices hidden, and catching reward hacking needed a stronger monitor (AUC 0.80 vs 0.64)."
    ]
   },
   "fin": {
-   "headline": "Testing what really moves prices and forecasts",
+   "headline": "Rigorous tests shrink the edge from news and AI",
    "points": [
-    "Classic risk pricing holds in bonds: Treasury expected excess returns tracked stock-market betas with a 67% correlation over 1988–2024, explaining over half the long decline in yields.",
-    "Market-based data sharpen policy reads: Kalshi prediction-market prices respond to Fed moves in line with standard transmission, with little sign of a 'Fed information effect'.",
-    "AI forecasting helps only in places: LLMs predicted economics treatment effects with a median error of 0.054 SD, yet news sentiment improved volatility forecasts in just 2 of 33 tests."
+    "News is priced fast: under a pre-registered, blinded test, an LLM news signal fell to IC 0.020 and no strategy survived costs, with commercial models only tracking the move before the open.",
+    "Text adds little to risk forecasts: news sentiment improved volatility forecasts in just 2 of 33 tests, while crypto volatility itself responds to price trends with an asymmetry peaking at a 20-minute lag.",
+    "Classic theory holds up: Treasury excess returns tracked stock-market betas with a 67% correlation over 1988–2024, and prediction-market prices reacted to Fed moves as standard transmission predicts."
    ]
   }
  },
@@ -82,46 +82,6 @@
    "takeaway": "Adding a human to an AI (or vice versa) does not reliably create synergy, so team designs need testing; the pipeline is automated, so coding errors in extracted effects are possible.",
    "evidence": "Automated meta-analysis · 1,955 effects from 420 papers",
    "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.38113",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Beauty Is Human: When People Love AI-Generated Art, They Think a Human Made It",
-   "authors": "Zihan Chen, Di Zhu, Lei Nico Zheng",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.38113",
-   "ref": "arXiv:2610.38113",
-   "summary": "People assume the art they like best was made by a human: a picture was 22.1 percentage points more likely to be judged human-made when it was someone's favourite.",
-   "findings": [
-    "11,123 people judged 50 images (26 AI-generated) in an online AI Art Turing Test; 9,152 named a favourite.",
-    "People most hostile to AI art picked fewer AI favourites (47% vs 60% for the most positive) but more often thought those favourites were human-made.",
-    "A reanalysis of an earlier 230-person study showed the same pattern."
-   ],
-   "takeaway": "Liking and authorship judgments are entangled, so \"can people tell AI art apart\" tests may really be measuring taste; the sample is a self-selected online audience.",
-   "evidence": "Large online judgment study · 11,123 participants",
-   "addedAt": "2026-10-30T11:33:35Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.40324",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals",
-   "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.40324",
-   "ref": "arXiv:2610.40324",
-   "summary": "Markets betting on whether people would hit their own goals were too optimistic: they resolved YES 4.4 percentage points less often than prices implied, while other markets were nearly calibrated.",
-   "findings": [
-    "6,150 Manifold markets, with 1,660 users asking about their own futures.",
-    "External markets were off by only 0.9 points; at matched price levels the self-market gap was 2.2 points.",
-    "The goal-setter's own trades supplied 38% of the price movement in self-markets vs 9% in external ones; recalibrating from past markets improved forecasts by only 1.5%."
-   ],
-   "takeaway": "Crowds inherit people's optimism about themselves, partly because the person trades on their own market; it is one play-money platform.",
-   "evidence": "Observational market data · 6,150 markets",
-   "addedAt": "2026-10-30T11:33:35Z"
   },
   {
    "id": "arxiv.org_abs_2610.37862",
@@ -184,26 +144,6 @@
    "addedAt": "2026-11-02T12:08:56Z"
   },
   {
-   "id": "arxiv.org_abs_2610.38917",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "TrussTutor-Bench: Benchmarking large language models on solution accuracy, sycophancy, and error detection in statics",
-   "authors": "Evangelos Apostolakis, Erfan Hamdi, Sara Jahedazad",
-   "venue": "arXiv cs.CY",
-   "url": "https://arxiv.org/abs/2610.38917",
-   "ref": "arXiv:2610.38917",
-   "summary": "LLM tutors for engineering statics vary widely in how easily students can talk them out of correct answers: when a student insisted correct work was wrong, models gave in 1.6% to 50.0% of the time.",
-   "findings": [
-    "13 LLMs tested on 200 verified 2D truss problems.",
-    "Baseline accuracy ranged from 64.5% to 97.0%.",
-    "Models caught 90.4% to 100% of deliberately injected errors."
-   ],
-   "takeaway": "Accuracy alone is a poor guide to tutor quality, since sycophancy varies far more than error detection; this is a benchmark, not a study with students.",
-   "evidence": "Preprint · benchmark of 13 LLMs, 200 problems",
-   "addedAt": "2026-10-30T11:33:35Z"
-  },
-  {
    "id": "arxiv.org_abs_2610.38950",
    "field": "edu",
    "kind": "Preprint",
@@ -242,26 +182,6 @@
    "takeaway": "Future health-AI builders may learn ethics in the abstract without learning to question their data; this is a review of published curricula, not of what is taught in class.",
    "evidence": "Curriculum audit · 36 programs",
    "addedAt": "2026-10-30T11:33:35Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.03742",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-04",
-   "title": "Fixed Detectors, Moving Code: How Well Do Static Security Analyzers Hold Up over a Decade of C/C++ Evolution?",
-   "authors": "Junhua Tang, Zhengsong Zhang, Haipeng Cai",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.03742",
-   "ref": "arXiv:2611.03742",
-   "summary": "Popular static security analyzers barely beat a coin flip at telling vulnerable C/C++ code from its fixed version: across 20,000 cases, AUROC stayed between 0.495 and 0.526.",
-   "findings": [
-    "20,000 vulnerable and patched cases from 1,116 projects; overall F1 ranged from 0.066 to 0.478.",
-    "Very few warnings landed on the actual fix: 6 of 39 for CodeQL and 2 of 620 for Infer.",
-    "79% of Semgrep cases had parser or timeout errors even though the tool reported success."
-   ],
-   "takeaway": "Teams relying on static analysis for C/C++ security may be getting far less protection than they assume, including silent failures.",
-   "evidence": "Preprint · large-scale evaluation · 20,000 cases from 1,116 projects",
-   "addedAt": "2026-11-04T12:20:01Z"
   },
   {
    "id": "arxiv.org_abs_2611.03854",
@@ -341,26 +261,6 @@
    ],
    "takeaway": "Behavior graphs give defenders a richer signal than flat indicators; sandbox behavior can differ from what malware does in the wild.",
    "evidence": "Preprint · sandbox dataset across 37 malware families",
-   "addedAt": "2026-11-04T12:20:01Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.00314",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-03",
-   "title": "Decentralized Multi-Agent Coordination and Communication in Shared Codebases (ParallACT)",
-   "authors": "Rishabh Mediratta, Lingyun Xiao, Peter Stone",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.00314",
-   "ref": "arXiv:2611.00314",
-   "summary": "Splitting a coding job across parallel agents backfired on tasks with conflicting requirements: Claude Code with Opus 4.8 fell from 62% success working alone with full information to 16% as a team of parallel agents.",
-   "findings": [
-    "Single-agent oracle: 62% success; same model as decentralized parallel agents: 16%.",
-    "The same drop showed up in six further agent/model configurations.",
-    "Giving agents a channel to talk to each other won back only a small part of the lost performance."
-   ],
-   "takeaway": "Multi-agent coding setups are popular for speed, but coordination in a shared codebase is still a major weak point; results come from purpose-built contradictory tasks rather than everyday repos.",
-   "evidence": "Preprint · benchmark of parallel coding agents across 7 configurations",
    "addedAt": "2026-11-04T12:20:01Z"
   },
   {
@@ -484,46 +384,6 @@
    "addedAt": "2026-11-04T12:20:01Z"
   },
   {
-   "id": "arxiv.org_abs_2610.38883",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "Can Artificial Intelligence Forecast Treatment Effects in Economics?",
-   "authors": "Eva Vivalt",
-   "venue": "arXiv econ.GN",
-   "url": "https://arxiv.org/abs/2610.38883",
-   "ref": "arXiv:2610.38883",
-   "summary": "LLMs predicted the results of not-yet-published economics experiments with a median absolute error of 0.054 standard deviations, beating zero-effect and average-effect benchmarks.",
-   "findings": [
-    "Forecasts covered 889 treatment effects from 39 pre-registered studies (673 from 33 after screening) whose results came out in 2026.",
-    "Best model: median absolute error 0.054 SD, mean absolute error 0.093 SD, MSE 0.0218.",
-    "Forecasts beat both a zero-effect and a mean-effect benchmark."
-   ],
-   "takeaway": "AI could help prioritize which experiments to run, though errors are small partly because many true effects are small.",
-   "evidence": "Prospective forecasting test · 889 effects from 39 studies",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
-   "id": "arxiv.org_abs_2610.38293",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-10-30",
-   "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-   "authors": "Yanbin Yin, Chuyu Xu, Liqin Ye",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2610.38293",
-   "ref": "arXiv:2610.38293",
-   "summary": "LLM agents are overconfident earnings forecasters: their nominal 80% ranges contained the actual EPS in only 37–70% of runs.",
-   "findings": [
-    "149 firm-quarters from 86 U.S. companies; six models evaluated.",
-    "Coverage of 80% intervals was 37–70% depending on the model.",
-    "Most misses fell above the upper bound, meaning agents underestimated earnings."
-   ],
-   "takeaway": "Don't trust AI forecast ranges at face value; the sample is small at 149 firm-quarters.",
-   "evidence": "Benchmark · 149 firm-quarters, 6 models",
-   "addedAt": "2026-11-02T12:08:56Z"
-  },
-  {
    "id": "arxiv.org_abs_2610.39636",
    "field": "fin",
    "kind": "Preprint",
@@ -542,6 +402,146 @@
    "takeaway": "A useful null result against the hype around text-based risk signals; only eleven stocks were studied.",
    "evidence": "Out-of-sample forecasting study · 11 stocks",
    "addedAt": "2026-11-02T12:08:56Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.06660",
+   "field": "psych",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Perceived Trust and Transparency in AI-Altered vs. Human-Written LinkedIn Posts",
+   "authors": "Thomas Christian Joos, Azza Bouleimen, Anikó Hannák",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2611.06660",
+   "ref": "arXiv:2611.06660",
+   "summary": "Readers could not tell when an AI had polished someone's LinkedIn post: they spotted AI alteration only 49% of the time, and the alteration itself did not change how trustworthy or transparent posts seemed.",
+   "findings": [
+    "Pre-registered within-subjects online experiment with 214 participants rating unlabeled human-written and AI-altered posts.",
+    "AI alteration had a near-zero, non-significant effect on trust and transparency; detection accuracy was 49%, and unsure readers assumed a human wrote it.",
+    "More detailed editing prompts raised trust and transparency but made edits easier to spot; posts where the AI added a new, invented idea were rated as more trustworthy."
+   ],
+   "takeaway": "AI-polished posts pass as human and can even gain credibility from invented content, which weakens trust cues online; the study covers one LinkedIn-style format.",
+   "evidence": "Pre-registered experiment · 214 participants",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.05347",
+   "field": "psych",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Whose Guardrail? User Identity Shapes the Effectiveness of Model Disclaimers in Mitigating LLM Political Persuasion",
+   "authors": "Jillian Fisher, Thomas Richardson, Daniel W. Fisher",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2611.05347",
+   "ref": "arXiv:2611.05347",
+   "summary": "Warning labels on a politically biased chatbot only partly protected people from being swayed: disclaimers naming the bias and explaining it reduced persuasion, but the effect varied by task and had faded a week later (1,586 participants).",
+   "findings": [
+    "Pre-registered experiment with 1,586 participants who did two decision tasks with an LLM biased against their own politics, measured immediately and one week later.",
+    "Disclaimers that flagged political bias with an explanation cut persuasion; effects were inconsistent across tasks and did not persist to the follow-up.",
+    "Who the user was mattered more: Republicans were more persuaded and more trusting than Democrats, frequent AI users were more persuaded, and self-rated AI-savvy users less."
+   ],
+   "takeaway": "One-size disclaimers are a weak guardrail against AI persuasion; the abstract gives no effect sizes.",
+   "evidence": "Pre-registered experiment · 1,586 adults · 1-week follow-up",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.04148",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Active Learning with Generative AI in Introductory Physics: A Multi-Institutional Study of the P-A.I.R. Framework",
+   "authors": "Bilas Paul, Shantanu Chakraborty, Shruti Shrestha",
+   "venue": "arXiv physics.ed-ph",
+   "url": "https://arxiv.org/abs/2611.04148",
+   "ref": "arXiv:2611.04148",
+   "summary": "When physics students used AI in a set cycle (get a worked solution, then solve AI-made look-alike problems on their own), 90.9% said their conceptual understanding improved, and their confidence tracked how they used AI, not how often.",
+   "findings": [
+    "Tested in 11 introductory physics sections at four U.S. institutions with a shared end-of-semester survey.",
+    "90.9% reported better conceptual understanding and 97.7% found the replicated practice problems helpful; mean confidence was 7.18 out of 10.",
+    "Confidence correlated with perceived understanding (r_s = 0.37) but not with frequency of AI use (r_s = 0.02); top concerns were AI accuracy (34.2%) and wanting guidance rather than answers (29.7%)."
+   ],
+   "takeaway": "Structuring AI help around independent practice looks promising for physics courses, but the evidence is self-reported survey data with no control group or test scores.",
+   "evidence": "Multi-site survey · 11 course sections, 4 institutions · no control group",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.06257",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-05",
+   "title": "Analysis of Local Open-Weight LLM Agents on Vulnerability-Reproduction Tasks",
+   "authors": "Jorge García-Carrasco, Javier Sanchis, Álvaro Navarro",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.06257",
+   "ref": "arXiv:2611.06257",
+   "summary": "Open-weight models running on a single consumer GPU can reproduce real software vulnerabilities: every configuration down to a 4B model solved most of the six easier CyberGym tasks, though the harder four needed the 27B model.",
+   "findings": [
+    "Twelve local model configurations (three generations, two architectures, three quantization levels) tested on ten CyberGym tasks, three runs each.",
+    "Quantization never changed which tasks were solved in matched pairs, only how fast; the mixture-of-experts model hit the same scores in less wall-clock time.",
+    "Nearly every run, including failures, found the vulnerable function and the right hypothesis; success hinged on turning that hypothesis into a working crashing input."
+   ],
+   "takeaway": "Security teams can do private, local vulnerability reproduction with small models, but the test set is only ten tasks.",
+   "evidence": "Preprint · benchmark of 12 local model configs on 10 tasks",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.06841",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-05",
+   "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+   "authors": "Xinrui Zhong, Zhiming Wang, Yongqi Liu",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.06841",
+   "ref": "arXiv:2611.06841",
+   "summary": "Coding agents can build LLM serving systems that beat standard software, but not reliably: the best run (Claude Sonnet 5.5) delivered 4.87x the value per GPU dollar of the vLLM reference, yet only 22 of 33 runs produced a system that passed verification.",
+   "findings": [
+    "Benchmark across 11 coding-agent models and three deployments, scored on latency-qualified token value per dollar of GPU cost, with independent verification of each system.",
+    "Claude Sonnet 5.5 reached 2.97 \"dollars per dollar\" on Gemma E4B, 4.87x vLLM.",
+    "22 of 33 runs gave verified systems and 13 beat the strongest baseline; winning designs combined capacity gains with smart load selection."
+   ],
+   "takeaway": "Agents can now do real systems-optimization work, but a third of attempts failed verification, so independent checks remain essential.",
+   "evidence": "Preprint · benchmark of 11 agent models, 33 runs",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.03985",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "Thinking Fast, Trading Late: System One Decision Models vs the Market",
+   "authors": "Amir Dehkordi, Alireza Kargarzadeh, Nariman Khaledian",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.03985",
+   "ref": "arXiv:2611.03985",
+   "summary": "Under a strict anti-look-ahead protocol, language models reading company news could not beat the market: the best fine-tuned signal fell to a daily information coefficient of 0.020 (t = 1.7) on a blinded 2026 test, and no pre-registered strategy survived trading costs.",
+   "findings": [
+    "The fine-tuned model's signal held on two validation quarters (IC 0.055 and 0.065) before shrinking on the blinded January–July 2026 test.",
+    "Commercial models tracked the overnight move to the open (IC 0.074–0.077) but not returns after the open, suggesting news is priced in before a trader can act.",
+    "Masking names did not hide companies: commercial models identified masked firms in 62%–74% of cases versus a 28% baseline."
+   ],
+   "takeaway": "Many reported LLM news-trading gains may reflect look-ahead and memorization; this test covers S&P 500 stocks over a short seven-month window.",
+   "evidence": "Pre-registered backtest · S&P 500 news, blinded Jan–Jul 2026 test",
+   "addedAt": "2026-11-06T12:36:52Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.04533",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-04",
+   "title": "How market volatility responds to a preceding price trend: a lag-resolved measurement in cryptocurrencies and equities",
+   "authors": "Gulsah Bicki, Taylan Akdogan",
+   "venue": "arXiv q-fin.ST",
+   "url": "https://arxiv.org/abs/2611.04533",
+   "ref": "arXiv:2611.04533",
+   "summary": "In Bitcoin and Ether, price trends predict later volatility with a leverage-effect-like asymmetry that peaks at a 20-minute lag and halves within about 1.5 hours; large U.S. stocks showed no detectable one-way (time-asymmetric) component at 20 minutes.",
+   "findings": [
+    "One-minute data from 2020–2026 for three large cryptocurrencies on one exchange, three large U.S. stocks and the S&P 500 ETF.",
+    "For Bitcoin and Ether, the time-asymmetric part of the response was 0.4–0.9 of the symmetric part at the first lag, consistent with a purely one-sided response at 20 minutes.",
+    "Checks on simulated and shuffled data returned zero within expected error and recovered a planted response time scale."
+   ],
+   "takeaway": "Suggests crypto volatility reacts to trends in a directional way that equities do not show at this scale; the sample is small (a few assets, one exchange) and a small opposite-sign effect is unresolved.",
+   "evidence": "Preprint · high-frequency time-series analysis · 7 assets, 2020–2026",
+   "addedAt": "2026-11-06T12:36:52Z"
   }
  ]
 }
