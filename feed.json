@@ -1,287 +1,125 @@
 {
- "updatedAt": "2026-11-11T12:00:59Z",
+ "updatedAt": "2026-11-13T12:16:23Z",
  "trends": {
   "psych": {
-   "headline": "AI changes how people feel about their own work and judgment",
+   "headline": "Social comparison and shifting standards shape how we feel and judge",
    "points": [
-    "Using AI can drain the meaning from creative work: across three experiments (N = 651), AI-assisted creators felt less authentic and more guilt and shame, while at a juried show three-quarters of AI-art creators priced by effort rather than artistic value.",
-    "Users often hand over control from the start rather than losing it gradually: 80.8% of 2,877 chatbot conversations showed low or zero autonomy throughout, and only 4.7% showed a real decline.",
-    "Built-in safeguards do little to make people more critical: bias disclaimers only partly blunted a biased chatbot's persuasion of 1,586 people and faded within a week, and in half a million real exchanges cues like hedging rarely prompted fact-checking."
+    "Comparing ourselves to others online drags down healthy habits: in 916 female students, appearance comparison predicted lower exercise adherence three months later (β ≈ −0.16), and vice versa.",
+    "Social pain may be the route from home stress to screen problems: family conflict linked to teens' problematic social media use (b = 0.28) almost entirely via social exclusion and weaker executive function.",
+    "Our judgments of AI drift with experience: 'both are bad' votes on unchanged Chatbot Arena pairs rose 1.71 points a month, and AI-assisted creative work felt less authentic across three experiments (N = 651)."
    ]
   },
   "edu": {
-   "headline": "Structured AI practice shows gains, but how it is used matters",
+   "headline": "AI tools reach classroom-grade accuracy when given structure",
    "points": [
-    "AI practice can move skills: English learners who practiced speaking with ChatGPT for 8 weeks gained 2.90 vs 0.75 points over controls (d = 1.20, 380 learners).",
-    "Structure around the tool drives results: a set solve-then-practice cycle in introductory physics had 90.9% of students reporting better understanding, and automated talk-move feedback raised tutors' good moves and student reasoning by 8–15%.",
-    "Media habits and measurement both cloud the picture: short-form video addiction had the strongest link to academic strain among 863 students, but a yes-saying response bias explained 59–89% of survey variance and flipped one association's sign."
+    "AI grading is approaching human reliability: an agent grading handwritten exams correlated r = 0.97 with human graders, within 0.85 marks on average.",
+    "Structure is what makes AI tutoring work: LLMs chose the right next topics 61.3% of the time from descriptions but 96–98% when given the prerequisite map.",
+    "Practice and feedback with AI show measurable gains: ChatGPT speaking practice produced d = 1.20 gains for 380 English learners, and automated feedback lifted peer tutors' good talk moves by 8–15%."
    ]
   },
   "tech": {
-   "headline": "Cheap, structured control beats raw model power",
+   "headline": "Measuring coding agents honestly",
    "points": [
-    "Imposed structure lets small models win: an executable finite-state controller got Claude Haiku 4.5 to 139 correct decisions out of 200 vs 48 for the best baseline, at 38% of Sonnet 4.6's cost.",
-    "Specialized checkers outperform general judges: the small ScreenProof judge found UI faults at F1 0.48 vs 0.37 for a frontier model at about 1/100th the cost, and a risk model catching 49–64% of bug-introducing commits in the riskiest 20% beat simple heuristics.",
-    "Long chains of agent work remain fragile: the best of nine models solved only 18.5% of multi-step coding tasks, and one adversarial line before signing pushed unsafe multi-agent handoffs to 75%."
+    "Frontier coding agents still miss a third of realistic work: the best solved 67.3% of expert-written tasks in unfamiliar codebases, and the best model passed just 25.0% of tasks in an enterprise DSL.",
+    "Usage is not productivity: engineers' agent token spend varied 39–240× for similar output, and doubling spend went with only ~10% more commits.",
+    "Specialized and defensive tooling pays off: a small trained UI judge beat a frontier model (F1 0.48 vs 0.37) at about 1% of the cost, and a twin-controller honeypot blocked all 2,400 AI attacker agents."
    ]
   },
   "ai": {
-   "headline": "Failures hide in training stages, test design and real-world reasoning",
+   "headline": "Agent reliability hinges on early errors and realistic evaluation",
    "points": [
-    "Problems arise earlier than assumed: supervised fine-tuning checkpoints already reach at least 92% of preference-aligned models' sycophancy, and preference training raised it in only 4 of 9 cases.",
-    "Knowing facts is not applying them: LLMs scored 92.0–97.5% on time-related theory yet underestimated their own task times by up to 99.5%, and under term substitution radiology summaries hallucinated 28–42% of the time.",
-    "How we test shapes what we see: fixing flawed tasks in about 30% of Terminal-Bench 2.0 shifted accuracy by over 10 points, and a behavioral loss-of-control score tracked failures across 13 frontier models (r = 0.84)."
+    "Agents fail early and ignore warnings: in 72% of failed long runs the contradicting evidence was already present, and rolling back state would have rescued 35 of 95.",
+    "Simpler often wins on cost: multi-agent setups used up to 4.7× the tokens, while better skills alone raised single-agent success from 67.4% to 73.1%.",
+    "Evaluations can mislead: real humans omitted the key fact 43% of the time vs 7% for simulated users, and graders who agree on correctness (κ = 0.932) barely agree on failure type (κ = 0.093)."
    ]
   },
   "fin": {
-   "headline": "Learning methods earn edges that depend on the market regime",
+   "headline": "AI in markets: promising returns, leaky tests",
    "points": [
-    "Gains are real but regime-dependent: an RL options market maker cut tail losses 8.9% vs delta hedging in falling volatile markets but cost 7–10% in rising ones, and an LLM-agent paper account beat SPY (34.5% vs 14.4%) with a deeper drawdown.",
-    "Learned aggregation improves forecasting: a neural intraday weighting improved crypto volatility forecasts in all 54 out-of-sample comparisons, by about 7–9%.",
-    "Rules and subsidies leave measurable price footprints: each 1% rise in tax-credit-eligible wind raised negative power-price odds by 3.4 points, and a Brazilian value-plus-trend strategy earned about 1% monthly alpha over 2000–2025."
+    "AI trading results need careful scrutiny: an LLM-agent account returned 34.5% vs SPY's 14.4% with a deeper drawdown, while a research benchmark found look-ahead leaks in 50.8% of passing agent runs.",
+    "Adaptive models target regime changes: an interpretable fuzzy-map forecaster beat an LSTM by 7.6 points on return direction, and a risk-sensitive RL market maker cut tail losses 8.9% in falling markets.",
+    "Market design trade-offs remain: a tenfold faster blockchain lowered priority-fee bidding but also thinned liquidity pools."
    ]
   }
  },
  "papers": [
   {
-   "id": "arxiv.org_abs_2610.41645",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-02",
-   "title": "Look Over There! Dynamic Visual Guidance for AI-Narrated Slides",
-   "authors": "Jiongning Allen Lian, Yutong Alison Mei, Ho Ting Cheung",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2610.41645",
-   "ref": "arXiv:2610.41645",
-   "summary": "Adding zooms and highlights synced to AI narration raised immediate comprehension and lowered perceived cognitive load compared with the same narration over static slides.",
+   "id": "www.mdpi.com_2076-328X_16_11_2156",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-13",
+   "title": "The Relationship Between Social Network Site Appearance Comparison and Exercise Adherence Among Female University Students: A Three-Wave Cross-Lagged Study",
+   "authors": "Xinyi Chen, Wen Zhang, Joston Gary",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2156",
+   "summary": "Comparing one's looks with others on social media and sticking with exercise pull against each other in both directions: more comparison predicted less exercise three months later (β ≈ −0.16), and more exercise predicted less comparison (β ≈ −0.18).",
    "findings": [
-    "Within-subjects study with 24 participants comparing GuideSlide to static slides with identical narration.",
-    "Dynamic guidance gave higher immediate comprehension scores and lower perceived cognitive load.",
-    "Participants strongly preferred the dynamic version; the abstract gives no numeric effect sizes."
+    "1,053 female undergraduates at four Chinese universities were surveyed three times about three months apart; 916 completed all waves.",
+    "Comparison and adherence were negatively correlated at every wave (r from −0.237 to −0.383).",
+    "Comparison → later adherence: β = −0.158 and −0.156; adherence → later comparison: β = −0.181 and −0.178 (all p < 0.001), with no differences by home region or year of study."
    ],
-   "takeaway": "Cheap visual cueing could make AI-generated lecture videos easier to follow; 24 people and only immediate recall were tested.",
-   "evidence": "Within-subjects experiment · 24 participants",
-   "addedAt": "2026-11-02T12:08:56Z"
+   "takeaway": "Suggests exercise programs and social-media habits could reinforce each other, so tackling either one may help the other; it is still correlational survey data from one region and one gender.",
+   "evidence": "Three-wave longitudinal survey · 916 students",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.05347",
+   "id": "www.mdpi.com_2076-328X_16_11_2157",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-13",
+   "title": "The Relationship Between Family Conflict and Problematic Social Media Use Among Adolescents: A Serial Mediation Model of Social Exclusion and Executive Function Deficits",
+   "authors": "Changlu Zhang, Yuge Tang",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2157",
+   "summary": "Teens from higher-conflict families report more problematic social media use (b = 0.28), but the link runs almost entirely through feeling socially excluded and weaker executive function rather than directly.",
+   "findings": [
+    "1,129 adolescents aged 15–19 were surveyed in a cluster sample.",
+    "Family conflict correlated with social exclusion (r = 0.35), executive function deficits (r = 0.38) and problematic use (r = 0.22).",
+    "Total effect b = 0.28 (p < 0.001) but direct effect only b = 0.07 (p = 0.06); executive function deficits were the largest single mediator (b = 0.14)."
+   ],
+   "takeaway": "Points to self-control training and inclusion, not only screen limits, as levers for teen social media problems; one cross-sectional sample cannot establish the causal chain it models.",
+   "evidence": "Cross-sectional survey, mediation model · 1,129 adolescents",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.14116",
    "field": "psych",
    "kind": "Preprint",
-   "date": "2026-11-04",
-   "title": "Whose Guardrail? User Identity Shapes the Effectiveness of Model Disclaimers in Mitigating LLM Political Persuasion",
-   "authors": "Jillian Fisher, Thomas Richardson, Daniel W. Fisher",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.05347",
-   "ref": "arXiv:2611.05347",
-   "summary": "Warning labels on a politically biased chatbot only partly protected people from being swayed: disclaimers naming the bias and explaining it reduced persuasion, but the effect varied by task and had faded a week later (1,586 participants).",
-   "findings": [
-    "Pre-registered experiment with 1,586 participants who did two decision tasks with an LLM biased against their own politics, measured immediately and one week later.",
-    "Disclaimers that flagged political bias with an explanation cut persuasion; effects were inconsistent across tasks and did not persist to the follow-up.",
-    "Who the user was mattered more: Republicans were more persuaded and more trusting than Democrats, frequent AI users were more persuaded, and self-rated AI-savvy users less."
-   ],
-   "takeaway": "One-size disclaimers are a weak guardrail against AI persuasion; the abstract gives no effect sizes.",
-   "evidence": "Pre-registered experiment · 1,586 adults · 1-week follow-up",
-   "addedAt": "2026-11-06T12:36:52Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.04148",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-04",
-   "title": "Active Learning with Generative AI in Introductory Physics: A Multi-Institutional Study of the P-A.I.R. Framework",
-   "authors": "Bilas Paul, Shantanu Chakraborty, Shruti Shrestha",
-   "venue": "arXiv physics.ed-ph",
-   "url": "https://arxiv.org/abs/2611.04148",
-   "ref": "arXiv:2611.04148",
-   "summary": "When physics students used AI in a set cycle (get a worked solution, then solve AI-made look-alike problems on their own), 90.9% said their conceptual understanding improved, and their confidence tracked how they used AI, not how often.",
-   "findings": [
-    "Tested in 11 introductory physics sections at four U.S. institutions with a shared end-of-semester survey.",
-    "90.9% reported better conceptual understanding and 97.7% found the replicated practice problems helpful; mean confidence was 7.18 out of 10.",
-    "Confidence correlated with perceived understanding (r_s = 0.37) but not with frequency of AI use (r_s = 0.02); top concerns were AI accuracy (34.2%) and wanting guidance rather than answers (29.7%)."
-   ],
-   "takeaway": "Structuring AI help around independent practice looks promising for physics courses, but the evidence is self-reported survey data with no control group or test scores.",
-   "evidence": "Multi-site survey · 11 course sections, 4 institutions · no control group",
-   "addedAt": "2026-11-06T12:36:52Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.08232",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations",
-   "authors": "Ahana Biswas, Yu-Ru Lin",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.08232",
-   "ref": "arXiv:2611.08232",
-   "summary": "In nearly half a million real chatbot exchanges, cues like source attribution and hedging rarely tipped users toward fact-checking rather than pushing back; only expressed uncertainty showed a small pooled link with checking.",
-   "findings": [
-    "Analyzed 489,283 assistant reply–user follow-up pairs drawn from the ShareChat and WildChat logs.",
-    "Vague attribution language (\"studies show\") appeared in 31.9% of eligible replies, while actual URLs appeared in just 1.33%.",
-    "Effects depended on context: uncertainty favored checking in technical help, while refusals and visible reasoning favored challenging in information-seeking; apparent carry-over of scrutiny across turns shrank a lot after accounting for conversation-level differences."
-   ],
-   "takeaway": "Suggests the trust cues chatbots display do not reliably steer people toward verifying answers; the data are observational logs, so the links are associations, not causal effects.",
-   "evidence": "Preprint · observational log analysis · 489,283 conversation pairs",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.07072",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Automated Feedback to Peer Tutors Increases Their Talk Moves and Learner Reasoning but Not the Balance of Talk",
-   "authors": "Dorottya Demszky, Yann Hicke, Joy Yun",
+   "date": "2026-11-11",
+   "title": "Visual Similarity in Adult Word Extension and Artificial Word Learning",
+   "authors": "Patricio M. Vera",
    "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2611.07072",
-   "ref": "arXiv:2611.07072",
-   "summary": "Giving volunteer math tutors automated feedback on how they talk raised their use of good teaching moves and students' reasoning by 8–15%, but tutors still did about 91.5% of the talking.",
+   "url": "https://arxiv.org/abs/2611.14116",
+   "ref": "arXiv:2611.14116",
+   "summary": "How far adults stretch a newly learned word depends strongly on visual similarity and on the examples they saw: after three narrow examples they applied it to just 1.1% of broad-category items, versus 77.5% after three broad examples.",
    "findings": [
-    "Randomized trial in two four-week SAT math bootcamps on Schoolhouse.world: 1,030 volunteer tutors, 7,443 learners, 6,508 recorded sessions.",
-    "Tutor feedback increased eliciting learner ideas, building on learner contributions, and learner reasoning by 8–15%; the pattern replicated in both bootcamps.",
-    "Tutor share of talk time averaged 91.5% in the control group and did not change in any condition; adding participation feedback for learners gave no further change. Interviews (17 tutors, 13 learners) pointed to unresponsive learners and learners' preference for listening."
+    "Reanalysis of word-learning data from 520 people.",
+    "Each standard deviation of visual distance lowered the log odds of extending a word by 3.23.",
+    "An artificial learner trained the same way named near, mid and far items correctly 84.7%, 65.4% and 53.0% of the time."
    ],
-   "takeaway": "Shows low-cost automated discourse feedback can improve peer tutoring at scale, but nudging tutors alone does not get quiet learners to talk more.",
-   "evidence": "Randomized controlled trial · 1,030 tutors, 7,443 learners",
-   "addedAt": "2026-11-09T12:06:05Z"
+   "takeaway": "Shows perceptual similarity does much of the work in how people generalize word meanings; it is a reanalysis of existing data, not a new experiment.",
+   "evidence": "Preprint · reanalysis of 520 participants plus model simulation",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.06950",
-   "field": "tech",
+   "id": "arxiv.org_abs_2611.14333",
+   "field": "psych",
    "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "KG-AST for Cheaper CI/CD: Budgeted Test Selection and AI Bug Review",
-   "authors": "Henry Yeung",
-   "venue": "arXiv cs.SE",
-   "url": "https://arxiv.org/abs/2611.06950",
-   "ref": "arXiv:2611.06950",
-   "summary": "Focusing heavy testing on the 20% of commits a model flags as riskiest caught 49–64% of bug-introducing commits across 155 projects, beating the 'biggest change first' rule in every language.",
+   "date": "2026-11-11",
+   "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
+   "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
+   "venue": "arXiv cs.HC",
+   "url": "https://arxiv.org/abs/2611.14333",
+   "ref": "arXiv:2611.14333",
+   "summary": "People judging the exact same chatbot pairs grow harsher over time: the share of 'both are bad' votes rises about 1.7 percentage points per month, even though the models have not changed.",
    "findings": [
-    "Across 155 open-source projects in 11 languages, the model beat the biggest-change baseline (40–55% coverage) by 3.8 to 13.2 points; random picking catches about 20%.",
-    "In 20 Java projects at a 20% budget it covered 64.6% vs 49.5% (+15.1 points), winning in 19 of 20 projects.",
-    "An AI reviewer that saw only the diff pinpointed 26% of later-fixed defects (32% with code-graph context); a call-graph test selector ran about 8% of tests and hit a fix-related test in 85% of 67 fix commits."
+    "Based on 1,260,967 blind votes on Chatbot Arena.",
+    "For unchanged model pairs, 'both are bad' rose 1.71 points a month on a 17.1% average (1.91 points a month in 2024).",
+    "In 14 recurring pairs it climbed from 15.5% to 23.3%."
    ],
-   "takeaway": "Offers a practical way to cut CI costs while still catching most risky changes; single-author preprint, and one component (Poincaré embeddings) added nothing.",
-   "evidence": "Preprint · retrospective evaluation · 155 open-source projects, 11 languages",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.07483",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Signed but Not Safe: Requirement Integrity in Multi-Agent LLM Handoffs",
-   "authors": "Xiaobo Chen, Genliang Zhu, Ziyuan Wang",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.07483",
-   "ref": "arXiv:2611.07483",
-   "summary": "Cryptographically signing the requirements one AI agent hands to another cut unsafe actions under attack from 69.4% to 9.0%, but a single adversarial line slipped in before signing pushed violations as high as 75%.",
-   "findings": [
-    "Preregistered study on scorable synthetic tasks; with Qwen3-8B (1,440 runs, five threat types) signed manifests cut unsafe commits from 69.4% to 9.0% without losing correct commits.",
-    "A deterministic verifier caught 78.7% of violating decisions with 7% false alarms, versus 59.0% and 50% for an LLM-based checker.",
-    "Injecting one adversarial line before signing raised violations from 14.6% to 37.5% (Qwen3-8B), 11.1% to 63.9% (gpt-oss-20b) and 8.3% to 75.0% (GPT-5.6-luna)."
-   ],
-   "takeaway": "Signing protects requirements in transit but not what goes into them, so multi-agent pipelines still need checks on how requirements are written; results come from synthetic tasks.",
-   "evidence": "Preprint · preregistered experiment · 1,440 agent trajectories",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.07166",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Multi-step SWE: Can Coding Agents Keep Building on Their Own Code Over Long Horizons?",
-   "authors": "Xiangkai Zeng, Zheng Liu, Zihao Lin",
-   "venue": "arXiv cs.SE",
-   "url": "https://arxiv.org/abs/2611.07166",
-   "ref": "arXiv:2611.07166",
-   "summary": "When coding agents must keep building on their own earlier code over 5–15 dependent steps, the best of nine frontier models solves only 18.5% of tasks.",
-   "findings": [
-    "Benchmark of 69 software tasks, each a chain of 5–15 dependent steps, across nine programming languages.",
-    "The strongest of nine frontier models reached an 18.5% solve rate.",
-    "38 of the 69 tasks were not solved by any model."
-   ],
-   "takeaway": "Suggests single-issue benchmarks overstate how well agents handle sustained development; the benchmark is fairly small (69 tasks).",
-   "evidence": "Preprint · benchmark of 9 frontier models · 69 tasks",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.08417",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
-   "authors": "E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.08417",
-   "ref": "arXiv:2611.08417",
-   "summary": "An audit found problems in about 30% of Terminal-Bench 2.0 tasks; fixing them raised agent accuracy by over 10 percentage points and moved leaderboard positions by up to three ranks.",
-   "findings": [
-    "Repairs are released as Terminal-Bench 2.1; overall rankings stayed highly correlated with the old version (Spearman ρ = 0.958).",
-    "Longer time limits closed a 20-point harness gap for GPT 5.4 and shrank a 30-point gap for GPT 5.4 mini to 5 points.",
-    "The authors argue benchmarks need ongoing maintenance like software."
-   ],
-   "takeaway": "A reminder that headline agent scores partly reflect benchmark bugs and time limits; broad rankings held up, but close comparisons may not.",
-   "evidence": "Preprint · benchmark audit · Terminal-Bench 2.0",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.07953",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "A Behavioural Framework for Predicting and Understanding Loss of Control in Frontier Artificial Intelligence Systems",
-   "authors": "Yao Huang, Yichi Zhang, Yifan Wang",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.07953",
-   "ref": "arXiv:2611.07953",
-   "summary": "A loss-of-control risk score built from 29 behavioral tests tracked how often 13 frontier models failed in contained long-horizon scenarios (r = 0.84), and risk was not explained by capability alone.",
-   "findings": [
-    "Splits risk into misaligned motive, harm-enabling capability and monitoring evasion, measured via 13 aspects and 29 evaluation tasks.",
-    "Across 13 frontier models the combined score correlated with scenario failure rates at Pearson r = 0.84.",
-    "Targeted fine-tuning and monitoring for diagnosed weaknesses lowered failure rates while largely keeping general performance (no figures given)."
-   ],
-   "takeaway": "Offers a measurable way to compare control risk across models; it is validated on contained test scenarios with 13 models, not real-world incidents.",
-   "evidence": "Preprint · evaluation study · 13 frontier models, 29 tasks",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.06919",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Return Decomposition of Hybrid Strategies in the Brazilian Market: Evidence of Genuine Alpha and Factor Exposure",
-   "authors": "Francisco Robson do Nascimento de Freitas, Felipe Macedo Zumba, Lucio Marassi",
-   "venue": "arXiv q-fin.ST",
-   "url": "https://arxiv.org/abs/2611.06919",
-   "ref": "arXiv:2611.06919",
-   "summary": "A Brazilian stock strategy mixing value/quality screens with a moving-average trend rule earned about 1% a month of risk-adjusted excess return (alpha) over 2000–2025, after controlling for standard factors.",
-   "findings": [
-    "300 monthly observations on B3, Jan 2000–Dec 2025; three-factor alpha 1.11%/month (p = 0.005), four-factor alpha 0.98%/month (p = 0.009).",
-    "Exposure to small caps was strong (SMB beta 0.38) while value and momentum loadings were not significant; market beta about 0.58.",
-    "Sharpe ratio was 0.443 vs 0.039 for the Ibovespa, but that difference was not statistically significant (p = 0.154)."
-   ],
-   "takeaway": "Suggests simple combined rules may still earn excess returns in an emerging market, but it is a single backtest without stated trading costs, and the Sharpe gain is not significant.",
-   "evidence": "Preprint · backtest / factor regressions · 300 months",
-   "addedAt": "2026-11-09T12:06:05Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.07287",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Neural Realized Measures: Forecast-Supervised Intraday Aggregation for Volatility Forecasting",
-   "authors": "Brian Sing Fan Chan, Jennifer So Kuen Chan",
-   "venue": "arXiv q-fin.ST",
-   "url": "https://arxiv.org/abs/2611.07287",
-   "ref": "arXiv:2611.07287",
-   "summary": "Letting a neural network learn how to weight intraday returns improved crypto volatility forecasts in all 54 out-of-sample comparisons, by about 7–9% on average.",
-   "findings": [
-    "Tested on six cryptocurrencies with five-minute data under three standard forecasting models.",
-    "Mean QLIKE loss improvements were 7.23% (SF), 8.15% (HAR) and 9.22% (MIDAS).",
-    "In Heston-model simulations it also lowered forecast error for same-day and next-day variance in every tested setting."
-   ],
-   "takeaway": "A drop-in upgrade for volatility forecasting inputs; evidence is limited to six crypto assets, so it is untested on equities.",
-   "evidence": "Preprint · out-of-sample forecasting + simulation · 6 cryptocurrencies",
-   "addedAt": "2026-11-09T12:06:05Z"
+   "takeaway": "Human expectations drift upward as people get used to better tools, which can make older models look worse than they are; voters on Arena are self-selected, not a representative panel.",
+   "evidence": "Preprint · observational analysis of 1.26M votes",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
    "id": "arxiv.org_abs_2611.09918",
@@ -304,44 +142,44 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
-   "id": "arxiv.org_abs_2611.10150",
-   "field": "psych",
+   "id": "arxiv.org_abs_2611.13217",
+   "field": "edu",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "What Is the Value of AI-Involved Art? Evidence From a Juried In-Person Exhibition",
-   "authors": "Wisdom Obinna, Hexuan Wang, Cecile Duncan",
+   "date": "2026-11-11",
+   "title": "Reliability of Claude Code as an Agentic AI Grading System for Handwritten University Exams",
+   "authors": "Rayed AlGhamdi",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10150",
-   "ref": "arXiv:2611.10150",
-   "summary": "At a juried exhibition of AI-involved art, nearly half of 209 evaluators said they would buy a piece, while three-quarters of creators would sell, pricing by the effort they put in rather than artistic merit.",
+   "url": "https://arxiv.org/abs/2611.13217",
+   "ref": "arXiv:2611.13217",
+   "summary": "An AI coding agent grading handwritten university exams closely tracked human graders (r = 0.97), averaging under one mark of difference per script.",
    "findings": [
-    "209 participants drawn from artists, lawyers and computer scientists took part in an in-person juried show.",
-    "Nearly half of evaluators were willing to buy an AI-involved artwork.",
-    "About three-quarters of creators would sell, setting prices tied to effort rather than artistic value."
+    "AI and human totals correlated at r = 0.97, with mean absolute error 0.85 marks and a bias of 0.68 marks.",
+    "Re-grading gave consistent results (test-retest ICC = 0.96).",
+    "92.8% of its feedback was diagnostic and 97.8% of it was confirmed as accurate."
    ],
-   "takeaway": "Buyers do value AI-involved art, and makers anchor price on their own labor; a single exhibition with a specialist sample limits generalization.",
-   "evidence": "Field study · 1 exhibition, 209 participants",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "Suggests AI grading of handwritten work is close to usable at scale, but the small systematic bias and a single-author, single-course setting call for human spot checks.",
+   "evidence": "Preprint · agreement study against human grading",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.09923",
-   "field": "psych",
+   "id": "arxiv.org_abs_2611.13667",
+   "field": "edu",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Autonomy Is Absent, Not Eroded: An Observational Study of User Autonomy in Multi-Turn LLM Conversations",
-   "authors": "Chaoran Chen, Isabel Barberá, Yuhuai Wei",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.09923",
-   "ref": "arXiv:2611.09923",
-   "summary": "Chatbots rarely erode user autonomy mid-conversation, because most users never show much to begin with: only 4.7% of 2,877 conversations showed a meaningful decline, while 80.8% stayed at zero or low autonomy throughout.",
+   "date": "2026-11-11",
+   "title": "Benchmarking LLM Next-Step Recommendations with Knowledge Space Theory",
+   "authors": "Peter Steiner, Jan Hochweber",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.13667",
+   "ref": "arXiv:2611.13667",
+   "summary": "LLMs pick the right 'what to learn next' topics only 61.3% of the time from descriptions alone, but 96–98% once they are given the prerequisite structure of the subject.",
    "findings": [
-    "Analyzed 2,877 multi-turn WildChat conversations (46,952 turns), checked against 500 LMSYS-Chat-1M conversations.",
-    "4.7% of conversations showed a meaningful drop in user autonomy; 80.8% showed zero or low autonomy from start to finish.",
-    "When autonomy was present, its persistence across consecutive turns rose from 40% to 85%."
+    "Exact-set accuracy: 61.3% from descriptions only, 62.8% when models rebuilt prerequisites themselves.",
+    "With supplied prerequisite relations: 96.3%; with the full knowledge space: 98.2%.",
+    "Recommendations matched across different presentations in 85.25% of pairs."
    ],
-   "takeaway": "Shifts the worry from AI wearing down users' independence to users delegating from the start; it is observational log data, so it cannot show why.",
-   "evidence": "Observational log analysis · 2,877 conversations + 500 validation",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "LLM tutors need an explicit map of prerequisites to sequence learning reliably; the benchmark tests recommendations, not actual student learning gains.",
+   "evidence": "Preprint · benchmark of LLM recommendations",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
    "id": "arxiv.org_abs_2611.09898",
@@ -384,6 +222,106 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
+   "id": "arxiv.org_abs_2611.07072",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-11-06",
+   "title": "Automated Feedback to Peer Tutors Increases Their Talk Moves and Learner Reasoning but Not the Balance of Talk",
+   "authors": "Dorottya Demszky, Yann Hicke, Joy Yun",
+   "venue": "arXiv cs.CL",
+   "url": "https://arxiv.org/abs/2611.07072",
+   "ref": "arXiv:2611.07072",
+   "summary": "Giving volunteer math tutors automated feedback on how they talk raised their use of good teaching moves and students' reasoning by 8–15%, but tutors still did about 91.5% of the talking.",
+   "findings": [
+    "Randomized trial in two four-week SAT math bootcamps on Schoolhouse.world: 1,030 volunteer tutors, 7,443 learners, 6,508 recorded sessions.",
+    "Tutor feedback increased eliciting learner ideas, building on learner contributions, and learner reasoning by 8–15%; the pattern replicated in both bootcamps.",
+    "Tutor share of talk time averaged 91.5% in the control group and did not change in any condition; adding participation feedback for learners gave no further change. Interviews (17 tutors, 13 learners) pointed to unresponsive learners and learners' preference for listening."
+   ],
+   "takeaway": "Shows low-cost automated discourse feedback can improve peer tutoring at scale, but nudging tutors alone does not get quiet learners to talk more.",
+   "evidence": "Randomized controlled trial · 1,030 tutors, 7,443 learners",
+   "addedAt": "2026-11-09T12:06:05Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13396",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "The AI Era's Lines of Code? A Case Study on What an Engineer's Token Spend Measures",
+   "authors": "Shyam Agarwal, Olga Lvova, Agnia Sergeyuk",
+   "venue": "arXiv cs.SE",
+   "url": "https://arxiv.org/abs/2611.13396",
+   "ref": "arXiv:2611.13396",
+   "summary": "How much engineers spend on coding-agent tokens is a poor productivity measure: in weeks with similar output, top spenders used 39 to 240 times more than low spenders, and doubling spend went with only about 10% more commits.",
+   "findings": [
+    "Five weeks of agent token use were linked to commits from 404 JetBrains engineers, plus a survey of 412 employees.",
+    "Work metrics explained 38% of between-engineer and 13% of within-engineer variation in spend.",
+    "Nearly 9 in 10 technical staff said they use agents for work beyond coding."
+   ],
+   "takeaway": "Warns companies against using AI token spend as a stand-in for output; it is one company over five weeks.",
+   "evidence": "Preprint · telemetry from 404 engineers + survey of 412",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13246",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases",
+   "authors": "Josip Vrdoljak, Akash Singh, Bas Steunebrink",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.13246",
+   "ref": "arXiv:2611.13246",
+   "summary": "On expert-written engineering tasks in codebases the agents had never seen, the best frontier coding agent solved 67.3%, with a wide spread down to 40.0% for a fast model.",
+   "findings": [
+    "Seven frontier models, 3,495 scored runs.",
+    "Claude Opus 5.5 scored 67.3% and GPT-6 Astra 63.7%.",
+    "Gemini 3.8 Flash scored 40.0%."
+   ],
+   "takeaway": "Even top agents fail about a third of realistic tasks in unfamiliar code, so human review still matters; scores depend on this specific task set.",
+   "evidence": "Preprint · benchmark of 7 models, 3,495 runs",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13183",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+   "authors": "Dipin Khati, Shubham Mehrotra, Bin Bi",
+   "venue": "arXiv cs.SE",
+   "url": "https://arxiv.org/abs/2611.13183",
+   "ref": "arXiv:2611.13183",
+   "summary": "LLMs struggle badly with a niche enterprise programming language: the best model passed only 25.0% of real tasks and every model scored 0% writing programs from scratch.",
+   "findings": [
+    "100 real, execution-graded tasks; five models tested zero-shot.",
+    "A 31B open-weight model compiled only 48.0% of the time; a compile-and-edit agent loop roughly doubled partial credit.",
+    "The same skill pack scored 28% as plain docs and 14% as a live plugin; rewriting one skill raised the plugin to 37%."
+   ],
+   "takeaway": "Shows that how domain knowledge is packaged for an agent can matter as much as the model; results cover one proprietary DSL.",
+   "evidence": "Preprint · benchmark of 100 tasks, 5 models",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13406",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "Stinging the Swarm: Extracting Attacker Intelligence from a Twin-Controller OT Honeypot",
+   "authors": "Canyon Grey Dell'Omo, Joao Pedro de Carvalho Voltani",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.13406",
+   "ref": "arXiv:2611.13406",
+   "summary": "A honeypot that pairs a real industrial controller with a decoy twin stopped every one of 2,400 autonomous AI attacker agents from writing to the real plant.",
+   "findings": [
+    "Tested against 2,400 attacker agents, 600 in each of four tiers of increasing stealth.",
+    "Zero writes reached the real plant in any tier.",
+    "Attackers sorted along two axes (persistence and disclosure); the system captured intelligence in three of the four resulting groups."
+   ],
+   "takeaway": "Suggests decoy twins can both protect industrial systems and profile AI-driven attackers; tested only against simulated agents, not real adversaries.",
+   "evidence": "Preprint · simulation with 2,400 attacker agents",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
    "id": "arxiv.org_abs_2611.10234",
    "field": "tech",
    "kind": "Preprint",
@@ -404,23 +342,84 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
-   "id": "arxiv.org_abs_2611.10884",
-   "field": "tech",
+   "id": "arxiv.org_abs_2611.13254",
+   "field": "ai",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Keeping LLM Agents on Procedure: Executable Finite-State Control for Long-Horizon Instruction Fidelity",
-   "authors": "Yutao Sun, Haokun Li, Mingshuai Chen",
+   "date": "2026-11-11",
+   "title": "Dependable Long-Horizon LLM Agents: A Trajectory-Centered Empirical Study",
+   "authors": "Shaohuang Wang, Jinghao Wen, Xulei Zhang",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10884",
-   "ref": "arXiv:2611.10884",
-   "summary": "Wrapping an agent in an executable finite-state machine nearly tripled correct decisions on a 200-account procedure benchmark: Claude Haiku 4.5 got 139 right vs 48 for the best baseline.",
+   "url": "https://arxiv.org/abs/2611.13254",
+   "ref": "arXiv:2611.13254",
+   "summary": "Long agent runs usually go wrong early and the agent ignores the warning signs: in 72% of failed runs the evidence against the mistake was already in the trajectory before failure.",
    "findings": [
-    "On a 200-account SOP-Bench batch, Haiku 4.5 with FSM control decided 139 accounts correctly vs 48 for the strongest baseline (95% CI of difference 46–130).",
-    "The FSM-guided Haiku ran at 38% of the cost of Claude Sonnet 4.6."
+    "Analysis of 95 failed long-horizon runs.",
+    "Faults entered early, at a median of 18% of the way through a run.",
+    "Simply restoring an earlier agent state would have been enough to recover in 35 of 95 runs."
    ],
-   "takeaway": "Hard-coding procedure structure around a cheap model can beat bigger models on long, rule-bound workflows; results come from one benchmark batch.",
-   "evidence": "Preprint · benchmark, 200 accounts",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "Points to cheap checkpoint-and-rollback and self-checking as practical reliability fixes; based on under 100 failures.",
+   "evidence": "Preprint · failure analysis of 95 runs",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.12953",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs",
+   "authors": "Subhrangshu Nandi, Hitesh Arora, Yunfei Bai",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.12953",
+   "ref": "arXiv:2611.12953",
+   "summary": "Multi-agent setups cost far more than a single agent for modest gains: they used 1.4–4.7× the tokens and 2.6–5.8× the latency, while good skills alone lifted success from 67.4% to 73.1%.",
+   "findings": [
+    "Controlled comparison across 13 enterprise-style standard operating procedures.",
+    "High-quality skills raised a single agent's success from 67.4% to 73.1%.",
+    "Only a redesigned multi-agent arm beat that, reaching 75.6%."
+   ],
+   "takeaway": "Before adding more agents, improve one agent's skills; results are from synthetic enterprise workflows.",
+   "evidence": "Preprint · controlled evaluation on 13 SOPs",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13015",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings",
+   "authors": "Yuhan Tang, Ke Fan, Xinkai Zou",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.13015",
+   "ref": "arXiv:2611.13015",
+   "summary": "Real people are much less helpful than simulated users when agents ask clarifying questions: human replies left out the key correcting fact 43% of the time, versus 7% for a simulated user.",
+   "findings": [
+    "43 tasks, 79 sessions with 19 human participants.",
+    "Agents' initial plans were infeasible on 58–98% of tasks with missing information, versus 5–28% with all facts given.",
+    "Simulated users overstate how easily agents get what they need."
+   ],
+   "takeaway": "Agent benchmarks built on simulated users likely overestimate real-world performance; the human sample is small.",
+   "evidence": "Preprint · benchmark with 19 human participants",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13140",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "Agreeing on the Answer but Not the Reason: Measurement Limits of LLM Reasoning Failure Taxonomies",
+   "authors": "Madhu Sudhan Rao Beesetty",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.13140",
+   "ref": "arXiv:2611.13140",
+   "summary": "Graders agree almost perfectly on whether an LLM got an answer wrong (κ = 0.932) but barely agree on why (κ as low as 0.093 for one failure type).",
+   "findings": [
+    "2,316 graded records across 12 models and 11 languages.",
+    "Agreement on correctness κ = 0.932; on the 'Collapse' category κ = 0.093.",
+    "50.1% of failures showed evidence for more than one category."
+   ],
+   "takeaway": "Claims about which kind of reasoning error a model makes rest on shaky labels; single-author study.",
+   "evidence": "Preprint · annotation study of 2,316 records",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
    "id": "arxiv.org_abs_2611.10045",
@@ -442,44 +441,64 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
-   "id": "arxiv.org_abs_2611.10536",
-   "field": "ai",
+   "id": "arxiv.org_abs_2611.12966",
+   "field": "fin",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "In Search of Lost Time: Temporal Competence in Large Language Models",
-   "authors": "Ryan Liu, David Lee, Icey Siyi Ai",
+   "date": "2026-11-11",
+   "title": "BuySideFlow: A Point-in-Time Benchmark for LLM Agents in Investment Research",
+   "authors": "Dong Bo, Fanjin Zhang, Ke Cheng",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10536",
-   "ref": "arXiv:2611.10536",
-   "summary": "LLMs ace textbook questions about time (92.0–97.5%) yet underestimate how long their own tasks take by up to 99.5%, and some ignore a 1,200-fold jump in wait time.",
+   "url": "https://arxiv.org/abs/2611.12966",
+   "ref": "arXiv:2611.12966",
+   "summary": "LLM agents doing investment research got only 16.2% to 36.8% of answers right, and half of the 'passing' runs used information that would not have been available at the time.",
    "findings": [
-    "Models scored 92.0–97.5% on time-related theorem questions.",
-    "They underestimated their own completion times by as much as 99.5%.",
-    "Some LLMs did not adjust answers when a user's wait time grew 1,200-fold."
+    "Nine agent configurations over 408 tasks.",
+    "Result accuracy ranged from 16.2% to 36.8%.",
+    "Look-ahead (point-in-time) violations appeared in 193 of 380 passing runs (50.8%)."
    ],
-   "takeaway": "Knowing about time is not the same as reasoning with it, which matters for agents that plan or schedule; exact gaps vary by model.",
-   "evidence": "Preprint · benchmark across multiple LLMs",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "Backtests of AI investment agents may be inflated by look-ahead leakage; this is one benchmark's task set.",
+   "evidence": "Preprint · benchmark of 9 configurations, 408 tasks",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.10277",
-   "field": "ai",
+   "id": "arxiv.org_abs_2611.13388",
+   "field": "fin",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Adversarial Evaluation of Large Language Models for Patient-Friendly Radiology Report Summarization",
-   "authors": "Magdalini Paschali, Asad Aali, Arogya Koirala",
+   "date": "2026-11-11",
+   "title": "Online-Adaptive Fuzzy Cognitive Maps for Neuro-symbolic Financial Forecasting",
+   "authors": "Brandon Rodriguez, Abel Deulofeu, Olaoluwa Adigun",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10277",
-   "ref": "arXiv:2611.10277",
-   "summary": "When medical terms in radiology reports were swapped, LLMs hallucinated in roughly 28–42% of patient-friendly summaries, from GPT-5-mini (28.1–30.1%) to MedGemma (41.4–41.9%).",
+   "url": "https://arxiv.org/abs/2611.13388",
+   "ref": "arXiv:2611.13388",
+   "summary": "An interpretable, self-updating forecasting model beat an LSTM by 7.6 percentage points at predicting whether returns go up or down, and re-adjusted to new market regimes within 10–15 trading days.",
    "findings": [
-    "18,000 evaluation pairs across six LLMs.",
-    "Hallucination rates under term substitution: 28.1–30.1% GPT-5-mini, 35.3–36.4% Claude Sonnet 4.5, 41.4–41.9% MedGemma.",
-    "An LLM judge agreed with radiologists at macro-F1 0.55–0.56, close to radiologist–radiologist agreement of 0.53."
+    "Framework I beat an LSTM by 7.6 points on return-sign accuracy.",
+    "Framework II scored 68.9% to 85.7% on state-direction accuracy.",
+    "Adaptive maps converged to new regimes in 10–15 trading days."
    ],
-   "takeaway": "Patient-facing report summaries remain error-prone under realistic perturbations, and a domain-tuned model fared worst; this is an adversarial test, not routine clinical use.",
-   "evidence": "Preprint · adversarial evaluation, 18,000 pairs, 6 LLMs",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "Offers an explainable alternative to black-box forecasters; accuracy gains are not tested as trading profits after costs.",
+   "evidence": "Preprint · backtest vs. LSTM baseline",
+   "addedAt": "2026-11-13T12:16:23Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.13616",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-11",
+   "title": "Optimal Trading Speed on Blockchain",
+   "authors": "Ruizhe Jia, Shihao Yu",
+   "venue": "arXiv q-fin.TR",
+   "url": "https://arxiv.org/abs/2611.13616",
+   "ref": "arXiv:2611.13616",
+   "summary": "Making a blockchain ten times faster is not a free lunch: after Base's Flashblocks upgrade, priority-fee bids fell sharply but liquidity pool depth also fell.",
+   "findings": [
+    "Natural experiment: Base's Flashblocks upgrade, a tenfold increase in block speed.",
+    "Priority-fee bidding dropped sharply after the change.",
+    "Pool depth declined; the abstract gives no exact figures."
+   ],
+   "takeaway": "Faster settlement can reduce competition for transaction ordering but thin out liquidity, so speed should be tuned, not maximized; evidence is from a single chain's upgrade.",
+   "evidence": "Preprint · natural experiment on one blockchain upgrade",
+   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
    "id": "arxiv.org_abs_2611.11657",
@@ -518,26 +537,6 @@
    ],
    "takeaway": "RL hedging helps most when markets crash, the moment that matters, but its edge is regime-dependent and modest overall.",
    "evidence": "Preprint · out-of-sample backtest, 6 years of real options data",
-   "addedAt": "2026-11-11T12:00:59Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.11112",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "The Effect of the U.S. Federal Production Tax Credit on Negative Energy Prices",
-   "authors": "Erik P. Johnson, Daniel H. Karney",
-   "venue": "arXiv q-fin",
-   "url": "https://arxiv.org/abs/2611.11112",
-   "ref": "arXiv:2611.11112",
-   "summary": "Each 1% rise in wind output eligible for the federal production tax credit raises the chance of a negative wholesale power price by 3.4 percentage points on average.",
-   "findings": [
-    "Causal analysis of Eastern Interconnection wholesale electricity markets, 2000–2023.",
-    "A 1% increase in PTC-eligible wind generation raised the probability of a negative price by 3.4 percentage points.",
-    "At least 18% of negative-price hours cannot be blamed on the PTC alone, and the credit explains about 10% of those it could explain."
-   ],
-   "takeaway": "Subsidy design measurably distorts power prices, but the PTC is only one of several drivers of negative pricing.",
-   "evidence": "Observational causal estimate · U.S. power markets 2000–2023",
    "addedAt": "2026-11-11T12:00:59Z"
   }
  ]
