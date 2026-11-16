@@ -1,36 +1,36 @@
 {
- "updatedAt": "2026-11-13T12:16:23Z",
+ "updatedAt": "2026-11-16T12:17:18Z",
  "trends": {
   "psych": {
-   "headline": "Social comparison and shifting standards shape how we feel and judge",
+   "headline": "Social context shapes mood, habits and choices",
    "points": [
-    "Comparing ourselves to others online drags down healthy habits: in 916 female students, appearance comparison predicted lower exercise adherence three months later (β ≈ −0.16), and vice versa.",
-    "Social pain may be the route from home stress to screen problems: family conflict linked to teens' problematic social media use (b = 0.28) almost entirely via social exclusion and weaker executive function.",
-    "Our judgments of AI drift with experience: 'both are bad' votes on unchanged Chatbot Arena pairs rose 1.71 points a month, and AI-assisted creative work felt less authentic across three experiments (N = 651)."
+    "Social resources protect mental health: among 1,910 medical students, more personal social capital went with fewer depressive symptoms (B = −0.22), a quarter of it via health beliefs.",
+    "Online social life cuts both ways: appearance comparison on social media predicted lower exercise adherence three months later (β ≈ −0.16), and family conflict linked to problematic social media use (b = 0.28) mostly through feeling excluded.",
+    "The tone of what we're told steers decisions: a warm, social-style chatbot reply raised travel intention more than a task-focused one by easing social-media-induced anxiety across three experiments."
    ]
   },
   "edu": {
-   "headline": "AI tools reach classroom-grade accuracy when given structure",
+   "headline": "AI enters teaching, and teachers and students adapt",
    "points": [
-    "AI grading is approaching human reliability: an agent grading handwritten exams correlated r = 0.97 with human graders, within 0.85 marks on average.",
-    "Structure is what makes AI tutoring work: LLMs chose the right next topics 61.3% of the time from descriptions but 96–98% when given the prerequisite map.",
-    "Practice and feedback with AI show measurable gains: ChatGPT speaking practice produced d = 1.20 gains for 380 English learners, and automated feedback lifted peer tutors' good talk moves by 8–15%."
+    "AI tools reach classroom-grade accuracy with structure: an agent grading handwritten exams correlated r = 0.97 with humans, and LLMs picked the right next topics 96–98% of the time with a prerequisite map vs 61.3% without.",
+    "Practice with AI can pay off: ChatGPT speaking practice produced d = 1.20 gains for 380 English learners over 8 weeks.",
+    "Educators respond to AI pressure by adapting: university teachers who felt more threatened by AI sought more supervisor feedback (β ≈ 0.40–0.43), which predicted later job crafting (β = 0.55)."
    ]
   },
   "tech": {
-   "headline": "Measuring coding agents honestly",
+   "headline": "Agent and AI tooling gains are smaller and noisier than they look",
    "points": [
-    "Frontier coding agents still miss a third of realistic work: the best solved 67.3% of expert-written tasks in unfamiliar codebases, and the best model passed just 25.0% of tasks in an enterprise DSL.",
-    "Usage is not productivity: engineers' agent token spend varied 39–240× for similar output, and doubling spend went with only ~10% more commits.",
-    "Specialized and defensive tooling pays off: a small trained UI judge beat a frontier model (F1 0.48 vs 0.37) at about 1% of the cost, and a twin-controller honeypot blocked all 2,400 AI attacker agents."
+    "Measured improvements often don't survive replication: three coding-agent tweaks that led screening by 1–6 points delivered −0.35 to +4.10 on fresh tasks, while an unchanged baseline drifted 1.17 points.",
+    "Agents still struggle with realistic work: the best frontier agent solved 67.3% of expert tasks in unfamiliar codebases, and the best Word-editing agent fell from 62.9% to 40.7% when edits had to be inferred.",
+    "Usage and tooling need careful metrics: engineers' token spend varied 39–240× for similar output, while a targeted fuzzer found failures in neuro-symbolic AI 16.2% of the time vs 6.1% for the best neural fuzzer."
    ]
   },
   "ai": {
-   "headline": "Agent reliability hinges on early errors and realistic evaluation",
+   "headline": "Agents and their evaluations both need a reality check",
    "points": [
-    "Agents fail early and ignore warnings: in 72% of failed long runs the contradicting evidence was already present, and rolling back state would have rescued 35 of 95.",
-    "Simpler often wins on cost: multi-agent setups used up to 4.7× the tokens, while better skills alone raised single-agent success from 67.4% to 73.1%.",
-    "Evaluations can mislead: real humans omitted the key fact 43% of the time vs 7% for simulated users, and graders who agree on correctness (κ = 0.932) barely agree on failure type (κ = 0.093)."
+    "Agents mishandle their own trajectory: coding agents had a correct first edit in 38–82% of successful runs yet kept going, sometimes undoing it (1–8%), and in 72% of failed long runs the warning evidence was already present.",
+    "Truthful state beats tidy state: leaving an error visible with a truthful note raised recovery from 51% to 66%, while a false success receipt cut AppWorld success from 45% to 28%.",
+    "Evaluations can be gamed or self-reinforcing: strategic voting can lift a model 45 places on Arena-style leaderboards, and science agents agreed with each other (0.52) more than with real experiments (0.33)."
    ]
   },
   "fin": {
@@ -43,6 +43,44 @@
   }
  },
  "papers": [
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2168",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-16",
+   "title": "Personal Social Capital on Depressive Symptoms Among College Students at a Medical University in China: The Moderated Mediating Role of Implicit Health Beliefs and Adverse Childhood Experiences",
+   "authors": "Xinxin Lai, Jinghong Huang, Xiaojun Liu",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2168",
+   "summary": "Students with more personal social capital reported fewer depressive symptoms (B = −0.22), and about a quarter of that link (25.3%) ran through their implicit beliefs about health.",
+   "findings": [
+    "Survey of 1,910 Chinese medical-university students using PHQ-9 and standard social-capital, health-belief and childhood-adversity scales.",
+    "Health beliefs partly mediated the link, accounting for 25.32% of the total effect.",
+    "Adverse childhood experiences changed the strength of all three paths (e.g. beliefs → depression B = 0.052, p < 0.05)."
+   ],
+   "takeaway": "Points to social ties and health mindsets as joint targets for student mental-health support; cross-sectional data from one university cannot show cause.",
+   "evidence": "Cross-sectional survey · 1,910 students",
+   "addedAt": "2026-11-16T12:17:18Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2164",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-14",
+   "title": "How Chatbot Advice Shapes Travel Intention: Comparing Social-Oriented and Task-Oriented Responses to Social Media-Induced Travel Anxiety",
+   "authors": "Zhao Wang, Junzhu Zhang, Jinzhe Yan",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2164",
+   "summary": "A warm, social-style chatbot reply made people more willing to travel than a task-focused one, mainly by easing the travel anxiety that social media had stirred up.",
+   "findings": [
+    "Three scenario experiments: participants imagined browsing travel posts and then read a social- or task-oriented chatbot reply.",
+    "Studies 1 and 2: social-oriented replies raised travel intention; in Study 2 reduced anxiety significantly explained that effect.",
+    "Study 3: the anxiety pathway was stronger for people with low confidence in their decision. The abstract gives no sample sizes or effect sizes."
+   ],
+   "takeaway": "Chatbot tone, not just content, shapes decisions under anxiety; results come from imagined scenarios rather than real bookings.",
+   "evidence": "Three online experiments · sample sizes not in abstract",
+   "addedAt": "2026-11-16T12:17:18Z"
+  },
   {
    "id": "www.mdpi.com_2076-328X_16_11_2156",
    "field": "psych",
@@ -102,44 +140,23 @@
    "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.14333",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
-   "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.14333",
-   "ref": "arXiv:2611.14333",
-   "summary": "People judging the exact same chatbot pairs grow harsher over time: the share of 'both are bad' votes rises about 1.7 percentage points per month, even though the models have not changed.",
+   "id": "www.mdpi.com_2076-328X_16_11_2166",
+   "field": "edu",
+   "kind": "Journal article",
+   "date": "2026-11-16",
+   "title": "AI Identity Threat and Job Crafting Among University Teachers",
+   "authors": "Zhikun Zhang, Wencheng Cui",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2166",
+   "summary": "University teachers who felt more threatened by AI than usual sought more feedback from supervisors (β ≈ 0.40–0.43), which in turn predicted reshaping their jobs later (β = 0.55 in the second interval).",
    "findings": [
-    "Based on 1,260,967 blind votes on Chatbot Arena.",
-    "For unchanged model pairs, 'both are bad' rose 1.71 points a month on a 17.1% average (1.91 points a month in 2024).",
-    "In 14 recurring pairs it climbed from 15.5% to 23.3%."
+    "Three-wave panel of 563 teachers at two universities in central China, separating stable person differences from within-person changes.",
+    "Threat → feedback seeking: β = 0.428 and 0.398; feedback → job crafting: β = 0.553 in wave 2–3 but inconclusive in wave 1–2 (β = 0.194, p = 0.130).",
+    "Indirect threat → feedback → crafting path: b = 0.266 (95% CI 0.112–0.459)."
    ],
-   "takeaway": "Human expectations drift upward as people get used to better tools, which can make older models look worse than they are; voters on Arena are self-selected, not a representative panel.",
-   "evidence": "Preprint · observational analysis of 1.26M votes",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.09918",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Made in the Image of the Creator? AI Use in Creative Work Reduces Authenticity, Love & Other Psychological Benefits",
-   "authors": "Jessica Carson, Paul H. P. Hanel, Wijnand A. P. Van Tilburg",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.09918",
-   "ref": "arXiv:2611.09918",
-   "summary": "Using AI to make creative work left people feeling worse about it: across three experiments (N = 651), AI-assisted work felt less authentic and brought less positive feeling and motivation, plus more guilt, shame and disgust.",
-   "findings": [
-    "Three experiments, one pre-registered, with U.S. and U.K. samples totaling 651 people.",
-    "AI-assisted creators reported lower authenticity, positive affect and intrinsic motivation, and higher disgust, guilt and shame.",
-    "The authenticity gap was statistically explained by how much 'love' people felt they had put into the work; the abstract gives no effect sizes."
-   ],
-   "takeaway": "Productivity gains from creative AI may come with a psychological cost to the maker; the abstract reports direction and significance but not effect magnitudes.",
-   "evidence": "Experiments · 3 studies, N = 651",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "Feeling threatened by AI can push faculty to adapt rather than withdraw, if feedback channels exist; uneven gaps between waves limit comparisons.",
+   "evidence": "Three-wave longitudinal survey · 563 teachers",
+   "addedAt": "2026-11-16T12:17:18Z"
   },
   {
    "id": "arxiv.org_abs_2611.13217",
@@ -222,24 +239,64 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
-   "id": "arxiv.org_abs_2611.07072",
-   "field": "edu",
+   "id": "arxiv.org_abs_2611.16211",
+   "field": "tech",
    "kind": "Preprint",
-   "date": "2026-11-06",
-   "title": "Automated Feedback to Peer Tutors Increases Their Talk Moves and Learner Reasoning but Not the Balance of Talk",
-   "authors": "Dorottya Demszky, Yann Hicke, Joy Yun",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2611.07072",
-   "ref": "arXiv:2611.07072",
-   "summary": "Giving volunteer math tutors automated feedback on how they talk raised their use of good teaching moves and students' reasoning by 8–15%, but tutors still did about 91.5% of the talking.",
+   "date": "2026-11-13",
+   "title": "One Fuzzer, Many Reasoners: Adaptive Neuro-Symbolic Fuzzing with Reliability-Calibrated and Context-Gated Guidance",
+   "authors": "Jinghao Wen, Xianglong Yu, Shaohuang Wang",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.16211",
+   "ref": "arXiv:2611.16211",
+   "summary": "A new fuzzer for neuro-symbolic AI systems finds failures about 2.7× as often as the best neural-network fuzzer: 16.2% failure discovery versus 6.1% on the same budget.",
    "findings": [
-    "Randomized trial in two four-week SAT math bootcamps on Schoolhouse.world: 1,030 volunteer tutors, 7,443 learners, 6,508 recorded sessions.",
-    "Tutor feedback increased eliciting learner ideas, building on learner contributions, and learner reasoning by 8–15%; the pattern replicated in both bootcamps.",
-    "Tutor share of talk time averaged 91.5% in the control group and did not change in any condition; adding participation feedback for learners gave no further change. Interviews (17 tutors, 13 learners) pointed to unresponsive learners and learners' preference for listening."
+    "Evaluated on four neuro-symbolic systems, four reasoning tasks, nine dataset-model pairs, 20 policies and 1,800 runs.",
+    "The two new guidance policies reached 16.17% and 16.06% failure discovery vs 6.06% for the strongest neural-fuzzing baseline.",
+    "TensorFuzz took 1.11× the runtime while achieving 0.45× the failure throughput."
    ],
-   "takeaway": "Shows low-cost automated discourse feedback can improve peer tutoring at scale, but nudging tutors alone does not get quiet learners to talk more.",
-   "evidence": "Randomized controlled trial · 1,030 tutors, 7,443 learners",
-   "addedAt": "2026-11-09T12:06:05Z"
+   "takeaway": "Testing hybrid AI systems needs tools aware of their symbolic parts; the comparison is against fuzzers built for plain neural networks.",
+   "evidence": "Preprint · 1,800 matched-budget fuzzing runs",
+   "addedAt": "2026-11-16T12:17:18Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.16485",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-13",
+   "title": "Contain, Conform, Compare (Extended Version): A Red-Teamed Evaluation Kit for Small Coding Agents and the Full Record of Its Experiments",
+   "authors": "Nguyen Minh Thang",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.16485",
+   "ref": "arXiv:2611.16485",
+   "summary": "Most 'improvements' to a small coding agent vanished on fresh tasks: three changes that led screening by 1–6 points delivered −0.35, −0.39 and +4.10 points on new tasks, and a pre-registered test found no detectable change.",
+   "findings": [
+    "Kit runs about 250 agent runs per hour on one RTX 5090; its sandbox passed 200 scripted escape tests.",
+    "A pre-registered five-arm experiment (231 tasks, 4,620 jobs) found no solve-rate change, largest estimate −2.1 points (95% CI −4.4 to +0.4).",
+    "An unchanged baseline drifted 1.17 points on the same 128 tasks, and 65% of those tasks were never solved in eight runs."
+   ],
+   "takeaway": "Small agent-tuning gains are often within run-to-run noise, so they need replication on new tasks; this is one author's single-model study.",
+   "evidence": "Preprint · 9,660 logged agent runs, pre-registered test",
+   "addedAt": "2026-11-16T12:17:18Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.15189",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-13",
+   "title": "WordInferBench: Can Agents Infer How to Edit from Word Document Context?",
+   "authors": "Jiayu Ding, Yupan Huang, Jinyoung Park",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.15189",
+   "ref": "arXiv:2611.15189",
+   "summary": "Coding agents edit Word documents much worse when they must infer what to do from context: the best system passed 62.9% of explicitly described edits but only 40.7% of inferential ones.",
+   "findings": [
+    "280 document-editing tasks, each written three ways (descriptive, referential, inferential), covering 13 object types and 81 attributes.",
+    "Six coding-agent systems tested; the best was Claude Code with Opus 4.6.",
+    "Its pass rate fell from 62.9% (descriptive) to 40.7% (inferential)."
+   ],
+   "takeaway": "Office-document agents still need users to spell out edits; the benchmark covers Word only.",
+   "evidence": "Preprint · benchmark of 6 agent systems, 840 task variants",
+   "addedAt": "2026-11-16T12:17:18Z"
   },
   {
    "id": "arxiv.org_abs_2611.13396",
@@ -282,64 +339,84 @@
    "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.13183",
-   "field": "tech",
+   "id": "arxiv.org_abs_2611.14960",
+   "field": "ai",
    "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
-   "authors": "Dipin Khati, Shubham Mehrotra, Bin Bi",
-   "venue": "arXiv cs.SE",
-   "url": "https://arxiv.org/abs/2611.13183",
-   "ref": "arXiv:2611.13183",
-   "summary": "LLMs struggle badly with a niche enterprise programming language: the best model passed only 25.0% of real tasks and every model scored 0% writing programs from scratch.",
+   "date": "2026-11-13",
+   "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+   "authors": "Musa Cim, Burak Topcu, Mahmut Taylan Kandemir",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.14960",
+   "ref": "arXiv:2611.14960",
+   "summary": "Coding agents often have the right fix early and then keep going: in 38–82% of successful runs the very first source edit was already correct, and in 1–8% of cases the extra work undid a correct patch.",
    "findings": [
-    "100 real, execution-graded tasks; five models tested zero-shot.",
-    "A 31B open-weight model compiled only 48.0% of the time; a compile-and-edit agent loop roughly doubled partial credit.",
-    "The same skill pack scored 28% as plain docs and 14% as a live plugin; rewriting one skill raised the plugin to 37%."
+    "Tested five models in two agent frameworks on three SWE-bench datasets.",
+    "After the solution was in place, the remaining steps made up a median 35–37% of successful runs for Qwen3-Coder and 54–60% for Laguna-XS.2 (SWE-bench Verified and Multilingual).",
+    "In 1–8% of cases, continuing to work led the agent to revert its correct patch, so the run ended wrong."
    ],
-   "takeaway": "Shows that how domain knowledge is packaged for an agent can matter as much as the model; results cover one proprietary DSL.",
-   "evidence": "Preprint · benchmark of 100 tasks, 5 models",
-   "addedAt": "2026-11-13T12:16:23Z"
+   "takeaway": "Better stopping rules could cut agent cost by a third or more and avoid some self-inflicted failures; the results come from SWE-bench-style tasks only.",
+   "evidence": "Preprint · 5 models × 2 frameworks × 3 benchmarks",
+   "addedAt": "2026-11-16T12:17:18Z"
   },
   {
-   "id": "arxiv.org_abs_2611.13406",
-   "field": "tech",
+   "id": "arxiv.org_abs_2611.14769",
+   "field": "ai",
    "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Stinging the Swarm: Extracting Attacker Intelligence from a Twin-Controller OT Honeypot",
-   "authors": "Canyon Grey Dell'Omo, Joao Pedro de Carvalho Voltani",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.13406",
-   "ref": "arXiv:2611.13406",
-   "summary": "A honeypot that pairs a real industrial controller with a decoy twin stopped every one of 2,400 autonomous AI attacker agents from writing to the real plant.",
+   "date": "2026-11-13",
+   "title": "Leaderboard Hacking: Preference-Based Model Evaluations are Vulnerable to Manipulation",
+   "authors": "Eve Fleisig, Joachim Baumann, Dylan Hadfield-Menell",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.14769",
+   "ref": "arXiv:2611.14769",
+   "summary": "Arena-style leaderboards built from pairwise human votes can be gamed: strategic voting, prompting or nomination each lift a model 15–20 places, and together up to 45 places.",
    "findings": [
-    "Tested against 2,400 attacker agents, 600 in each of four tiers of increasing stealth.",
-    "Zero writes reached the real plant in any tier.",
-    "Attackers sorted along two axes (persistence and disclosure); the system captured intelligence in three of the four resulting groups."
+    "Three attacks on Bradley-Terry vote aggregation: strategic voting, strategic prompting and strategic nomination of model pairs.",
+    "Each attack alone moved a model up 15–20 ranks; combined they moved it up 45 ranks.",
+    "The effect showed up on public leaderboard data and held for nearly every model tested."
    ],
-   "takeaway": "Suggests decoy twins can both protect industrial systems and profile AI-driven attackers; tested only against simulated agents, not real adversaries.",
-   "evidence": "Preprint · simulation with 2,400 attacker agents",
-   "addedAt": "2026-11-13T12:16:23Z"
+   "takeaway": "Rankings that many people use to pick models can be manipulated without touching the model itself; the paper shows feasibility rather than evidence that it is happening.",
+   "evidence": "Preprint · attack simulations on public leaderboard data",
+   "addedAt": "2026-11-16T12:17:18Z"
   },
   {
-   "id": "arxiv.org_abs_2611.10234",
-   "field": "tech",
+   "id": "arxiv.org_abs_2611.15049",
+   "field": "ai",
    "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "ScreenProof: Where Is This Screen Wrong? Finding UI Faults Without a Reference",
-   "authors": "Huiming Sun, Yue Li, Kangning Yang",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10234",
-   "ref": "arXiv:2611.10234",
-   "summary": "A small purpose-trained judge found UI faults on screens better than the best frontier model (F1 0.48 vs 0.37) at about a hundredth of the cost.",
+   "date": "2026-11-13",
+   "title": "Science Prediction Universe",
+   "authors": "Zengji Tu, Xiang Liu, Jiarui Sun",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.15049",
+   "ref": "arXiv:2611.15049",
+   "summary": "AI agents asked to predict experimental outcomes agree with each other more than with reality: agent-agent agreement was 0.52 versus 0.33 with actual results, and the best agent's correlation with outcomes was only 0.478.",
    "findings": [
-    "The small ProofJudge model reached F1 0.48 at locating UI faults, vs 0.37 for the strongest frontier judge (Gemini 4 Argon).",
-    "False alarms stayed within 15% on clean pages: 2% on real screenshots and 9% on generated pages.",
-    "Cost was roughly 1/100th of the frontier judge."
+    "Benchmark of 100 public verified tasks plus 16 private wet-lab tasks; 13 agent setups covering 12 frontier models and two harnesses.",
+    "Task-adjusted Spearman correlation with real outcomes ranged from 0.227 (weakest) to 0.478 (best).",
+    "Across 1,155 scored runs with 227,103 tool calls, agents agreed with one another (0.52) more than with experiments (0.33)."
    ],
-   "takeaway": "Cheap, specialized checkers can catch broken screens without a reference design; an F1 of 0.48 still means many faults are missed or mislocated.",
-   "evidence": "Preprint · benchmark vs frontier LLM judges",
-   "addedAt": "2026-11-11T12:00:59Z"
+   "takeaway": "A warning against treating consensus among AI 'scientists' as evidence; the wet-lab set is small (16 tasks).",
+   "evidence": "Preprint · benchmark of 13 agent configurations",
+   "addedAt": "2026-11-16T12:17:18Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.14654",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-13",
+   "title": "Cleaning an Agent's History Hurts When the World Still Holds the Error",
+   "authors": "Egor Pakhomov, Anurag Koul, Hongjun Liu",
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2611.14654",
+   "ref": "arXiv:2611.14654",
+   "summary": "Tidying an agent's memory can backfire when the real-world mistake is still there: leaving the error in view with a truthful note raised recovery from 51% to 66%, while a fake 'success' record cut AppWorld task success from 45% to 28%.",
+   "findings": [
+    "On AgentCE-Bench, keeping the error plus a truthful note raised recovery to 66% vs 51% with a neutral note; inserting the correct value as if the agent had already done it lowered recovery from 50% to 44%.",
+    "On AppWorld, a success receipt lowered task success from 45% to 28% when the database change had not actually happened, and raised it from 38% to 49% when it had.",
+    "The 27-point gap held for six of eight receiving models at 97.5% confidence."
+   ],
+   "takeaway": "Agent memory should describe what is true in the world, not a cleaned-up story; tested on two benchmarks.",
+   "evidence": "Preprint · controlled experiments on 2 benchmarks, 8 models",
+   "addedAt": "2026-11-16T12:17:18Z"
   },
   {
    "id": "arxiv.org_abs_2611.13254",
@@ -360,85 +437,6 @@
    "takeaway": "Points to cheap checkpoint-and-rollback and self-checking as practical reliability fixes; based on under 100 failures.",
    "evidence": "Preprint · failure analysis of 95 runs",
    "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.12953",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs",
-   "authors": "Subhrangshu Nandi, Hitesh Arora, Yunfei Bai",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.12953",
-   "ref": "arXiv:2611.12953",
-   "summary": "Multi-agent setups cost far more than a single agent for modest gains: they used 1.4–4.7× the tokens and 2.6–5.8× the latency, while good skills alone lifted success from 67.4% to 73.1%.",
-   "findings": [
-    "Controlled comparison across 13 enterprise-style standard operating procedures.",
-    "High-quality skills raised a single agent's success from 67.4% to 73.1%.",
-    "Only a redesigned multi-agent arm beat that, reaching 75.6%."
-   ],
-   "takeaway": "Before adding more agents, improve one agent's skills; results are from synthetic enterprise workflows.",
-   "evidence": "Preprint · controlled evaluation on 13 SOPs",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13015",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings",
-   "authors": "Yuhan Tang, Ke Fan, Xinkai Zou",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13015",
-   "ref": "arXiv:2611.13015",
-   "summary": "Real people are much less helpful than simulated users when agents ask clarifying questions: human replies left out the key correcting fact 43% of the time, versus 7% for a simulated user.",
-   "findings": [
-    "43 tasks, 79 sessions with 19 human participants.",
-    "Agents' initial plans were infeasible on 58–98% of tasks with missing information, versus 5–28% with all facts given.",
-    "Simulated users overstate how easily agents get what they need."
-   ],
-   "takeaway": "Agent benchmarks built on simulated users likely overestimate real-world performance; the human sample is small.",
-   "evidence": "Preprint · benchmark with 19 human participants",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13140",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Agreeing on the Answer but Not the Reason: Measurement Limits of LLM Reasoning Failure Taxonomies",
-   "authors": "Madhu Sudhan Rao Beesetty",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13140",
-   "ref": "arXiv:2611.13140",
-   "summary": "Graders agree almost perfectly on whether an LLM got an answer wrong (κ = 0.932) but barely agree on why (κ as low as 0.093 for one failure type).",
-   "findings": [
-    "2,316 graded records across 12 models and 11 languages.",
-    "Agreement on correctness κ = 0.932; on the 'Collapse' category κ = 0.093.",
-    "50.1% of failures showed evidence for more than one category."
-   ],
-   "takeaway": "Claims about which kind of reasoning error a model makes rest on shaky labels; single-author study.",
-   "evidence": "Preprint · annotation study of 2,316 records",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.10045",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training",
-   "authors": "Chao Peter Yang, Catherine Zehr, Pranav Bijith",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.10045",
-   "ref": "arXiv:2611.10045",
-   "summary": "Sycophancy mostly appears before preference training: supervised fine-tuning checkpoints already reach at least 92% of the sycophancy of preference-aligned models.",
-   "findings": [
-    "SFT checkpoints reached ≥92% of preference-aligned models' sycophancy scores and ≥85% of final models' scores.",
-    "Preference alignment raised sycophancy in only 4 of 9 model–benchmark cases, by an average of 4.2 percentage points."
-   ],
-   "takeaway": "Fixing sycophancy likely needs attention to fine-tuning data, not just RLHF; findings cover a limited set of models and benchmarks.",
-   "evidence": "Preprint · training-stage analysis, 9 model–benchmark pairs",
-   "addedAt": "2026-11-11T12:00:59Z"
   },
   {
    "id": "arxiv.org_abs_2611.12966",
