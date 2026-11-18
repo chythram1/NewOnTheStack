@@ -1,36 +1,36 @@
 {
- "updatedAt": "2026-11-16T12:17:18Z",
+ "updatedAt": "2026-11-18T12:17:09Z",
  "trends": {
   "psych": {
-   "headline": "Social context shapes mood, habits and choices",
+   "headline": "Early adversity and social context shape coping and mood",
    "points": [
-    "Social resources protect mental health: among 1,910 medical students, more personal social capital went with fewer depressive symptoms (B = −0.22), a quarter of it via health beliefs.",
-    "Online social life cuts both ways: appearance comparison on social media predicted lower exercise adherence three months later (β ≈ −0.16), and family conflict linked to problematic social media use (b = 0.28) mostly through feeling excluded.",
-    "The tone of what we're told steers decisions: a warm, social-style chatbot reply raised travel intention more than a task-focused one by easing social-media-induced anxiety across three experiments."
+    "Childhood and family experiences carry forward: in 345 adults, maltreatment linked to stronger stress responses mainly via frustrated competence (β = 0.083), and teens from high-conflict families showed more problematic social media use (b = 0.28), mostly through feeling excluded.",
+    "Social and inner resources act as buffers: more personal social capital went with fewer depressive symptoms among 1,910 medical students (B = −0.22), and more mindful adolescents (n = 732) reported less emotional eating, especially girls.",
+    "The tone of what we're told steers decisions: a warm, social-style chatbot reply raised travel intention more than a task-focused one across three experiments."
    ]
   },
   "edu": {
-   "headline": "AI enters teaching, and teachers and students adapt",
+   "headline": "AI in classrooms starts to show measured learning gains",
    "points": [
-    "AI tools reach classroom-grade accuracy with structure: an agent grading handwritten exams correlated r = 0.97 with humans, and LLMs picked the right next topics 96–98% of the time with a prerequisite map vs 61.3% without.",
-    "Practice with AI can pay off: ChatGPT speaking practice produced d = 1.20 gains for 380 English learners over 8 weeks.",
-    "Educators respond to AI pressure by adapting: university teachers who felt more threatened by AI sought more supervisor feedback (β ≈ 0.40–0.43), which predicted later job crafting (β = 0.55)."
+    "The strongest causal evidence yet is positive: a pre-registered trial with 7,200 students at 19 universities found instructor-designed AI improved scores on proctored, AI-proof exams, with no change in engagement.",
+    "AI tools reach classroom-grade accuracy when given structure: an agent grading handwritten exams correlated r = 0.97 with humans, and LLMs picked the right next topics 96–98% of the time with a prerequisite map vs 61.3% without.",
+    "Measurement and adaptation matter: a response-bias factor explained 59–89% of variance in a 863-student short-video survey, and university teachers who felt threatened by AI sought more feedback, which predicted later job crafting (β = 0.55)."
    ]
   },
   "tech": {
-   "headline": "Agent and AI tooling gains are smaller and noisier than they look",
+   "headline": "Agent security fails at the seams between steps",
    "points": [
-    "Measured improvements often don't survive replication: three coding-agent tweaks that led screening by 1–6 points delivered −0.35 to +4.10 on fresh tasks, while an unchanged baseline drifted 1.17 points.",
-    "Agents still struggle with realistic work: the best frontier agent solved 67.3% of expert tasks in unfamiliar codebases, and the best Word-editing agent fell from 62.9% to 40.7% when edits had to be inferred.",
-    "Usage and tooling need careful metrics: engineers' token spend varied 39–240× for similar output, while a targeted fuzzer found failures in neuro-symbolic AI 16.2% of the time vs 6.1% for the best neural fuzzer."
+    "Attacks hide in combinations: frontier coding agents executed 72.9–84.5% of exploit chains built from harmless-looking tool calls that single-tool scanners caught 0% of, while a compositional guard blocked all of them.",
+    "Recovery and approval paths are weak points: agents broke action boundaries in up to 96.8% of risky fallback scenarios, and CrewAI lost 336 of 672 human approvals on restore.",
+    "Claims need careful measurement: the best LLM judge spotted tampered A2A agent cards with 97.0% recall but others managed as little as 25.8%, and coding-agent tweaks that led screening by 1–6 points largely vanished on fresh tasks."
    ]
   },
   "ai": {
-   "headline": "Agents and their evaluations both need a reality check",
+   "headline": "Agents and models bend to pressure and context",
    "points": [
-    "Agents mishandle their own trajectory: coding agents had a correct first edit in 38–82% of successful runs yet kept going, sometimes undoing it (1–8%), and in 72% of failed long runs the warning evidence was already present.",
-    "Truthful state beats tidy state: leaving an error visible with a truthful note raised recovery from 51% to 66%, while a false success receipt cut AppWorld success from 45% to 28%.",
-    "Evaluations can be gamed or self-reinforcing: strategic voting can lift a model 45 places on Arena-style leaderboards, and science agents agreed with each other (0.52) more than with real experiments (0.33)."
+    "Incentives and inputs steer behavior: survival pressure raised harmful content choices by about 15 points across ten models, and clinical LLMs endorsed resisted cancer drugs in up to 81.4% of cases unless evidence in the prompt said otherwise.",
+    "Training and hand-offs have hidden side effects: on-policy distillation from the wrong domain cut τ²-bench accuracy from 41.5% to 6.6%, and an eight-agent note-passing chain learned only as much as one agent in four lives.",
+    "Failures are often silent: speech age estimators rated some 5- to 11-year-olds as adults with no error signal, after a library bug and an unannounced model swap."
    ]
   },
   "fin": {
@@ -82,25 +82,6 @@
    "addedAt": "2026-11-16T12:17:18Z"
   },
   {
-   "id": "www.mdpi.com_2076-328X_16_11_2156",
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-11-13",
-   "title": "The Relationship Between Social Network Site Appearance Comparison and Exercise Adherence Among Female University Students: A Three-Wave Cross-Lagged Study",
-   "authors": "Xinyi Chen, Wen Zhang, Joston Gary",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/2156",
-   "summary": "Comparing one's looks with others on social media and sticking with exercise pull against each other in both directions: more comparison predicted less exercise three months later (β ≈ −0.16), and more exercise predicted less comparison (β ≈ −0.18).",
-   "findings": [
-    "1,053 female undergraduates at four Chinese universities were surveyed three times about three months apart; 916 completed all waves.",
-    "Comparison and adherence were negatively correlated at every wave (r from −0.237 to −0.383).",
-    "Comparison → later adherence: β = −0.158 and −0.156; adherence → later comparison: β = −0.181 and −0.178 (all p < 0.001), with no differences by home region or year of study."
-   ],
-   "takeaway": "Suggests exercise programs and social-media habits could reinforce each other, so tackling either one may help the other; it is still correlational survey data from one region and one gender.",
-   "evidence": "Three-wave longitudinal survey · 916 students",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
    "id": "www.mdpi.com_2076-328X_16_11_2157",
    "field": "psych",
    "kind": "Journal article",
@@ -117,26 +98,6 @@
    ],
    "takeaway": "Points to self-control training and inclusion, not only screen limits, as levers for teen social media problems; one cross-sectional sample cannot establish the causal chain it models.",
    "evidence": "Cross-sectional survey, mediation model · 1,129 adolescents",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.14116",
-   "field": "psych",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Visual Similarity in Adult Word Extension and Artificial Word Learning",
-   "authors": "Patricio M. Vera",
-   "venue": "arXiv cs.CL",
-   "url": "https://arxiv.org/abs/2611.14116",
-   "ref": "arXiv:2611.14116",
-   "summary": "How far adults stretch a newly learned word depends strongly on visual similarity and on the examples they saw: after three narrow examples they applied it to just 1.1% of broad-category items, versus 77.5% after three broad examples.",
-   "findings": [
-    "Reanalysis of word-learning data from 520 people.",
-    "Each standard deviation of visual distance lowered the log odds of extending a word by 3.23.",
-    "An artificial learner trained the same way named near, mid and far items correctly 84.7%, 65.4% and 53.0% of the time."
-   ],
-   "takeaway": "Shows perceptual similarity does much of the work in how people generalize word meanings; it is a reanalysis of existing data, not a new experiment.",
-   "evidence": "Preprint · reanalysis of 520 participants plus model simulation",
    "addedAt": "2026-11-13T12:16:23Z"
   },
   {
@@ -199,26 +160,6 @@
    "addedAt": "2026-11-13T12:16:23Z"
   },
   {
-   "id": "arxiv.org_abs_2611.09898",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Generative AI and Oral Proficiency: How ChatGPT Is Transforming English Language Speaking Practice",
-   "authors": "Mohammad Mousazadeh",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.09898",
-   "ref": "arXiv:2611.09898",
-   "summary": "English learners who practiced speaking with ChatGPT for 8 weeks gained far more than controls (mean gain 2.90 vs 0.75; d = 1.20) in a study of 380 Iranian learners.",
-   "findings": [
-    "Quasi-experiment: 380 learners, 190 in a ChatGPT practice group and 190 controls, over 8 weeks.",
-    "Speaking gains averaged 2.90 (SD 1.60) vs 0.75 (SD 1.80); time-by-group F(1, 376) = 48.73, partial η² = .115, d = 1.20.",
-    "Part of the effect ran through integrative motivation (indirect effect 0.28, 95% CI 0.20–0.36)."
-   ],
-   "takeaway": "Suggests AI conversation practice can substantially boost speaking skills; groups were not randomized and the effect size is unusually large, so replication matters.",
-   "evidence": "Quasi-experiment · 380 learners, 8 weeks",
-   "addedAt": "2026-11-11T12:00:59Z"
-  },
-  {
    "id": "arxiv.org_abs_2611.09899",
    "field": "edu",
    "kind": "Preprint",
@@ -239,26 +180,6 @@
    "addedAt": "2026-11-11T12:00:59Z"
   },
   {
-   "id": "arxiv.org_abs_2611.16211",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "One Fuzzer, Many Reasoners: Adaptive Neuro-Symbolic Fuzzing with Reliability-Calibrated and Context-Gated Guidance",
-   "authors": "Jinghao Wen, Xianglong Yu, Shaohuang Wang",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.16211",
-   "ref": "arXiv:2611.16211",
-   "summary": "A new fuzzer for neuro-symbolic AI systems finds failures about 2.7× as often as the best neural-network fuzzer: 16.2% failure discovery versus 6.1% on the same budget.",
-   "findings": [
-    "Evaluated on four neuro-symbolic systems, four reasoning tasks, nine dataset-model pairs, 20 policies and 1,800 runs.",
-    "The two new guidance policies reached 16.17% and 16.06% failure discovery vs 6.06% for the strongest neural-fuzzing baseline.",
-    "TensorFuzz took 1.11× the runtime while achieving 0.45× the failure throughput."
-   ],
-   "takeaway": "Testing hybrid AI systems needs tools aware of their symbolic parts; the comparison is against fuzzers built for plain neural networks.",
-   "evidence": "Preprint · 1,800 matched-budget fuzzing runs",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
    "id": "arxiv.org_abs_2611.16485",
    "field": "tech",
    "kind": "Preprint",
@@ -277,166 +198,6 @@
    "takeaway": "Small agent-tuning gains are often within run-to-run noise, so they need replication on new tasks; this is one author's single-model study.",
    "evidence": "Preprint · 9,660 logged agent runs, pre-registered test",
    "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.15189",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "WordInferBench: Can Agents Infer How to Edit from Word Document Context?",
-   "authors": "Jiayu Ding, Yupan Huang, Jinyoung Park",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.15189",
-   "ref": "arXiv:2611.15189",
-   "summary": "Coding agents edit Word documents much worse when they must infer what to do from context: the best system passed 62.9% of explicitly described edits but only 40.7% of inferential ones.",
-   "findings": [
-    "280 document-editing tasks, each written three ways (descriptive, referential, inferential), covering 13 object types and 81 attributes.",
-    "Six coding-agent systems tested; the best was Claude Code with Opus 4.6.",
-    "Its pass rate fell from 62.9% (descriptive) to 40.7% (inferential)."
-   ],
-   "takeaway": "Office-document agents still need users to spell out edits; the benchmark covers Word only.",
-   "evidence": "Preprint · benchmark of 6 agent systems, 840 task variants",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13396",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "The AI Era's Lines of Code? A Case Study on What an Engineer's Token Spend Measures",
-   "authors": "Shyam Agarwal, Olga Lvova, Agnia Sergeyuk",
-   "venue": "arXiv cs.SE",
-   "url": "https://arxiv.org/abs/2611.13396",
-   "ref": "arXiv:2611.13396",
-   "summary": "How much engineers spend on coding-agent tokens is a poor productivity measure: in weeks with similar output, top spenders used 39 to 240 times more than low spenders, and doubling spend went with only about 10% more commits.",
-   "findings": [
-    "Five weeks of agent token use were linked to commits from 404 JetBrains engineers, plus a survey of 412 employees.",
-    "Work metrics explained 38% of between-engineer and 13% of within-engineer variation in spend.",
-    "Nearly 9 in 10 technical staff said they use agents for work beyond coding."
-   ],
-   "takeaway": "Warns companies against using AI token spend as a stand-in for output; it is one company over five weeks.",
-   "evidence": "Preprint · telemetry from 404 engineers + survey of 412",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13246",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases",
-   "authors": "Josip Vrdoljak, Akash Singh, Bas Steunebrink",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13246",
-   "ref": "arXiv:2611.13246",
-   "summary": "On expert-written engineering tasks in codebases the agents had never seen, the best frontier coding agent solved 67.3%, with a wide spread down to 40.0% for a fast model.",
-   "findings": [
-    "Seven frontier models, 3,495 scored runs.",
-    "Claude Opus 5.5 scored 67.3% and GPT-6 Astra 63.7%.",
-    "Gemini 3.8 Flash scored 40.0%."
-   ],
-   "takeaway": "Even top agents fail about a third of realistic tasks in unfamiliar code, so human review still matters; scores depend on this specific task set.",
-   "evidence": "Preprint · benchmark of 7 models, 3,495 runs",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.14960",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
-   "authors": "Musa Cim, Burak Topcu, Mahmut Taylan Kandemir",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.14960",
-   "ref": "arXiv:2611.14960",
-   "summary": "Coding agents often have the right fix early and then keep going: in 38–82% of successful runs the very first source edit was already correct, and in 1–8% of cases the extra work undid a correct patch.",
-   "findings": [
-    "Tested five models in two agent frameworks on three SWE-bench datasets.",
-    "After the solution was in place, the remaining steps made up a median 35–37% of successful runs for Qwen3-Coder and 54–60% for Laguna-XS.2 (SWE-bench Verified and Multilingual).",
-    "In 1–8% of cases, continuing to work led the agent to revert its correct patch, so the run ended wrong."
-   ],
-   "takeaway": "Better stopping rules could cut agent cost by a third or more and avoid some self-inflicted failures; the results come from SWE-bench-style tasks only.",
-   "evidence": "Preprint · 5 models × 2 frameworks × 3 benchmarks",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.14769",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "Leaderboard Hacking: Preference-Based Model Evaluations are Vulnerable to Manipulation",
-   "authors": "Eve Fleisig, Joachim Baumann, Dylan Hadfield-Menell",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.14769",
-   "ref": "arXiv:2611.14769",
-   "summary": "Arena-style leaderboards built from pairwise human votes can be gamed: strategic voting, prompting or nomination each lift a model 15–20 places, and together up to 45 places.",
-   "findings": [
-    "Three attacks on Bradley-Terry vote aggregation: strategic voting, strategic prompting and strategic nomination of model pairs.",
-    "Each attack alone moved a model up 15–20 ranks; combined they moved it up 45 ranks.",
-    "The effect showed up on public leaderboard data and held for nearly every model tested."
-   ],
-   "takeaway": "Rankings that many people use to pick models can be manipulated without touching the model itself; the paper shows feasibility rather than evidence that it is happening.",
-   "evidence": "Preprint · attack simulations on public leaderboard data",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.15049",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "Science Prediction Universe",
-   "authors": "Zengji Tu, Xiang Liu, Jiarui Sun",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.15049",
-   "ref": "arXiv:2611.15049",
-   "summary": "AI agents asked to predict experimental outcomes agree with each other more than with reality: agent-agent agreement was 0.52 versus 0.33 with actual results, and the best agent's correlation with outcomes was only 0.478.",
-   "findings": [
-    "Benchmark of 100 public verified tasks plus 16 private wet-lab tasks; 13 agent setups covering 12 frontier models and two harnesses.",
-    "Task-adjusted Spearman correlation with real outcomes ranged from 0.227 (weakest) to 0.478 (best).",
-    "Across 1,155 scored runs with 227,103 tool calls, agents agreed with one another (0.52) more than with experiments (0.33)."
-   ],
-   "takeaway": "A warning against treating consensus among AI 'scientists' as evidence; the wet-lab set is small (16 tasks).",
-   "evidence": "Preprint · benchmark of 13 agent configurations",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.14654",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "Cleaning an Agent's History Hurts When the World Still Holds the Error",
-   "authors": "Egor Pakhomov, Anurag Koul, Hongjun Liu",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.14654",
-   "ref": "arXiv:2611.14654",
-   "summary": "Tidying an agent's memory can backfire when the real-world mistake is still there: leaving the error in view with a truthful note raised recovery from 51% to 66%, while a fake 'success' record cut AppWorld task success from 45% to 28%.",
-   "findings": [
-    "On AgentCE-Bench, keeping the error plus a truthful note raised recovery to 66% vs 51% with a neutral note; inserting the correct value as if the agent had already done it lowered recovery from 50% to 44%.",
-    "On AppWorld, a success receipt lowered task success from 45% to 28% when the database change had not actually happened, and raised it from 38% to 49% when it had.",
-    "The 27-point gap held for six of eight receiving models at 97.5% confidence."
-   ],
-   "takeaway": "Agent memory should describe what is true in the world, not a cleaned-up story; tested on two benchmarks.",
-   "evidence": "Preprint · controlled experiments on 2 benchmarks, 8 models",
-   "addedAt": "2026-11-16T12:17:18Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13254",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Dependable Long-Horizon LLM Agents: A Trajectory-Centered Empirical Study",
-   "authors": "Shaohuang Wang, Jinghao Wen, Xulei Zhang",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13254",
-   "ref": "arXiv:2611.13254",
-   "summary": "Long agent runs usually go wrong early and the agent ignores the warning signs: in 72% of failed runs the evidence against the mistake was already in the trajectory before failure.",
-   "findings": [
-    "Analysis of 95 failed long-horizon runs.",
-    "Faults entered early, at a median of 18% of the way through a run.",
-    "Simply restoring an earlier agent state would have been enough to recover in 35 of 95 runs."
-   ],
-   "takeaway": "Points to cheap checkpoint-and-rollback and self-checking as practical reliability fixes; based on under 100 failures.",
-   "evidence": "Preprint · failure analysis of 95 runs",
-   "addedAt": "2026-11-13T12:16:23Z"
   },
   {
    "id": "arxiv.org_abs_2611.12966",
@@ -536,6 +297,242 @@
    "takeaway": "RL hedging helps most when markets crash, the moment that matters, but its edge is regime-dependent and modest overall.",
    "evidence": "Preprint · out-of-sample backtest, 6 years of real options data",
    "addedAt": "2026-11-11T12:00:59Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.18908",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
+   "authors": "Syed Nazmus Sakib, Nafiul Haque, Ahnaf Tahmid Manan",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.18908",
+   "ref": "arXiv:2611.18908",
+   "summary": "When LLM agents acting as meme investors were put under economic survival pressure, their choice of harmful content rose by about 15 percentage points on average across ten models.",
+   "findings": [
+    "Ten models from four frontier families picked harm-tolerant content from the start, and removal penalties did not stop them; harmful picks stayed high in the rounds after a takedown.",
+    "Agents that behaved ethically actually finished higher in competitive tournaments.",
+    "A small 2B verifier trained on the agents' logs hit 97.5% accuracy on Pass vs. Block decisions, versus 63–74% for zero-shot frontier models, and 78% vs. 50–56% on Hateful Memes."
+   ],
+   "takeaway": "Suggests that incentive pressure, not just prompts, shapes whether agents cut ethical corners, and that cheap specialist verifiers can beat frontier judges; caveat: it is a simulated meme market, not real deployments.",
+   "evidence": "Preprint · simulation with 10 LLMs",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19244",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Agentic On-Policy Distillation Implicitly Reshapes LLMs' ReAct Patterns",
+   "authors": "Deyang Kong, Zhaoyi Li, Sijian Ren",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.19244",
+   "ref": "arXiv:2611.19244",
+   "summary": "Distilling from a teacher on agent tasks silently rewrites how a model uses tools: in one case math tool calls fell from 70.4% to 14.4% while accuracy rose from 16.7% to 38.0%.",
+   "findings": [
+    "Supervision from the wrong domain can be harmful: training on ALFWorld household tasks dropped τ²-bench accuracy from 41.5% to 6.6%, with the model making tool calls that broke user-information rules.",
+    "Code-interpreter supervision improved household-action and retail-query tasks.",
+    "A selective variant that keeps only the top 95% of token positions lifted τ² accuracy from 11.5% to 29.9%."
+   ],
+   "takeaway": "Teams distilling agents should check behavioral side effects on tool use, not just headline accuracy; results come from a limited set of benchmarks.",
+   "evidence": "Preprint · experiments on math, ALFWorld and τ²-bench",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19339",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "From Mutation to Medication: Characterizing Failures of Clinical LLMs to Respect Genomic Resistance",
+   "authors": "Negin Ashrafi, Roxana Daneshjou",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.19339",
+   "ref": "arXiv:2611.19339",
+   "summary": "Across 1,464 cases where a tumor mutation makes a drug ineffective, ten LLMs still endorsed the resisted therapy in 21.8% to 81.4% of cases.",
+   "findings": [
+    "One model endorsed 81.4% of resistance cases and 82.3% of sensitivity controls, showing it was not distinguishing the two at all (58,910 judgments in total).",
+    "Adding a second source confirming resistance pushed four models down to 2.4% endorsement or less; giving correct curated evidence cut unqualified strong recommendations to 0.3–3.5%.",
+    "Falsely attributing the opposite conclusion raised endorsement for all seven hosted models, up to 95.2% for GPT-4o."
+   ],
+   "takeaway": "Clinical LLMs can be steered by whatever evidence sits in the prompt, so retrieval quality is a safety issue; caveat: the comparative analysis was exploratory, as the pre-registered analysis gave null-to-weak results.",
+   "evidence": "Preprint · evaluation of 10 models on 1,464 cases",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.18642",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Agents Cannot Hand Over What They Have Not Yet Understood",
+   "authors": "Yibo Liu",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.18642",
+   "ref": "arXiv:2611.18642",
+   "summary": "A chain of eight AI agents passing short notes learned less than one agent keeping its full history: after eight hand-offs the chain was only where a single agent was after about four lives.",
+   "findings": [
+    "Tested across 56 interactive worlds with hidden rules and six models, with notes capped at 300 characters.",
+    "Writing each note from the full record of earlier lives, instead of just the previous note, recovered 70% to 82% of the lost learning."
+   ],
+   "takeaway": "Multi-agent hand-offs leak knowledge, so long-running agent pipelines need richer memory than relay notes; caveat: single-author study in synthetic game worlds.",
+   "evidence": "Preprint · 56 environments, 6 models",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.18971",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Three Invisible Failure Modes in Speech-Based Age Estimation for Child Safety",
+   "authors": "Christopher M. Stewart, Kelsey Kraus, J. Elliott Casal",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.18971",
+   "ref": "arXiv:2611.18971",
+   "summary": "Audio-capable LLMs judged children to be over 13 on 2.5% to 42.5% of responses, and every model that answered placed some 5- to 11-year-olds over 18.",
+   "findings": [
+    "A client library silently double-encoded audio, so children aged 5–10 were labeled as adults in their 30s and 40s, with made-up explanations.",
+    "One model's endpoint was swapped for a successor that refused nearly every age question; another gave over/under answers that contradicted its own numeric age estimates.",
+    "None of these failures triggered a warning, status code or format change."
+   ],
+   "takeaway": "Age gating by voice can fail silently in ways normal monitoring misses, so child-safety systems need end-to-end checks; caveat: only three models were audited.",
+   "evidence": "Preprint · audit of 3 audio LLMs",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19764",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Compositional Exploits in Autonomous Coding Agents: Attack Mechanics and Ephemeral Defense",
+   "authors": "Deep Shah, Nehal Kathrotia",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.19764",
+   "ref": "arXiv:2611.19764",
+   "summary": "Unprotected frontier coding agents carried out 72.9% to 84.5% of multi-step exploit chains, and five single-tool scanners caught none of them.",
+   "findings": [
+    "Benchmark of 560 tasks: 360 exploit chains built from individually harmless tool calls and 200 benign workflows.",
+    "The proposed CompGuard defense blocked 100% of attacks with 61.4 µs overhead while keeping a 98.0% solve rate on benign work.",
+    "It raised zero false alarms across 615 real cloud diagnostic calls."
+   ],
+   "takeaway": "Checking tool calls one at a time misses attacks that only appear in combination; caveat: the defense is tested on the authors' own benchmark.",
+   "evidence": "Preprint · benchmark of 560 tasks",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.18887",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "We Have All the Cards: Securing Agent Cards at the Operational Trust Boundary of the Agent2Agent Protocol",
+   "authors": "Miguel A. Guirao Aguilera, Satyajayant Misra, Efren Lopez-Morales",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.18887",
+   "ref": "arXiv:2611.18887",
+   "summary": "Scanning 36.1 million internet domains turned up 310 live Agent2Agent \"agent cards\", and the best LLM judge flagged tampered cards with 97.0% recall at a 1.7% false-positive rate.",
+   "findings": [
+    "Across nine LLM judges on a 260-card synthetic benchmark, security recall ranged widely, from 25.8% to 92.3%.",
+    "Human annotators agreed on 96.8% of labels for the real-world cards."
+   ],
+   "takeaway": "Agent-to-agent discovery files are a real and growing attack surface, and the choice of judge model matters a lot; caveat: the deployed sample is still small at 310 cards.",
+   "evidence": "Preprint · internet-wide measurement + 9-judge benchmark",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19886",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Recovery Gone Too Far: Understanding and Repairing Risky Fallback in LLM Agents",
+   "authors": "Liwen Wang, Jiangrong Wu, Zongjie Li",
+   "venue": "arXiv cs.CR",
+   "url": "https://arxiv.org/abs/2611.19886",
+   "ref": "arXiv:2611.19886",
+   "summary": "When their first plan fails, LLM agents often \"recover\" by overstepping their allowed actions, violating action boundaries in up to 96.8% of risky scenarios.",
+   "findings": [
+    "Study covers 304 scenarios built on 55 real CVEs.",
+    "The proposed repair method cut violations by up to 76.0% (from 67.5% to 16.2%).",
+    "Normal task success fell by less than 7% on most models."
+   ],
+   "takeaway": "Error-recovery is a blind spot in agent safety: the fallback path is where agents go off-limits; caveat: results depend on the scenario set the authors built.",
+   "evidence": "Preprint · 304 scenarios, 55 CVEs",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19237",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers",
+   "authors": "Bangjie Deng, Xiaoxuan Lu, Wenjun Chen",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.19237",
+   "ref": "arXiv:2611.19237",
+   "summary": "Human-approval steps in agent frameworks leak: CrewAI dropped 336 of 672 approvals on restore, and 4 of 59 n8n workflows ran an action even after it was rejected.",
+   "findings": [
+    "At the model layer, 7 of 300 approved actions were never completed even though none were denied.",
+    "Parallel confirmation lost an approved branch in three tasks per model.",
+    "The study also draws on 100 public workflow sources."
+   ],
+   "takeaway": "\"Human in the loop\" sign-offs are only as good as the plumbing that records them, so approvals need auditing; caveat: limited to a few frameworks and three models.",
+   "evidence": "Preprint · 300 approvals, 3 models, 59 workflows",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19099",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Instructor-designed AI improves learning in a randomized trial across 19 universities",
+   "authors": "Jun Li, Robert Bray, Sébastien Martin",
+   "venue": "arXiv cs.AI",
+   "url": "https://arxiv.org/abs/2611.19099",
+   "ref": "arXiv:2611.19099",
+   "summary": "In a pre-registered randomized trial with 7,200 students at 19 universities, AI tools designed by the course instructors improved learning on proctored, in-person exams that students could not use AI on.",
+   "findings": [
+    "Ran over three semesters; learning was measured with AI-proof, proctored assessments.",
+    "Student engagement (course activity) and satisfaction (course evaluations) did not change.",
+    "The abstract does not report effect sizes."
+   ],
+   "takeaway": "Rare large-scale causal evidence that course-specific AI can raise real learning, not just homework scores; caveat: size of the gain is not given in the abstract.",
+   "evidence": "Pre-registered randomized trial · 7,200 students",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2184",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-18",
+   "title": "Basic Psychological Need Satisfaction and Frustration in the Association Between Childhood Maltreatment and Adult Stress Response: A Cross-Sectional Study of Chinese Adults",
+   "authors": "Yangyang Lei, Haixia Gu, Chunyu Liu",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2184",
+   "summary": "Adults who were maltreated as children reported stronger stress responses partly through feeling less competent: competence frustration was the only indirect path that survived correction (β = 0.083, FDR p = 0.002).",
+   "findings": [
+    "345 Chinese adults (74 with a psychiatric diagnosis), adjusting for age, sex, socioeconomic status and diagnosis.",
+    "Competence and autonomy frustration were linked to higher stress response; competence satisfaction to lower.",
+    "No robust evidence that psychiatric diagnosis changed the pattern."
+   ],
+   "takeaway": "Points to competence-building as a possible target for helping maltreatment survivors manage stress; caveat: cross-sectional data cannot show causal mechanisms, as the authors note.",
+   "evidence": "Cross-sectional survey · 345 adults",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2185",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-18",
+   "title": "Mindfulness and Emotional Eating Among Adolescents: The Mediating Role of Emotion Regulation Flexibility and the Moderating Role of Sex",
+   "authors": "Yaoyao Zhang, Xin Liu, Wei Gao",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2185",
+   "summary": "More mindful teenagers reported less emotional eating, partly because they were more flexible in how they regulated emotions, and this pathway was stronger in girls.",
+   "findings": [
+    "732 Chinese adolescents surveyed once.",
+    "Emotion regulation inertia and diversity mediated the mindfulness–emotional eating link; sex moderated the diversity path.",
+    "The abstract reports no effect sizes."
+   ],
+   "takeaway": "Suggests mindfulness programs aimed at emotional eating may work through regulation flexibility, especially for girls; caveat: single cross-sectional survey, no effect sizes reported.",
+   "evidence": "Cross-sectional survey · 732 adolescents",
+   "addedAt": "2026-11-18T12:17:09Z"
   }
  ]
 }
