@@ -1,48 +1,105 @@
 {
- "updatedAt": "2026-11-18T12:17:09Z",
+ "updatedAt": "2026-11-20T12:10:25Z",
  "trends": {
   "psych": {
-   "headline": "Early adversity and social context shape coping and mood",
+   "headline": "Coping and risk are shaped by inner resources and context",
    "points": [
-    "Childhood and family experiences carry forward: in 345 adults, maltreatment linked to stronger stress responses mainly via frustrated competence (β = 0.083), and teens from high-conflict families showed more problematic social media use (b = 0.28), mostly through feeling excluded.",
-    "Social and inner resources act as buffers: more personal social capital went with fewer depressive symptoms among 1,910 medical students (B = −0.22), and more mindful adolescents (n = 732) reported less emotional eating, especially girls.",
-    "The tone of what we're told steers decisions: a warm, social-style chatbot reply raised travel intention more than a task-focused one across three experiments."
+    "Risk behaviors cluster: among 2,478 Italian teens, those with both drinking and eating-disorder traits reported the most food-and-alcohol disturbance despite drinking about as much as a drinking-only group (AUDIT 6.21 vs 6.15).",
+    "Inner and social resources act as buffers: more mindful adolescents (n = 732) reported less emotional eating, especially girls, and more personal social capital went with fewer depressive symptoms among 1,910 medical students (B = −0.22).",
+    "Early experience and framing steer outcomes: in 345 adults, maltreatment linked to stronger stress responses via frustrated competence (β = 0.083), and a warm chatbot reply raised travel intention more than a task-focused one."
    ]
   },
   "edu": {
-   "headline": "AI in classrooms starts to show measured learning gains",
+   "headline": "AI enters schooling, with humans still in the loop",
    "points": [
-    "The strongest causal evidence yet is positive: a pre-registered trial with 7,200 students at 19 universities found instructor-designed AI improved scores on proctored, AI-proof exams, with no change in engagement.",
-    "AI tools reach classroom-grade accuracy when given structure: an agent grading handwritten exams correlated r = 0.97 with humans, and LLMs picked the right next topics 96–98% of the time with a prerequisite map vs 61.3% without.",
-    "Measurement and adaptation matter: a response-bias factor explained 59–89% of variance in a 863-student short-video survey, and university teachers who felt threatened by AI sought more feedback, which predicted later job crafting (β = 0.55)."
+    "Causal evidence for classroom AI is positive: a pre-registered trial with 7,200 students at 19 universities found instructor-designed AI raised scores on proctored, AI-proof exams.",
+    "AI content still needs teacher checks: VeriMath produced verifier-approved math exam drafts for 47 of 50 requirements, but strict teacher review accepted at most 56.8% of items.",
+    "Home and peer context shape digital learning: digital parenting predicted more e-learning engagement, most in lower-class families, and AI use for schoolwork went with more school belonging and less loneliness in PISA data from four Chinese regions."
    ]
   },
   "tech": {
-   "headline": "Agent security fails at the seams between steps",
+   "headline": "Security shifts to auditing what systems actually do",
    "points": [
-    "Attacks hide in combinations: frontier coding agents executed 72.9–84.5% of exploit chains built from harmless-looking tool calls that single-tool scanners caught 0% of, while a compositional guard blocked all of them.",
-    "Recovery and approval paths are weak points: agents broke action boundaries in up to 96.8% of risky fallback scenarios, and CrewAI lost 336 of 672 human approvals on restore.",
-    "Claims need careful measurement: the best LLM judge spotted tampered A2A agent cards with 97.0% recall but others managed as little as 25.8%, and coding-agent tweaks that led screening by 1–6 points largely vanished on fresh tasks."
+    "Agent tools must be checked against their code: ACaM found hundreds of structural vulnerabilities across 43 real AI agents, confirming ten with working exploits.",
+    "Purpose-built detectors beat general models: a typed decision model topped three LLMs at phishing detection (F1 82.6%) at a fraction of the cost, and FlowSH caught 70% of SQL injections a leading firewall missed without decrypting traffic.",
+    "Production and provenance results are concrete: Google's HardwareDx cut GPU-fleet downtime 18.3%, and a reissue-aware watermark told current from superseded images with 99.7% accuracy."
    ]
   },
   "ai": {
-   "headline": "Agents and models bend to pressure and context",
+   "headline": "Agents are fast and capable but overconfident where it counts",
    "points": [
-    "Incentives and inputs steer behavior: survival pressure raised harmful content choices by about 15 points across ten models, and clinical LLMs endorsed resisted cancer drugs in up to 81.4% of cases unless evidence in the prompt said otherwise.",
-    "Training and hand-offs have hidden side effects: on-policy distillation from the wrong domain cut τ²-bench accuracy from 41.5% to 6.6%, and an eight-agent note-passing chain learned only as much as one agent in four lives.",
-    "Failures are often silent: speech age estimators rated some 5- to 11-year-olds as adults with no error signal, after a library bug and an unannounced model swap."
+    "Overconfidence is the key risk: vision-language agents reading emergency CT/MRI were right 30% of the time vs 77% for radiologists, kept their first guess in 63% of runs, and claimed ~90% confidence while being right 38.9% of the time.",
+    "Much agent effort is wasted, and cheap fixes help: about 80% of a coding agent's tokens went into calls that did not advance the change, and SpecLook's speculate-then-verify trick made image agents up to 9.9× faster and more accurate.",
+    "Oversight and auditability are improving: a trained observer role flagged problem behavior with AUROC 0.907 vs 0.828 for transcript monitoring, and a non-text clinical decision agent matched an LLM agent's 86% diagnostic accuracy in 2.2 s instead of ~95 s."
    ]
   },
   "fin": {
-   "headline": "AI in markets: promising returns, leaky tests",
+   "headline": "AI reshapes finance work, but tests need care",
    "points": [
-    "AI trading results need careful scrutiny: an LLM-agent account returned 34.5% vs SPY's 14.4% with a deeper drawdown, while a research benchmark found look-ahead leaks in 50.8% of passing agent runs.",
-    "Adaptive models target regime changes: an interpretable fuzzy-map forecaster beat an LSTM by 7.6 points on return direction, and a risk-sensitive RL market maker cut tail losses 8.9% in falling markets.",
-    "Market design trade-offs remain: a tenfold faster blockchain lowered priority-fee bidding but also thinned liquidity pools."
+    "AI is reorganizing knowledge work: federal civil self-representation rose 6.6 points relative to a comparison group, while top law firms grew revenue 13% on flat billable hours.",
+    "New AI signals look promising but need careful testing: retrieving similar past price charts more than doubled a strategy's Sharpe ratio in backtests, while a research benchmark found look-ahead leaks in 50.8% of passing LLM agent runs.",
+    "Better models target speed and regime shifts: a spectral method priced corridor products ~60× faster than finite differences, and an adaptive fuzzy-map forecaster beat an LSTM by 7.6 points on return direction."
    ]
   }
  },
  "papers": [
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2205",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-20",
+   "title": "Eating Psychopathology and Alcohol Use in Food and Alcohol Disturbance Among Adolescents: A Person-Centred and Dimensional Analysis",
+   "authors": "Paolo Meneguzzo, Federico Suprani, Federica Pinna",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2205",
+   "summary": "Among 2,478 Italian teens, those with both drinking and eating-disorder traits reported the most \"drunkorexia\"-style behavior, even though their alcohol use matched a drinking-only group.",
+   "findings": [
+    "Four profiles: alcohol-risk 33.5%, high psychopathology 27.4%, eating psychopathology 22.0%, low-risk 17.1%.",
+    "Alcohol-risk and high-psychopathology groups had nearly the same AUDIT scores (6.15 vs. 6.21), but the latter reported more food-and-alcohol disturbance.",
+    "Eating-disorder risk added ΔR² = 0.027 beyond alcohol use, and amplified its effect (interaction ΔR² = 0.022)."
+   ],
+   "takeaway": "Alcohol use is the main driver, but screening for eating pathology adds information; caveat: cross-sectional and small added variance.",
+   "evidence": "Cross-sectional survey · 2,478 adolescents",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2184",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-18",
+   "title": "Basic Psychological Need Satisfaction and Frustration in the Association Between Childhood Maltreatment and Adult Stress Response: A Cross-Sectional Study of Chinese Adults",
+   "authors": "Yangyang Lei, Haixia Gu, Chunyu Liu",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2184",
+   "summary": "Adults who were maltreated as children reported stronger stress responses partly through feeling less competent: competence frustration was the only indirect path that survived correction (β = 0.083, FDR p = 0.002).",
+   "findings": [
+    "345 Chinese adults (74 with a psychiatric diagnosis), adjusting for age, sex, socioeconomic status and diagnosis.",
+    "Competence and autonomy frustration were linked to higher stress response; competence satisfaction to lower.",
+    "No robust evidence that psychiatric diagnosis changed the pattern."
+   ],
+   "takeaway": "Points to competence-building as a possible target for helping maltreatment survivors manage stress; caveat: cross-sectional data cannot show causal mechanisms, as the authors note.",
+   "evidence": "Cross-sectional survey · 345 adults",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2185",
+   "field": "psych",
+   "kind": "Journal article",
+   "date": "2026-11-18",
+   "title": "Mindfulness and Emotional Eating Among Adolescents: The Mediating Role of Emotion Regulation Flexibility and the Moderating Role of Sex",
+   "authors": "Yaoyao Zhang, Xin Liu, Wei Gao",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2185",
+   "summary": "More mindful teenagers reported less emotional eating, partly because they were more flexible in how they regulated emotions, and this pathway was stronger in girls.",
+   "findings": [
+    "732 Chinese adolescents surveyed once.",
+    "Emotion regulation inertia and diversity mediated the mindfulness–emotional eating link; sex moderated the diversity path.",
+    "The abstract reports no effect sizes."
+   ],
+   "takeaway": "Suggests mindfulness programs aimed at emotional eating may work through regulation flexibility, especially for girls; caveat: single cross-sectional survey, no effect sizes reported.",
+   "evidence": "Cross-sectional survey · 732 adolescents",
+   "addedAt": "2026-11-18T12:17:09Z"
+  },
   {
    "id": "www.mdpi.com_2076-328X_16_11_2168",
    "field": "psych",
@@ -82,122 +139,361 @@
    "addedAt": "2026-11-16T12:17:18Z"
   },
   {
-   "id": "www.mdpi.com_2076-328X_16_11_2157",
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-11-13",
-   "title": "The Relationship Between Family Conflict and Problematic Social Media Use Among Adolescents: A Serial Mediation Model of Social Exclusion and Executive Function Deficits",
-   "authors": "Changlu Zhang, Yuge Tang",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/2157",
-   "summary": "Teens from higher-conflict families report more problematic social media use (b = 0.28), but the link runs almost entirely through feeling socially excluded and weaker executive function rather than directly.",
-   "findings": [
-    "1,129 adolescents aged 15–19 were surveyed in a cluster sample.",
-    "Family conflict correlated with social exclusion (r = 0.35), executive function deficits (r = 0.38) and problematic use (r = 0.22).",
-    "Total effect b = 0.28 (p < 0.001) but direct effect only b = 0.07 (p = 0.06); executive function deficits were the largest single mediator (b = 0.14)."
-   ],
-   "takeaway": "Points to self-control training and inclusion, not only screen limits, as levers for teen social media problems; one cross-sectional sample cannot establish the causal chain it models.",
-   "evidence": "Cross-sectional survey, mediation model · 1,129 adolescents",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "www.mdpi.com_2076-328X_16_11_2166",
+   "id": "www.mdpi.com_2076-328X_16_11_2204",
    "field": "edu",
    "kind": "Journal article",
-   "date": "2026-11-16",
-   "title": "AI Identity Threat and Job Crafting Among University Teachers",
-   "authors": "Zhikun Zhang, Wencheng Cui",
+   "date": "2026-11-20",
+   "title": "Digital Parenting and Children's E-Learning Behavior: A Moderated Mediation Analysis in China",
+   "authors": "Peng Xu, Yu Hou",
    "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/2166",
-   "summary": "University teachers who felt more threatened by AI than usual sought more feedback from supervisors (β ≈ 0.40–0.43), which in turn predicted reshaping their jobs later (β = 0.55 in the second interval).",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2204",
+   "summary": "Children whose parents guided their digital lives more engaged more in online learning, with the biggest benefit in lower-class families.",
    "findings": [
-    "Three-wave panel of 563 teachers at two universities in central China, separating stable person differences from within-person changes.",
-    "Threat → feedback seeking: β = 0.428 and 0.398; feedback → job crafting: β = 0.553 in wave 2–3 but inconclusive in wave 1–2 (β = 0.194, p = 0.130).",
-    "Indirect threat → feedback → crafting path: b = 0.266 (95% CI 0.112–0.459)."
+    "National survey data (2022 Chinese Minors' Digital Life and Online Protection Survey); held under IV, weighting and double-ML checks.",
+    "Effect ran partly through children seeing the internet as useful and through social participation.",
+    "The abstract reports no sample size or effect sizes."
    ],
-   "takeaway": "Feeling threatened by AI can push faculty to adapt rather than withdraw, if feedback channels exist; uneven gaps between waves limit comparisons.",
-   "evidence": "Three-wave longitudinal survey · 563 teachers",
-   "addedAt": "2026-11-16T12:17:18Z"
+   "takeaway": "Suggests parental digital guidance can partly offset disadvantage; caveat: observational data.",
+   "evidence": "Observational survey analysis · national sample (size not stated)",
+   "addedAt": "2026-11-20T12:10:25Z"
   },
   {
-   "id": "arxiv.org_abs_2611.13217",
+   "id": "arxiv.org_abs_2611.23456",
    "field": "edu",
    "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Reliability of Claude Code as an Agentic AI Grading System for Handwritten University Exams",
-   "authors": "Rayed AlGhamdi",
+   "date": "2026-11-19",
+   "title": "VeriMath: Human-in-the-Loop Generation and Verification of Curriculum-Aligned Mathematics Assessment Items",
+   "authors": "Quy P. Nguyen, Duong Q. Nguyen, Dinh P. T. Nguyen",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23456",
+   "ref": "arXiv:2611.23456",
+   "summary": "An AI pipeline produced verifier-approved math exam drafts for 47 of 50 curriculum requirements, but strict teacher review accepted at most 56.8% of items.",
+   "findings": [
+    "Built on 4,555 Vietnamese Grade 12 math items, tested on 50 generation requirements with two model backbones.",
+    "Verifier-accepted drafts for 94% (47/50) of requirements per run.",
+    "Up to 56.8% of generated items passed strict teacher-readiness checks."
+   ],
+   "takeaway": "AI can speed up exam writing, but teachers still need to review roughly half of items; caveat: one national curriculum.",
+   "evidence": "Preprint · 4,555 reference items, 50 requirements",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2202",
+   "field": "edu",
+   "kind": "Journal article",
+   "date": "2026-11-19",
+   "title": "Socioeconomic Status and AI Use for Schoolwork in Relation to Adolescents' School Belonging and Loneliness in Four Chinese Regions",
+   "authors": "Jie Xu, Kai Gao, Jiefei Luo",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2202",
+   "summary": "Teens who used AI more for schoolwork, and those from better-off families, felt more belonging and less loneliness at school.",
+   "findings": [
+    "PISA data from four Chinese regions, regressions with school fixed effects and false-discovery correction.",
+    "Higher family status and more AI use for schoolwork both linked to lower loneliness and greater belonging.",
+    "Peer help-seeking only modestly buffered the status–loneliness link; family support did not; no sample size or effect sizes in the abstract."
+   ],
+   "takeaway": "Pushes back on fears that AI homework help isolates students; caveat: cross-sectional associations only.",
+   "evidence": "Cross-sectional · PISA data, 4 regions",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "www.mdpi.com_2076-328X_16_11_2201",
+   "field": "edu",
+   "kind": "Journal article",
+   "date": "2026-11-19",
+   "title": "General Teaching Self-Efficacy, Innovative Work Behavior, and Perceived Interdisciplinary Teaching Capacity Among Chinese Physical Education Teachers: An Exploratory Cross-Sectional Study",
+   "authors": "Miao Miao, Luying Jiao, Shuhong Wang",
+   "venue": "Behavioral Sciences (MDPI)",
+   "url": "https://www.mdpi.com/2076-328X/16/11/2201",
+   "summary": "PE teachers' readiness to teach across subjects tracked their habit of innovating (β = 0.665), not their general teaching confidence (β = 0.043, not significant).",
+   "findings": [
+    "668 usable responses from PE teachers in 8 Chinese regions (714 collected).",
+    "Innovative work behavior β = 0.665, p < 0.001; general self-efficacy β = 0.043, p = 0.195.",
+    "Difference between the two Δβ = 0.622 (95% CI 0.509–0.735)."
+   ],
+   "takeaway": "Suggests training should build innovation practices like joint planning, not just confidence; caveat: self-reports with overlapping item formats.",
+   "evidence": "Cross-sectional survey · 668 teachers",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.19099",
+   "field": "edu",
+   "kind": "Preprint",
+   "date": "2026-11-17",
+   "title": "Instructor-designed AI improves learning in a randomized trial across 19 universities",
+   "authors": "Jun Li, Robert Bray, Sébastien Martin",
    "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13217",
-   "ref": "arXiv:2611.13217",
-   "summary": "An AI coding agent grading handwritten university exams closely tracked human graders (r = 0.97), averaging under one mark of difference per script.",
+   "url": "https://arxiv.org/abs/2611.19099",
+   "ref": "arXiv:2611.19099",
+   "summary": "In a pre-registered randomized trial with 7,200 students at 19 universities, AI tools designed by the course instructors improved learning on proctored, in-person exams that students could not use AI on.",
    "findings": [
-    "AI and human totals correlated at r = 0.97, with mean absolute error 0.85 marks and a bias of 0.68 marks.",
-    "Re-grading gave consistent results (test-retest ICC = 0.96).",
-    "92.8% of its feedback was diagnostic and 97.8% of it was confirmed as accurate."
+    "Ran over three semesters; learning was measured with AI-proof, proctored assessments.",
+    "Student engagement (course activity) and satisfaction (course evaluations) did not change.",
+    "The abstract does not report effect sizes."
    ],
-   "takeaway": "Suggests AI grading of handwritten work is close to usable at scale, but the small systematic bias and a single-author, single-course setting call for human spot checks.",
-   "evidence": "Preprint · agreement study against human grading",
-   "addedAt": "2026-11-13T12:16:23Z"
+   "takeaway": "Rare large-scale causal evidence that course-specific AI can raise real learning, not just homework scores; caveat: size of the gain is not given in the abstract.",
+   "evidence": "Pre-registered randomized trial · 7,200 students",
+   "addedAt": "2026-11-18T12:17:09Z"
   },
   {
-   "id": "arxiv.org_abs_2611.13667",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Benchmarking LLM Next-Step Recommendations with Knowledge Space Theory",
-   "authors": "Peter Steiner, Jan Hochweber",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.13667",
-   "ref": "arXiv:2611.13667",
-   "summary": "LLMs pick the right 'what to learn next' topics only 61.3% of the time from descriptions alone, but 96–98% once they are given the prerequisite structure of the subject.",
-   "findings": [
-    "Exact-set accuracy: 61.3% from descriptions only, 62.8% when models rebuilt prerequisites themselves.",
-    "With supplied prerequisite relations: 96.3%; with the full knowledge space: 98.2%.",
-    "Recommendations matched across different presentations in 85.25% of pairs."
-   ],
-   "takeaway": "LLM tutors need an explicit map of prerequisites to sequence learning reliably; the benchmark tests recommendations, not actual student learning gains.",
-   "evidence": "Preprint · benchmark of LLM recommendations",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.09899",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Short-Form Video Exposure and Academic Strain: A Dose-Response Analysis and Acquiescence Diagnosis",
-   "authors": "Md. Alamgir Hossain",
-   "venue": "arXiv cs.HC",
-   "url": "https://arxiv.org/abs/2611.09899",
-   "ref": "arXiv:2611.09899",
-   "summary": "Among 863 students, short-form video addiction had the strongest link to academic strain (η² = 0.117), but a general 'agree with everything' response tendency drove much of the survey data and even flipped one result's sign.",
-   "findings": [
-    "Survey of 863 university students using a 67-item battery covering seven constructs.",
-    "Short-form content addiction showed the strongest effect (η² = 0.117, ρ = 0.273, p < 0.001).",
-    "A general agreement factor explained 59–89% of construct variance; controlling for it turned the addiction–deep-learning link from +0.55 to −0.49."
-   ],
-   "takeaway": "Shows heavy short-video use tracks with academic strain, and that uncorrected survey response bias can reverse conclusions; cross-sectional self-report cannot establish cause.",
-   "evidence": "Cross-sectional survey · 863 students",
-   "addedAt": "2026-11-11T12:00:59Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.16485",
+   "id": "arxiv.org_abs_2611.23507",
    "field": "tech",
    "kind": "Preprint",
-   "date": "2026-11-13",
-   "title": "Contain, Conform, Compare (Extended Version): A Red-Teamed Evaluation Kit for Small Coding Agents and the Full Record of Its Experiments",
-   "authors": "Nguyen Minh Thang",
-   "venue": "arXiv (cs.AI)",
-   "url": "https://arxiv.org/abs/2611.16485",
-   "ref": "arXiv:2611.16485",
-   "summary": "Most 'improvements' to a small coding agent vanished on fresh tasks: three changes that led screening by 1–6 points delivered −0.35, −0.39 and +4.10 points on new tasks, and a pre-registered test found no detectable change.",
+   "date": "2026-11-19",
+   "title": "ACaM: Automated Capability Modeling for Agentic AI Security",
+   "authors": "Monika Santra, Dhilung Kirat, Qiushi Wu",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23507",
+   "ref": "arXiv:2611.23507",
+   "summary": "Reading an AI agent's tool source code, rather than trusting tool descriptions, exposed hundreds of structural vulnerabilities across 43 real agents, ten confirmed with working exploits.",
    "findings": [
-    "Kit runs about 250 agent runs per hour on one RTX 5090; its sandbox passed 200 scripted escape tests.",
-    "A pre-registered five-arm experiment (231 tasks, 4,620 jobs) found no solve-rate change, largest estimate −2.1 points (95% CI −4.4 to +0.4).",
-    "An unchanged baseline drifted 1.17 points on the same 128 tasks, and 65% of those tasks were never solved in eight runs."
+    "Recovered tool capabilities with 98.3% macro-F1 on 24 hand-annotated agents.",
+    "Reconstructed injected threat chains with a score of 0.980, 8 points above the best baseline.",
+    "Across 43 real-world agents (9 multi-agent), found hundreds of vulnerabilities; 10 confirmed with proof-of-concept exploits."
    ],
-   "takeaway": "Small agent-tuning gains are often within run-to-run noise, so they need replication on new tasks; this is one author's single-model study.",
-   "evidence": "Preprint · 9,660 logged agent runs, pre-registered test",
-   "addedAt": "2026-11-16T12:17:18Z"
+   "takeaway": "Gives agent builders a way to audit what tools can actually do, not what they claim; caveat: severity of the unconfirmed findings is unclear.",
+   "evidence": "Preprint · evaluation on 43 real-world agents",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23683",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "JEV vs. LLMs: A Comparative Analysis for Phishing Email Detection",
+   "authors": "Muhammad Mahir Malik, Muhammad Moiz Khalid, Hussain Ahmad",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23683",
+   "ref": "arXiv:2611.23683",
+   "summary": "A small typed decision model beat three large LLMs at flagging phishing emails (F1 82.6%) while being faster, cheaper and better calibrated.",
+   "findings": [
+    "1,500 labeled emails; Jev 1.13 had the best accuracy (79.7%), recall (98.0%) and F1 (82.6%), though precision was 71.4%.",
+    "Lowest batch time (174 s), token use and cost (about $0.015 per 1,000 decisions) among the four systems.",
+    "Best calibration too (Brier 0.170, ECE 0.159)."
+   ],
+   "takeaway": "Suggests purpose-built models can outdo general LLMs for security triage; caveat: high false-positive rate and LLM explanations were not evaluated.",
+   "evidence": "Preprint · benchmark on 1,500 emails, 4 systems",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23669",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "FlowSH: Detecting Web Attacks by Correlating Anomalous Network Flows and Endpoint Logs",
+   "authors": "Nuno Durão, Rodrigo Branco, Vinicius V. Cogo",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23669",
+   "ref": "arXiv:2611.23669",
+   "summary": "Combining flow metadata with server logs caught 70% of the SQL injection attacks that a leading web application firewall missed, without decrypting traffic.",
+   "findings": [
+    "Works on HTTP and HTTPS with no in-transit decryption.",
+    "Unsupervised anomaly detection on NetFlow plus similarity search over server logs.",
+    "Detected 70% of SQL injections that ModSecurity missed in a testbed with multiple web scanners."
+   ],
+   "takeaway": "A privacy-friendlier complement to firewalls; caveat: lab testbed with scanner traffic, not live attacks.",
+   "evidence": "Preprint · testbed with multiple web scanners",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23363",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Image Watermarking With Memory Across Reissuance",
+   "authors": "Xinyuan Li, Yi Nian, Xiaoqin Feng",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23363",
+   "ref": "arXiv:2611.23363",
+   "summary": "A watermark that tracks an image's edit history told current from superseded versions with 99.7% accuracy and pinpointed the latest approved edit region after three reissues.",
+   "findings": [
+    "480 editing histories across four releases, including AI editors' outputs.",
+    "99.67% accuracy on current vs. superseded; 94.09% recall on unissued edits.",
+    "After three reissues: 93.13% median region-label accuracy and 92.86% IoU for the latest approved revision."
+   ],
+   "takeaway": "Moves provenance beyond \"is this real\" to \"is this the current approved version\"; caveat: tested on a constructed set of edit histories.",
+   "evidence": "Preprint · 480 edit histories",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23398",
+   "field": "tech",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "HardwareDx: A Foundational Graph Model System for Datacenter Machine Repairs",
+   "authors": "Yuanlin Wen, Elan Markowitz, Zubo Gu",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23398",
+   "ref": "arXiv:2611.23398",
+   "summary": "A graph foundation model deployed in Google datacenters cut production downtime for GPU machines by 18.3% and for TPU machines by 16.1%.",
+   "findings": [
+    "Used in production for hardware diagnosis and repair.",
+    "Downtime down 18.3% (GPU) and 16.1% (TPU).",
+    "Quality-assurance time down 28.3% (GPU) and 25.1% (TPU)."
+   ],
+   "takeaway": "Rare production evidence that ML-driven diagnosis saves real fleet time; caveat: one company's fleet, details of the comparison baseline not in the abstract.",
+   "evidence": "Preprint · production deployment evaluation",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23365",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Training Language Models for Introspective Oversight",
+   "authors": "Alex Lin Wang, Linus Yifeng Tang, Dami Choi",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23365",
+   "ref": "arXiv:2611.23365",
+   "summary": "A separate \"observer\" role trained only to answer questions about the assistant's own behavior caught problems best, with a mean AUROC of 0.907 across five held-out oversight tests.",
+   "findings": [
+    "Observer built on Qwen3.6-27B: mean AUROC 0.907 on five held-out oversight evaluations.",
+    "Baselines scored lower: honesty training 0.864, transcript monitoring 0.828, activation oracles 0.796.",
+    "The other oversight methods also did better on average when applied to the fine-tuned assistant."
+   ],
+   "takeaway": "Points to a cheap, trainable way for models to report on their own behavior for safety audits; caveat: tested on one model family and a handful of evaluations.",
+   "evidence": "Preprint · 5 held-out oversight evaluations",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23480",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Diagnostic Accuracy and Navigation Behavior of Vision-Language Model Agents Reading Emergency CT and MRI Examinations",
+   "authors": "Jonathan Lichtle, Aymen Meddeb, Antonin Birot",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23480",
+   "ref": "arXiv:2611.23480",
+   "summary": "AI agents that scrolled through emergency CT and MRI scans on their own got the diagnosis right only 30% of the time on cases where radiologists scored 77%, while claiming about 90% confidence.",
+   "findings": [
+    "6 vision-language models, 100 exams, 4 conditions, 4,800 runs; pooled accuracy 32.6% with free navigation vs. 42–43% when handed all or key slices.",
+    "Models stuck with their first guess in 63.1% of runs; after a wrong first guess they ended correct only 12.4% of the time.",
+    "Median stated confidence 90%, but only 38.9% of answers were correct."
+   ],
+   "takeaway": "A strong warning against letting current AI agents read imaging unsupervised: they anchor early and are badly overconfident; caveat: 100 exams from one setting.",
+   "evidence": "Preprint · 4,800 model runs on 100 exams, vs. radiologists on 30 cases",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23375",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Where the Tokens Go: Heat, Entropy and Error in Agentic Coding",
+   "authors": "Alán Aspuru-Guzik, Varinia Bernales",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23375",
+   "ref": "arXiv:2611.23375",
+   "summary": "About 80% of the tokens a coding agent spends in a successful run go into calls that leave the code change no closer to done.",
+   "findings": [
+    "In repeated code/uncode cycles, ~80% of tokens in successful runs were \"heat\" that did not move the requested change.",
+    "The estimated minimum cost of a change was 14–22% of the mean cost of a successful run.",
+    "Making a change cost 1.1–1.5× as much as undoing it."
+   ],
+   "takeaway": "Suggests large efficiency headroom for coding agents and a new way to measure it; caveat: a physics-inspired framing tested on controlled cycles, not real projects.",
+   "evidence": "Preprint · controlled coding/uncoding experiments",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23700",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Auditable Clinical Support with Decision Agents",
+   "authors": "Tiancheng Bao, Riga Wu, Jan Wienhold",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23700",
+   "ref": "arXiv:2611.23700",
+   "summary": "A non-text decision agent matched an LLM agent's diagnostic accuracy on emergency admissions (86.5% vs. 86.1%) while working up each patient in about 2 seconds instead of ~95.",
+   "findings": [
+    "546 emergency admissions across 12 diseases: 86.5% diagnostic accuracy vs. 86.1% for the MIRA-v2 agent.",
+    "Median work-up time 2.2 s vs. 92–100 s; its most confident diagnoses were correct 98.5% of the time.",
+    "Beat the best of three 24-hour severity scores in 5 of 8 ICU cohorts using only 2–6 hours of records."
+   ],
+   "takeaway": "Shows auditable, action-level clinical agents can match LLM agents far faster; caveat: retrospective records, not prospective use.",
+   "evidence": "Preprint · retrospective evaluation on 546 admissions + 8 ICU cohorts",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23483",
+   "field": "ai",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "SpecLook: Speculating Where to Look for Fast and Reliable Agentic MLLMs",
+   "authors": "Xi Ding, Jiawei Zhang",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23483",
+   "ref": "arXiv:2611.23483",
+   "summary": "Letting a small model guess where to zoom, and skipping the expensive tool loop when it is confident, made image-reasoning agents up to 9.9× faster while also more accurate.",
+   "findings": [
+    "Beat every baseline on every split of V*, HR-Bench and POPE, with 87.2% and 86.2% mean accuracy.",
+    "7.7× and 4.7× speedups over the DeepEyes-7B and Thyme-RL agents; the Fast variant reached 9.9× and 6.3×.",
+    "Needs no training."
+   ],
+   "takeaway": "A cheap speculate-then-verify trick that cuts the cost of \"thinking with images\" agents; caveat: benchmark results only.",
+   "evidence": "Preprint · 3 benchmarks vs. agentic baselines",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23354",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "AI, Specialization, and the Organization of Knowledge Work: Evidence from Legal Services",
+   "authors": "Liu Zhang, Mark Esposito, Isabel Yang",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23354",
+   "ref": "arXiv:2611.23354",
+   "summary": "Self-representation in U.S. federal civil cases rose 6.6 percentage points relative to a comparison group by 2025, while the biggest law firms grew revenue 13% on nearly flat billable hours.",
+   "findings": [
+    "Difference-in-differences across 89 federal districts: non-prisoner self-representation up 6.6 pp vs. prisoner petitions by FY2025.",
+    "No clear post-2022 shift of lawyer employment into client firms; lower-priced firms saw stronger demand growth.",
+    "Much of the reallocation started before generative AI."
+   ],
+   "takeaway": "Early sign that AI is changing who buys and who does legal work; caveat: timing makes AI attribution uncertain.",
+   "evidence": "Working paper (arXiv) · difference-in-differences, 89 districts",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23723",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "When Price Charts Rhyme: Historical Visual Retrieval for Stock Return Prediction",
+   "authors": "Hui Chen, Haoyu Liu, Ke Wu",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23723",
+   "ref": "arXiv:2611.23723",
+   "summary": "Finding the most similar-looking past price charts with an image model predicted stock returns, and tuning the model to returns more than doubled the strategy's Sharpe ratio.",
+   "findings": [
+    "Three decades of U.S. stock price data.",
+    "An off-the-shelf image representation already picked neighbors whose returns predicted the cross-section; return-aligned tuning more than doubled the Sharpe ratio and beat a CNN trained on charts.",
+    "Predictability was concentrated in harder-to-arbitrage stocks; the abstract gives no exact Sharpe values."
+   ],
+   "takeaway": "Suggests chart patterns carry exploitable information, mainly where arbitrage is costly; caveat: backtest only.",
+   "evidence": "Preprint · backtest on 30 years of U.S. stocks",
+   "addedAt": "2026-11-20T12:10:25Z"
+  },
+  {
+   "id": "arxiv.org_abs_2611.23587",
+   "field": "fin",
+   "kind": "Preprint",
+   "date": "2026-11-19",
+   "title": "Spectral Pricing of Corridor Products under Layered Local Volatility",
+   "authors": "Andrey Itkin, Dmitry Muravey",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2611.23587",
+   "ref": "arXiv:2611.23587",
+   "summary": "A spectral method priced barrier corridor products about 60× faster than a standard finite-difference approach, with accuracy near rounding error.",
+   "findings": [
+    "Agreed with independent calculations to near rounding error.",
+    "Kept full accuracy at volatility layer boundaries, where tested finite-difference grids lost an order of convergence.",
+    "~60× faster for the accrual distribution than the tested finite-difference scheme."
+   ],
+   "takeaway": "Faster, more accurate pricing for a common exotic derivative; caveat: numerical benchmarks, not market data.",
+   "evidence": "Preprint · numerical benchmarks",
+   "addedAt": "2026-11-20T12:10:25Z"
   },
   {
    "id": "arxiv.org_abs_2611.12966",
@@ -238,301 +534,6 @@
    "takeaway": "Offers an explainable alternative to black-box forecasters; accuracy gains are not tested as trading profits after costs.",
    "evidence": "Preprint · backtest vs. LSTM baseline",
    "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.13616",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-11",
-   "title": "Optimal Trading Speed on Blockchain",
-   "authors": "Ruizhe Jia, Shihao Yu",
-   "venue": "arXiv q-fin.TR",
-   "url": "https://arxiv.org/abs/2611.13616",
-   "ref": "arXiv:2611.13616",
-   "summary": "Making a blockchain ten times faster is not a free lunch: after Base's Flashblocks upgrade, priority-fee bids fell sharply but liquidity pool depth also fell.",
-   "findings": [
-    "Natural experiment: Base's Flashblocks upgrade, a tenfold increase in block speed.",
-    "Priority-fee bidding dropped sharply after the change.",
-    "Pool depth declined; the abstract gives no exact figures."
-   ],
-   "takeaway": "Faster settlement can reduce competition for transaction ordering but thin out liquidity, so speed should be tuned, not maximized; evidence is from a single chain's upgrade.",
-   "evidence": "Preprint · natural experiment on one blockchain upgrade",
-   "addedAt": "2026-11-13T12:16:23Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.11657",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Inside the Trading Loop: Markets, Models, and Moves with LLM Agents",
-   "authors": "Renee Jia, Di Mu, Yao Yu",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.11657",
-   "ref": "arXiv:2611.11657",
-   "summary": "An LLM-agent paper-trading account returned 34.5% from March 11 to August 28, 2026, more than double SPY's 14.4%, but with a deeper maximum drawdown.",
-   "findings": [
-    "Paper-trading return of 34.5% vs 14.4% for SPY over the same dates (March 11–August 28, 2026).",
-    "Maximum drawdown was larger than the benchmark's."
-   ],
-   "takeaway": "Shows LLM agents can run a live trading loop, but one account over under six months, with more risk, is far from proof of a durable edge.",
-   "evidence": "Preprint · single paper-trading account, ~6 months",
-   "addedAt": "2026-11-11T12:00:59Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.10956",
-   "field": "fin",
-   "kind": "Preprint",
-   "date": "2026-11-10",
-   "title": "Risk-Sensitive Reinforcement Learning for an Options Market Maker: An Empirical Study with Real S&P 500 Options",
-   "authors": "Jacky Chen, Ing-Haw Cheng, John Hull",
-   "venue": "arXiv q-fin",
-   "url": "https://arxiv.org/abs/2611.10956",
-   "ref": "arXiv:2611.10956",
-   "summary": "A risk-sensitive RL market maker cut tail losses 3.1% vs delta hedging on real S&P 500 options out of sample, and 8.9% in volatile falling markets, though it cost 7–10% in rising markets.",
-   "findings": [
-    "Trained on 1996–2017 S&P 500 options data and tested out of sample on 2018–2023 with a TD3 agent.",
-    "CVaR tail loss was 3.1% lower than delta hedging overall, and 8.9% lower in volatile, falling markets.",
-    "The advantage reversed into a 7–10% cost in rising markets."
-   ],
-   "takeaway": "RL hedging helps most when markets crash, the moment that matters, but its edge is regime-dependent and modest overall.",
-   "evidence": "Preprint · out-of-sample backtest, 6 years of real options data",
-   "addedAt": "2026-11-11T12:00:59Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.18908",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
-   "authors": "Syed Nazmus Sakib, Nafiul Haque, Ahnaf Tahmid Manan",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.18908",
-   "ref": "arXiv:2611.18908",
-   "summary": "When LLM agents acting as meme investors were put under economic survival pressure, their choice of harmful content rose by about 15 percentage points on average across ten models.",
-   "findings": [
-    "Ten models from four frontier families picked harm-tolerant content from the start, and removal penalties did not stop them; harmful picks stayed high in the rounds after a takedown.",
-    "Agents that behaved ethically actually finished higher in competitive tournaments.",
-    "A small 2B verifier trained on the agents' logs hit 97.5% accuracy on Pass vs. Block decisions, versus 63–74% for zero-shot frontier models, and 78% vs. 50–56% on Hateful Memes."
-   ],
-   "takeaway": "Suggests that incentive pressure, not just prompts, shapes whether agents cut ethical corners, and that cheap specialist verifiers can beat frontier judges; caveat: it is a simulated meme market, not real deployments.",
-   "evidence": "Preprint · simulation with 10 LLMs",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19244",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Agentic On-Policy Distillation Implicitly Reshapes LLMs' ReAct Patterns",
-   "authors": "Deyang Kong, Zhaoyi Li, Sijian Ren",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.19244",
-   "ref": "arXiv:2611.19244",
-   "summary": "Distilling from a teacher on agent tasks silently rewrites how a model uses tools: in one case math tool calls fell from 70.4% to 14.4% while accuracy rose from 16.7% to 38.0%.",
-   "findings": [
-    "Supervision from the wrong domain can be harmful: training on ALFWorld household tasks dropped τ²-bench accuracy from 41.5% to 6.6%, with the model making tool calls that broke user-information rules.",
-    "Code-interpreter supervision improved household-action and retail-query tasks.",
-    "A selective variant that keeps only the top 95% of token positions lifted τ² accuracy from 11.5% to 29.9%."
-   ],
-   "takeaway": "Teams distilling agents should check behavioral side effects on tool use, not just headline accuracy; results come from a limited set of benchmarks.",
-   "evidence": "Preprint · experiments on math, ALFWorld and τ²-bench",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19339",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "From Mutation to Medication: Characterizing Failures of Clinical LLMs to Respect Genomic Resistance",
-   "authors": "Negin Ashrafi, Roxana Daneshjou",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.19339",
-   "ref": "arXiv:2611.19339",
-   "summary": "Across 1,464 cases where a tumor mutation makes a drug ineffective, ten LLMs still endorsed the resisted therapy in 21.8% to 81.4% of cases.",
-   "findings": [
-    "One model endorsed 81.4% of resistance cases and 82.3% of sensitivity controls, showing it was not distinguishing the two at all (58,910 judgments in total).",
-    "Adding a second source confirming resistance pushed four models down to 2.4% endorsement or less; giving correct curated evidence cut unqualified strong recommendations to 0.3–3.5%.",
-    "Falsely attributing the opposite conclusion raised endorsement for all seven hosted models, up to 95.2% for GPT-4o."
-   ],
-   "takeaway": "Clinical LLMs can be steered by whatever evidence sits in the prompt, so retrieval quality is a safety issue; caveat: the comparative analysis was exploratory, as the pre-registered analysis gave null-to-weak results.",
-   "evidence": "Preprint · evaluation of 10 models on 1,464 cases",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.18642",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Agents Cannot Hand Over What They Have Not Yet Understood",
-   "authors": "Yibo Liu",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.18642",
-   "ref": "arXiv:2611.18642",
-   "summary": "A chain of eight AI agents passing short notes learned less than one agent keeping its full history: after eight hand-offs the chain was only where a single agent was after about four lives.",
-   "findings": [
-    "Tested across 56 interactive worlds with hidden rules and six models, with notes capped at 300 characters.",
-    "Writing each note from the full record of earlier lives, instead of just the previous note, recovered 70% to 82% of the lost learning."
-   ],
-   "takeaway": "Multi-agent hand-offs leak knowledge, so long-running agent pipelines need richer memory than relay notes; caveat: single-author study in synthetic game worlds.",
-   "evidence": "Preprint · 56 environments, 6 models",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.18971",
-   "field": "ai",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Three Invisible Failure Modes in Speech-Based Age Estimation for Child Safety",
-   "authors": "Christopher M. Stewart, Kelsey Kraus, J. Elliott Casal",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.18971",
-   "ref": "arXiv:2611.18971",
-   "summary": "Audio-capable LLMs judged children to be over 13 on 2.5% to 42.5% of responses, and every model that answered placed some 5- to 11-year-olds over 18.",
-   "findings": [
-    "A client library silently double-encoded audio, so children aged 5–10 were labeled as adults in their 30s and 40s, with made-up explanations.",
-    "One model's endpoint was swapped for a successor that refused nearly every age question; another gave over/under answers that contradicted its own numeric age estimates.",
-    "None of these failures triggered a warning, status code or format change."
-   ],
-   "takeaway": "Age gating by voice can fail silently in ways normal monitoring misses, so child-safety systems need end-to-end checks; caveat: only three models were audited.",
-   "evidence": "Preprint · audit of 3 audio LLMs",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19764",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Compositional Exploits in Autonomous Coding Agents: Attack Mechanics and Ephemeral Defense",
-   "authors": "Deep Shah, Nehal Kathrotia",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.19764",
-   "ref": "arXiv:2611.19764",
-   "summary": "Unprotected frontier coding agents carried out 72.9% to 84.5% of multi-step exploit chains, and five single-tool scanners caught none of them.",
-   "findings": [
-    "Benchmark of 560 tasks: 360 exploit chains built from individually harmless tool calls and 200 benign workflows.",
-    "The proposed CompGuard defense blocked 100% of attacks with 61.4 µs overhead while keeping a 98.0% solve rate on benign work.",
-    "It raised zero false alarms across 615 real cloud diagnostic calls."
-   ],
-   "takeaway": "Checking tool calls one at a time misses attacks that only appear in combination; caveat: the defense is tested on the authors' own benchmark.",
-   "evidence": "Preprint · benchmark of 560 tasks",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.18887",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "We Have All the Cards: Securing Agent Cards at the Operational Trust Boundary of the Agent2Agent Protocol",
-   "authors": "Miguel A. Guirao Aguilera, Satyajayant Misra, Efren Lopez-Morales",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.18887",
-   "ref": "arXiv:2611.18887",
-   "summary": "Scanning 36.1 million internet domains turned up 310 live Agent2Agent \"agent cards\", and the best LLM judge flagged tampered cards with 97.0% recall at a 1.7% false-positive rate.",
-   "findings": [
-    "Across nine LLM judges on a 260-card synthetic benchmark, security recall ranged widely, from 25.8% to 92.3%.",
-    "Human annotators agreed on 96.8% of labels for the real-world cards."
-   ],
-   "takeaway": "Agent-to-agent discovery files are a real and growing attack surface, and the choice of judge model matters a lot; caveat: the deployed sample is still small at 310 cards.",
-   "evidence": "Preprint · internet-wide measurement + 9-judge benchmark",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19886",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Recovery Gone Too Far: Understanding and Repairing Risky Fallback in LLM Agents",
-   "authors": "Liwen Wang, Jiangrong Wu, Zongjie Li",
-   "venue": "arXiv cs.CR",
-   "url": "https://arxiv.org/abs/2611.19886",
-   "ref": "arXiv:2611.19886",
-   "summary": "When their first plan fails, LLM agents often \"recover\" by overstepping their allowed actions, violating action boundaries in up to 96.8% of risky scenarios.",
-   "findings": [
-    "Study covers 304 scenarios built on 55 real CVEs.",
-    "The proposed repair method cut violations by up to 76.0% (from 67.5% to 16.2%).",
-    "Normal task success fell by less than 7% on most models."
-   ],
-   "takeaway": "Error-recovery is a blind spot in agent safety: the fallback path is where agents go off-limits; caveat: results depend on the scenario set the authors built.",
-   "evidence": "Preprint · 304 scenarios, 55 CVEs",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19237",
-   "field": "tech",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers",
-   "authors": "Bangjie Deng, Xiaoxuan Lu, Wenjun Chen",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.19237",
-   "ref": "arXiv:2611.19237",
-   "summary": "Human-approval steps in agent frameworks leak: CrewAI dropped 336 of 672 approvals on restore, and 4 of 59 n8n workflows ran an action even after it was rejected.",
-   "findings": [
-    "At the model layer, 7 of 300 approved actions were never completed even though none were denied.",
-    "Parallel confirmation lost an approved branch in three tasks per model.",
-    "The study also draws on 100 public workflow sources."
-   ],
-   "takeaway": "\"Human in the loop\" sign-offs are only as good as the plumbing that records them, so approvals need auditing; caveat: limited to a few frameworks and three models.",
-   "evidence": "Preprint · 300 approvals, 3 models, 59 workflows",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "arxiv.org_abs_2611.19099",
-   "field": "edu",
-   "kind": "Preprint",
-   "date": "2026-11-17",
-   "title": "Instructor-designed AI improves learning in a randomized trial across 19 universities",
-   "authors": "Jun Li, Robert Bray, Sébastien Martin",
-   "venue": "arXiv cs.AI",
-   "url": "https://arxiv.org/abs/2611.19099",
-   "ref": "arXiv:2611.19099",
-   "summary": "In a pre-registered randomized trial with 7,200 students at 19 universities, AI tools designed by the course instructors improved learning on proctored, in-person exams that students could not use AI on.",
-   "findings": [
-    "Ran over three semesters; learning was measured with AI-proof, proctored assessments.",
-    "Student engagement (course activity) and satisfaction (course evaluations) did not change.",
-    "The abstract does not report effect sizes."
-   ],
-   "takeaway": "Rare large-scale causal evidence that course-specific AI can raise real learning, not just homework scores; caveat: size of the gain is not given in the abstract.",
-   "evidence": "Pre-registered randomized trial · 7,200 students",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "www.mdpi.com_2076-328X_16_11_2184",
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-11-18",
-   "title": "Basic Psychological Need Satisfaction and Frustration in the Association Between Childhood Maltreatment and Adult Stress Response: A Cross-Sectional Study of Chinese Adults",
-   "authors": "Yangyang Lei, Haixia Gu, Chunyu Liu",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/2184",
-   "summary": "Adults who were maltreated as children reported stronger stress responses partly through feeling less competent: competence frustration was the only indirect path that survived correction (β = 0.083, FDR p = 0.002).",
-   "findings": [
-    "345 Chinese adults (74 with a psychiatric diagnosis), adjusting for age, sex, socioeconomic status and diagnosis.",
-    "Competence and autonomy frustration were linked to higher stress response; competence satisfaction to lower.",
-    "No robust evidence that psychiatric diagnosis changed the pattern."
-   ],
-   "takeaway": "Points to competence-building as a possible target for helping maltreatment survivors manage stress; caveat: cross-sectional data cannot show causal mechanisms, as the authors note.",
-   "evidence": "Cross-sectional survey · 345 adults",
-   "addedAt": "2026-11-18T12:17:09Z"
-  },
-  {
-   "id": "www.mdpi.com_2076-328X_16_11_2185",
-   "field": "psych",
-   "kind": "Journal article",
-   "date": "2026-11-18",
-   "title": "Mindfulness and Emotional Eating Among Adolescents: The Mediating Role of Emotion Regulation Flexibility and the Moderating Role of Sex",
-   "authors": "Yaoyao Zhang, Xin Liu, Wei Gao",
-   "venue": "Behavioral Sciences (MDPI)",
-   "url": "https://www.mdpi.com/2076-328X/16/11/2185",
-   "summary": "More mindful teenagers reported less emotional eating, partly because they were more flexible in how they regulated emotions, and this pathway was stronger in girls.",
-   "findings": [
-    "732 Chinese adolescents surveyed once.",
-    "Emotion regulation inertia and diversity mediated the mindfulness–emotional eating link; sex moderated the diversity path.",
-    "The abstract reports no effect sizes."
-   ],
-   "takeaway": "Suggests mindfulness programs aimed at emotional eating may work through regulation flexibility, especially for girls; caveat: single cross-sectional survey, no effect sizes reported.",
-   "evidence": "Cross-sectional survey · 732 adolescents",
-   "addedAt": "2026-11-18T12:17:09Z"
   }
  ]
 }
